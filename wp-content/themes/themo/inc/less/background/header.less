@@ -1,0 +1,79 @@
+@import "../helpers.less";
+
+#header:before{
+    display:none;
+}
+
+#header when (@is_global_style = 1) {
+  body.skin-light &{
+    background: #92A0B1;
+  }
+
+  body.skin-dark &{
+    background: #20262C;
+  }
+}
+
+html body when not(@is_global_style = 1) {
+  &.skin-light,
+  &.skin-dark {
+    #header {
+      &.background-type-color {
+        background-color: @pt_background_color;
+      }
+
+      &.background-type-image {
+        .isBackgroundImage(@pt_background_upload_image);
+        .backgroundSize(@pt_background_cover);
+        background-repeat: @pt_background_image_repeat;
+        background-position: @pt_background_image_position;
+      }
+
+      &.background-overlay-pattern {
+        .pt-overlay {
+          .overlayImage(@pt_background_overlay, @pt_background_pattern);
+        }
+      }
+
+      &.background-overlay-color {
+        .pt-overlay {
+          .overlayColor(@pt_background_overlay, @pt_background_overlay_color);
+        }
+      }
+    }
+  }
+}
+
+body when (@is_global_style = 1){
+
+  &.skin-light,
+  &.skin-dark {
+    #header {
+      &.background-type-color {
+        background-color: @pt_background_color;
+      }
+
+      &.background-type-image {
+        .isBackgroundImage(@pt_background_upload_image);
+        .backgroundSize(@pt_background_cover);
+        background-repeat: @pt_background_image_repeat;
+        background-position: @pt_background_image_position;
+      }
+
+      &.background-overlay-pattern {
+        .pt-overlay {
+          .overlayImage(@pt_background_overlay, @pt_background_pattern);
+        }
+      }
+
+      &.background-overlay-color {
+        .pt-overlay {
+          .overlayColor(@pt_background_overlay, @pt_background_overlay_color);
+        }
+      }
+    }
+  }
+    
+
+}
+

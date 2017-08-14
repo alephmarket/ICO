@@ -1,0 +1,28 @@
+@import "../helpers.less";
+
+#@{id} {
+  &.icon-small {
+
+  }
+
+  &.icon-big {
+
+  }
+
+  &:before {
+    .ifNotEmpty(color, @icon_color);
+  }
+
+  p {
+    .ifNotEmpty(font-family, @font_family);
+    font-size: @font_size;
+  }
+
+  .ifNotEmpty(font-family, @font_family);
+  .ifNotEmpty(font-weight, @font_weight);
+  .ifNotEmpty(font-style, @font_style);
+  font-size: @font_size;
+  .ifNotEmpty(color, @text_color);
+  .ifNotEmpty(background-color, @background_color);
+  .ifNotEmpty(border-color, @border_color);
+}

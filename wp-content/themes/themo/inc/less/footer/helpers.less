@@ -1,0 +1,13 @@
+
+.footerPadding(@padding_top, @padding_bottom) when (@padding_top > 0) and (@padding_bottom > 0) {
+    .unit(padding-top, @padding_top, px);
+    .unit(padding-bottom, @padding_bottom, px);
+}
+
+.footerColoring(@skin, @text_color, @accent_color, @title_color) {
+    #footer-content {
+        &.skin-@{skin} {
+            .widgetsColoring(@text_color, @accent_color, @title_color);
+        }
+    }
+}

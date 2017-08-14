@@ -1,0 +1,14 @@
+@import "../../helpers.less";
+@import "../helpers.less";
+@import "../../widgets-helpers.less";
+
+#copyright {
+  &.copyright-container {
+    .ifNotEmpty(color, @copyrights_text_color);
+    .ifNotEmpty(background-color, @copyrights_background_color);
+  }
+}
+
+body {
+  .footerColoring(@standard_footer_skin, @standard_footer_widget_text_light, @standard_footer_accent_color_light, @standard_footer_widget_title_light);
+}

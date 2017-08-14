@@ -1,0 +1,65 @@
+#sidebar, .sidebar {
+  & > ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+}
+
+.sidebar {
+  position: relative;
+  z-index: 2;
+    
+  @media (max-width: 768px) {
+    padding-top: 50px;
+  }
+
+  .widget {
+
+    & > ul li {
+      border-bottom: solid 1px transparent;
+    }
+
+    &.widget_tag_cloud {
+      .tagcloud {
+        a {
+          border: solid 1px transparent;
+        }
+      }
+    }
+  }
+  
+  .wrap-boxed &{
+      padding-left: 10px;
+      padding-right: 40px;
+      @media (max-width:767px) {
+          padding-left: 40px;
+      }
+  }
+  .wrap-boxed &.pull-left{
+      padding-left: 40px;
+      padding-right: 10px;
+      @media (max-width:767px) {
+          padding-right: 40px;
+      }
+  }
+  
+  .wrap-wide &.pull-left{
+      padding-left:15px;
+      padding-right: 20px;
+  }
+  
+  .wrap-wide &{
+      padding-left:20px;
+      padding-right: 15px;
+  }
+  .wrap-wide.sidebar-left &{
+      padding-left: 15px;
+      padding-right: 15px;
+  }
+  .wrap-wide.sidebar-right &{
+      padding-left: 15px;
+      padding-right: 15px;
+  }
+  
+}

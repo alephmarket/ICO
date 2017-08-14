@@ -1,0 +1,150 @@
+.widgetsColoring(@text_color, @accent_color, @title_color) {
+    .widget {
+        a {
+            .ifNotEmpty(color, @text_color);
+            &:hover {
+                .ifNotEmpty(color, @accent_color);
+            }
+        }
+        & > ul li {
+            .ifNotEmptyBorder(border-bottom, @text_color, solid 1px, 10%);
+        }
+        .widget-title,
+        .widgettitle {
+            .ifNotEmpty(color, @title_color);
+            &:before {
+                .ifNotEmpty(background-color, @accent_color);
+            }
+        }
+        .selectric-wrapper {
+            .selectric {
+                .ifNotEmptyFade(border-color, @accent_color, 10%);
+                .label {
+                    .ifNotEmpty(color, #4A4A4A);
+                    height: 33px;
+                }
+                &:after {
+                    .ifNotEmpty(background-color, @accent_color);
+                }
+            }
+            .selectric-items {
+                .ifNotEmptyFade(border-color, @accent_color, 10%);
+                li {
+                    &:hover {
+                        .ifNotEmpty(background-color, @accent_color);
+                    }
+                }
+            }
+        }
+        &.widget_text {
+            .textwidget {
+                .ifNotEmpty(color, @text_color);
+            }
+        }
+        &.widget_nav_menu ul.menu,
+        &.widget_categories > ul,
+        &.widget_archive > ul {
+            li {
+                a {
+                    .ifNotEmptyFade(border-top-color, @text_color, 10%);
+                    &:before {
+                        .ifNotEmpty(color, @accent_color);
+                    }
+                }
+                &:last-child {
+                    a {
+                        .ifNotEmptyFade(border-bottom-color, @text_color, 10%);
+                    }
+                }
+                & > ul.children {
+                    .ifNotEmptyFade(border-top-color, @text_color, 10%);
+                }
+            }
+            > li.menu-item-has-children > a:after {
+                .ifNotEmpty(color, @accent_color);
+            }
+        }
+        &.widget_archive > ul,
+        &.widget_categories > ul{
+            li {
+                .ifNotEmptyFade(border-top-color, @text_color, 10%);
+              
+            }
+        }
+        &.widget_recentpostwidget {
+            .newest-list {
+                .image {
+                    a {
+                        &:before {
+                            .ifNotEmpty(background-color, @accent_color);
+                        }
+                    }
+                }
+                p.date {
+                    .ifNotEmpty(color, @accent_color);
+                }
+                .comments {
+                    .ifNotEmpty(color, @accent_color);
+                }
+            }
+        }
+        &.widget_tag_cloud {
+            .tagcloud {
+                a {
+                    .ifNotEmptyBorder(border, @text_color, solid 1px, 10%);
+                    &:hover {
+                        .ifNotEmpty(background-color, @accent_color);
+                        color: #fff;
+                    }
+                }
+            }
+        }
+        &.widget_recent_comments {
+            .recentcomments {
+                .ifNotEmpty(color, @text_color);
+                &:before {
+                    .ifNotEmpty(color, @accent_color);
+                }
+                .comment-author-link {
+                    .ifNotEmpty(color, @accent_color);
+                }
+            }
+        }
+        &.widget_categories {
+            .cat-item {
+                .ifNotEmpty(color, @accent_color);
+            }
+            .cat-item span {
+                .ifNotEmpty(background-color, @accent_color);
+            }
+        }
+        &.widget_archive {
+            li {
+                .ifNotEmpty(color, @accent_color);
+            }
+            span {
+                .ifNotEmpty(background-color, @accent_color);
+            }
+        }
+        &.widget_calendar {
+            table {
+                caption {
+                    .ifNotEmpty(color, @title_color);
+                }
+                tfoot {
+                    a:hover {
+                        .ifNotEmpty(color, @title_color);
+                    }
+                    .id {
+                        .ifNotEmpty(background-color, @accent_color);
+                    }
+                }
+            }
+        }
+        &.widget_recent_entries {
+            .post-date {
+                .ifNotEmpty(color, @accent_color);
+            }
+        }
+    }
+}

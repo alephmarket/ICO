@@ -1,0 +1,235 @@
+// out: null
+@import "vendor/flexbox.less";
+
+.unit (@style, @var, @unit) when (isnumber(@var)) {
+  @{style}: unit(@var, @unit);
+}
+.setStyle (@style, @var) when not (@var = '') and not (@var = false) {
+  @{style}: @var;
+}
+.container-rwd(@width, @offset) {
+    @min_width: unit((@width+30+@offset), px);
+    @max_width: (@min_width - 1);
+    @media (min-width: @min_width) {
+        .unit(width, @width, px);
+    }
+    .wrap-boxed .sticky_slide_header & {
+        &.navbar-standard.navbar-standard-width-custom {
+            width: 100%;
+        }
+    }
+    & when (@width > 1199){
+        @media (min-width: 1200px) and (max-width: @max_width) {        
+            .wrap-boxed &.navbar-standard.navbar-standard-width-container,
+            .wrap-boxed &.navbar-standard.navbar-standard-width-full,
+            .wrap-boxed &.navbar-sticky.navbar-standard-width-container,
+            .wrap-boxed &.navbar-sticky.navbar-standard-width-full
+            {
+                width: (1170px-@offset);
+            }
+        }
+    }
+    & when (@width > 991){
+        @media (max-width:1199px) {
+            width: (970px - @offset);
+        }
+    }
+    @media (max-width:991px) {
+        width: 100%;
+    }
+    @media (max-width:767px) {
+        width: 100%;
+    }
+}
+.container-rwd-wide(@width, @offset){
+    
+    @min_width: unit((@width+30+@offset), px);
+    @max_width: (@min_width - 1);
+    
+    @media (min-width: @min_width) {
+        .unit(width, @width, px);
+    }
+    @media(max-width: @max_width) {
+        width: 100%;    
+    }
+    @media (max-width:991px) {
+        width: 100%;
+    }
+    @media (max-width:767px) {
+        width: 100%;
+    }
+ }
+
+.setStyleDefault (@style, @var, @default) when not (@var = '') and not (@var = false) {
+  @{style}: @var;
+}   
+.setStyleDefault (@style, @var, @default) when (@var = '') {
+  @{style}: @default;
+}  
+.setStyleDefault (@style, @var, @default) when (@var = false) {
+  @{style}: @default;
+}
+
+.fontSize (@var) when not (@var = '') and not (@var = false)  {
+  font-size: @var;
+}
+
+.lineHeight (@var) when not (@var = '') and not (@var = false)  {
+  line-height: @var;
+}
+
+.letterSpacing (@var) when not (@var = '') and not (@var = false)  {
+  letter-spacing:  @var;
+}
+
+.letterSpacingWithUnit (@var) when not (@var = false) {
+  letter-spacing: @var;
+}
+
+.fontWeight (@var) when (@var = regular) {
+  font-weight: normal;
+}
+.fontWeight (@var) when (@var = italic) {
+  font-weight: italic;
+}
+.fontWeight (@var) when (@var > 0) {
+  font-weight: @var;
+}
+
+
+.width (@var, @type) when (@var > 0) and (@type = custom) {
+  width: unit(@var, px);
+}
+
+.maxWidth (@var, @type) when (@var > 0) and (@type = custom) {
+  max-width: unit(@var, px);
+}
+
+.fontFamily (@var) when not (@var = '') and not (@var = undefined)  {
+  .ifNotEmpty(font-family, @var);
+}
+
+.backgroundColor (@var, @color) when (@var = color) {
+  background-color: @color;
+  background-image: none;
+}
+
+.backgroundImage (@var, @image) when (@var = image) {
+  .isBackgroundImage(@image);
+}
+
+.isBackgroundImage (@image) when not (@image = '') {
+  background-image: url(@image);
+}
+
+.backgroundPosition (@var, @position) when (@var = image) {
+  background-position: @position;
+}
+
+.backgroundRepeat (@var, @repeat) when (@var = image) {
+  background-repeat: @repeat;
+}
+
+.backgroundSize (@cover) when (@cover = 0) {
+  -webkit-background-size: auto;
+  -moz-background-size: auto;
+  -o-background-size: auto;
+  background-size: auto;
+}
+
+.backgroundSize (@cover) when (@cover = 1) {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.fontItalic (@status) when (@status = 0) {
+  font-style: normal;
+}
+
+.fontItalic (@status) when (@status = 1) {
+  font-style: italic;
+}
+
+.overlayColor(@type, @color) when (@type = color) and not (@color = undefined){
+  background-color: @color;
+  background-image: none;
+}
+
+.ifNotEmpty(@property, @value) when not (@value = undefined) {
+  @{property}: @value;
+}
+
+.ifNotEmptyFade(@property, @value, @opacity) when not (@value = undefined) {
+  @{property}: fade(@value, @opacity);
+}
+
+.ifNotEmptyBorder(@property, @color, @style, @opacity) when not (@color = undefined) {
+  @{property}: @style fade(@color, @opacity);
+}
+
+.ifNotEmptyAlternative(@property, @value, @alternative) when not (@value = undefined) {
+    @{property}: @value;
+}
+
+.ifNotEmptyAlternative(@property, @value, @alternative) when (@value = undefined) {
+    @{property}: @alternative;
+}
+
+.overlayImage(@type, @image) when (@type = pattern) {
+  background-image: @image;
+}
+
+.placeholder(@rules) {
+
+  ::-webkit-input-placeholder {
+    @rules();
+  }
+  :-moz-placeholder {
+    @rules();
+  }
+  ::-moz-placeholder {
+    @rules();
+  }
+  :-ms-input-placeholder {
+    @rules();
+  }
+}
+
+.transition (@transition) {
+  transition: @transition;
+  -webkit-transition: @transition;
+  -moz-transition: @transition;
+  -ms-transition: @transition;
+  -o-transition: @transition;
+}
+
+.masonryBlockquote () {
+  text-align: center;
+  .letterSpacing('');
+}
+
+.postMetaBeforeIcon (@content) {
+  content: @content;
+  color: @brand-g;
+  font-size: 12px;
+  font-family: @fontawesome;
+  margin-right: 5px;
+}
+
+.debug(@var) {
+  &:after {
+    content: "@{var}";
+    font-size: 20px;
+    background-color: #fff;
+    border: 1px solid red;
+    padding: 10px;
+    border-radius: 5px;
+    color: red;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  }
+}

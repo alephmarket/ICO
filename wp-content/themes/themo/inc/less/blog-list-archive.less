@@ -1,0 +1,141 @@
+.blog-lists-posts {
+    &.blog-list-archive,
+    &.blog-list-search {
+        .wrap-boxed & {
+            padding-left: 25px;
+            padding-right: 25px;
+        }
+        .wrap-boxed &.ideo-blog-masonry {
+            padding-left: 0;
+            padding-right: 0;
+        }
+        &.skin-colored-light {
+            .ideo-blog-entry {
+                .post-type {
+                    color: @blog_accent_color_light;
+                }
+                .ideo-entry-excerpt {
+                    color: @blog_text_color_light;
+                }
+                .ideo-entry-footer {
+                    border-color: @blog_accent_color_light;
+                }
+            }
+            &.ideo-blog-classic .ideo-blog-entry .ideo-entry-footer {
+                border-color: fade(@blog_text_color_light, 20);
+            }
+        }
+        &.skin-colored-dark {
+            .ideo-blog-entry {
+                .post-type {
+                    color: @blog_accent_color_dark;
+                }
+                .ideo-entry-excerpt {
+                    color: @blog_text_color_dark;
+                }
+                .ideo-entry-footer {
+                    border-color: @blog_accent_color_light;
+                }
+            }
+            &.ideo-blog-classic .ideo-blog-entry .ideo-entry-footer {
+                border-color: fade(@blog_text_color_dark, 20);
+            }
+        }
+        & + .pagination {
+            &.skin-light {
+                &.load-more {
+                    .load-more-button {
+                        background-color: @blog_accent_color_light;
+                        color: @blog_alternative_color_light;
+                        &:hover {
+                            background-color: darken(@blog_accent_color_light, 10%);
+                        }
+                    }
+                    .loader {
+                        color: @blog_text_color_light;
+                        background-image: @preloader_load_more_light;
+                    }
+                }
+            }
+            &.skin-dark {
+                &.load-more {
+                    .load-more-button {
+                        background-color: @blog_accent_color_dark;
+                        color: @blog_alternative_color_dark;
+                        &:hover {
+                            background-color: darken(@blog_accent_color_dark, 10%);
+                        }
+                    }
+                    .loader {
+                        color: @blog_text_color_dark;
+                        background-image: @preloader_load_more_dark;
+                    }
+                }
+            }
+        }
+    }
+    @boxed_blog_margin: 25;
+    &.blog-list-archive {
+        &.ideo-blog-masonry {
+            .wrap-wide & {
+                .unit(margin-left, -@blog_archives_block_distance / 2, px);
+                .unit(margin-right, -@blog_archives_block_distance / 2, px);
+            }
+            .wrap-boxed & {
+                .unit(margin-left, @boxed_blog_margin - @blog_archives_block_distance / 2, px);
+                .unit(margin-right, @boxed_blog_margin - @blog_archives_block_distance / 2, px);
+            }
+            .ideo-blog-entry {
+                .unit(padding-bottom, @blog_archives_block_distance, px);
+                .unit(padding-left, @blog_archives_block_distance / 2 + 10, px);
+                .unit(padding-right, @blog_archives_block_distance / 2 + 10, px);
+                &:before {
+                    .unit(left, @blog_archives_block_distance / 2, px);
+                    .unit(right, @blog_archives_block_distance / 2, px);
+                    .unit(bottom, @blog_archives_block_distance, px);
+                }
+                &:after {
+                    .unit(left, @blog_archives_block_distance / 2 + 1, px);
+                    .unit(right, @blog_archives_block_distance / 2 + 1, px);
+                    .unit(bottom, @blog_archives_block_distance + 2, px);
+                }
+            }
+        }
+    }
+    &.blog-list-search {
+        .wrap-wide & {
+            margin-left: -15px;
+            margin-right: -15px;
+        }
+        .wrap-boxed & {
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        .post-meta {
+            border: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+        .post-type {
+            display: inline-block;
+            margin-top: 20px;
+            padding-left: 5px;
+            line-height: 20px;
+        }
+        .ideo-blog-entry {
+            .ideo-entry-content {
+                padding-bottom: 26px;
+                .ideo-entry-excerpt {
+                    padding-top: 14px;
+                    margin-bottom: 0;
+                }
+                .post-title {
+                    margin-top: 0;
+                }
+            }
+        }
+        .ideo-entry-footer {
+            height: 10px;
+        }
+    }
+}
