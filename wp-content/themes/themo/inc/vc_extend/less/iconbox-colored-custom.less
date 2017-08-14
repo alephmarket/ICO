@@ -1,0 +1,29 @@
+// sourceMap:true, out: ../css/
+@import "shortcodes-custom-helpers";
+
+#@{id}.ideo-iconbox {    
+    .ifNotEmpty(color, @text_color);
+    .ifNotEmpty(background-color, @background_color);
+    .ifNotEmptyBorder(border-bottom, @border_color, solid 2px);
+    .icon{
+        .ifNotEmpty(color, @icon_color);
+         &:after{
+             .ifNotEmptyBorder(border-bottom, @border_color, solid 2px);
+         }
+    }
+    
+    &.type-small-icon {        
+        .icon {
+            .ifNotEmpty(background-color, @icon_background_color);
+            .ifNotEmpty(border-color, @icon_border_color);
+        }
+    }
+    
+    h4{
+        .ifNotEmpty(color, @title_color);
+        .ifNotEmptyBorder(border-bottom, @separator_color, solid 1px);
+    }
+    p{
+        .ifNotEmpty(color, @text_color);
+    }
+}

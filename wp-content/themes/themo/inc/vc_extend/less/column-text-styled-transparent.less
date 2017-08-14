@@ -1,0 +1,14 @@
+// sourceMap:true, out: ../css/
+&.column-text-styled{
+    &, *:not(a){
+        color: @text_color;        
+    }  
+    border-bottom: solid 1px fade(@text_color, 20%);
+    
+    & a {
+        color: @accent_color;
+        &:hover{
+            color: @accent_color - #222;
+        }
+    }
+}

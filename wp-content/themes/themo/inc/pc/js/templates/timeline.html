@@ -1,0 +1,133 @@
+<div class="pc-right-panel"> 
+    <div id="timelines">
+        <div class="header">
+            <div class="timelines-leftcol">
+                 <div class="section-bar">
+                </div>
+                <div class="measure-bar">
+                    <div class="scroll-pos"><strong>{{scrollPos}}</strong> px</div>
+                </div>
+            </div>
+            <div class="timelines-rightcol">
+                <div class="timlines-content">
+                    <div class="section-bar">
+                        <ul>
+                           <li ng-section-page section="s" ratio="{{scaleRatio}}" ng-repeat="s in data.sections" bo-class="{'current': s.id == selectedParentItem.id}" ng-bind="::s.title"></li>
+                           
+                        </ul>
+                    </div>
+                   <div ng-measure-bar> </div>
+                     <div class="current-pos-line">
+                        <div class="window" ng-keypress="keyPress()">
+                            <div class="nav-panel">  
+                               <span ng-click="seekPos('prev')" class="prev"></span>                              
+                                <span class="pos"><input class="input-pos" type="number" min="0" max="{{(windowParms.documentHeight - windowParms.windowHeight)}}" value="{{scrollPos}}" /> px</span>      
+                                <span ng-click="seekPos('next')" class="next"></span>                          
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               
+            </div>
+
+        </div>
+        <div class="content">
+            <div class="timelines-leftcol">
+               
+                <div class="animation">
+                    <div class="label-animation">
+                       <div ng-if="data.currentLayer.type=='audio' || data.currentLayer.type=='multi'" class="">Start/Stop</div>
+                        <div ng-repeat="keyName in allKeysName">
+                            {{ keyName| keyName:this }}
+                            <a href="" ng-if="showAddKey(keyName)"  ng-click="addKey(keyName)" class="add-key icon"></a>
+                            <a href="" ng-click="delAllKeysByNameConfirm(keyName,$event)" class="del icon"></a>
+                            <div class="pc-confirm">                               
+                                <a class="button confirm" ng-click="delAllKeysByName(keyName)" ng-bind="::l10n.yes"></a>
+                                <a class="button cancel" ng-bind="::l10n.no"></a>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            
+            </div>
+            <div class="timelines-rightcol">
+                <div class="timlines-content">                   
+                       <div class="section-bar">
+                            <ul>
+                                <li ng-section-page section="s" ratio="{{scaleRatio}}" ng-repeat="s in data.sections" ng-class="::{'current': s.id == selectedParentItem.id}"></li>
+                            </ul>
+                        </div>
+                    <div class="animation">
+                        <div ng-if="(data.currentLayer.type=='audio' || data.currentLayer.type=='multi')" class="keys-animation">
+                            <div class="line"> 
+                                <a ng-if="data.currentLayer.start != null" ng-static-key layer="data.currentLayer" class="key-static" ratio="{{scaleRatio}}"></a>
+                            </div>
+                        </div>
+                        
+                        <div class="keys-animation" ng-repeat="keyName in allKeysName">
+                            <div class="line">                                    
+                                <a ng-key key="key" ng-repeat="key in allKeys[keyName]" name="{{keyName}}" ratio="{{scaleRatio}}" animation="data.currentLayer.animation" freez="data.currentLayer.freezArray" isopen="isEditKeyOpen"></a>
+                            </div>
+            
+                        </div>
+                    </div>
+                    <div class="current-pos-line" >
+                        <div class="window"  ng-keypress="keyPress()">
+                           
+                        </div>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            
+            
+            </div>
+        </div>
+
+
+        <div class="footer">
+            <div class="timelines-leftcol">
+                <div class="timlines-scale">
+                    <div class="timlines-scale-scrollbar">
+                        <span class="origin-scale"></span> 
+                        <span class="small icon"></span>
+                        <span class="large icon"></span>
+                        <div class="bar">
+                            <div class="scroll"></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="timelines-rightcol">
+                <div class="timlines-scrollbar">
+                    <a href="" class="navi left"></a>
+                    <div class="bar">
+                        <div class="scroll"></div>
+                    </div>
+                    <a href="" class="navi right"></a>
+                </div>
+                <div class="timlines-resolution">
+                    <select name="" id="" ng-model="previewResolution" ng-change="changePreviewResolution()">
+                        <option value="100%">Full Width</option>
+                        <option value="1980px">1980px</option>
+                        <option value="1680px">1680px</option>
+                        <option value="1280px">1280px</option>
+                        <option value="992px">992px</option>
+                        <option value="768px">768px</option>
+                        <option value="320px">320px</option>
+                        <option value="100%">-------</option>
+                        <option value="1200px">1200px</option>
+                        <option value="1199px">1199px</option>
+                        <option value="992px">992px</option>
+                        <option value="991px">991px</option>
+                        <option value="768px">768px</option>
+                        <option value="767px">767px</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>

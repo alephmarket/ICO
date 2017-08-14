@@ -1,0 +1,13 @@
+// sourceMap:true, out: ../css/
+&.column-text{
+    /*&,*:not(a){
+        color: @text_color;
+    }*/
+    color: @text_color;
+    & a {
+        color: @accent_color;
+        & :hover{
+            color: @accent_color - #222;
+        }
+    }
+}

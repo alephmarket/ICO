@@ -1,0 +1,80 @@
+@import "../../helpers.less";
+
+.member-image-container {
+  .member-image {
+    .ifNotEmpty(border-color, @member_image_border_color);
+  }
+}
+
+body.skin-light #header .page-title-container .navigator-bar {
+  background-color: #f0f4f7;
+  border-top-color: #dce0e4;
+  border-bottom-color: #dce0e4;
+
+  .socials {
+    .symbol {
+      label {
+        color: #7b8695;
+      }
+    }
+  }
+}
+
+body.skin-dark #header .page-title-container .navigator-bar {
+  background-color: #272f39;
+  border-top-color: #272f39;
+  border-bottom-color: #272f39;
+
+  .socials {
+    .symbol {
+      label {
+        color: #ffffff;
+      }
+    }
+  }
+}
+
+body {
+  &.skin-light,
+  &.skin-dark {
+    #header {
+      .page-title-container {
+        &.skin-light,
+        &.skin-dark {
+          .navigator-bar {
+            .ifNotEmpty(background-color, @navbar_background_color);
+            .ifNotEmpty(border-top-color, @navbar_border_top_color);
+            .ifNotEmpty(border-bottom-color, @navbar_border_bottom_color);
+
+            .symbol, a, li, i {
+              .ifNotEmpty(color, @navbar_icons_color);
+
+              &:hover {
+                .ifNotEmpty(color, @navbar_icons_hover_color);
+              }
+            }
+
+            li:hover a i {
+              .ifNotEmpty(color, @navbar_icons_hover_color);
+            }
+
+            .socials {
+              .symbol {
+                label {
+                  .ifNotEmpty(color, @navbar_share_color);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+#header .page-title-container.skin-light .navigator-bar,
+#header .page-title-container.skin-dark .navigator-bar {
+  .socials ul.animated when (iscolor(@navbar_icons_color)) {
+    .ifNotEmpty(border-bottom-color, fade(@navbar_icons_color,20%));
+  }
+}

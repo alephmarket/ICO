@@ -1,0 +1,27 @@
+@import "dark.less";
+@import "light.less";
+
+#header {
+  .page-title-container {
+    .breadcrumb {
+      li {
+        &.active {
+          color: @general_accent_color;
+        }
+      }
+    }
+
+    &.skin-light,
+    &.skin-dark {
+      .navigator-bar {
+        .symbol, a, li, i {
+          color: @general_accent_color;
+
+          &:hover {
+            color: darken(@general_accent_color, 20%);
+          }
+        }
+      }
+    }
+  }
+}

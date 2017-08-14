@@ -1,0 +1,119 @@
+<div>
+    <div  ng-controller="editLayer">
+        <div class="pc-edit-layer-panel">
+
+            <div class="edit-layer-header">
+                <div class="edit-layer-title">
+                    <p class="type" ng-bind="::l10n.addLayer.audio"></p>
+                    <p class="title" ng-bind="::data.currentLayer.title"></p>
+                </div>
+            </div>
+            
+            <div class="edit-layer-accordion-section settings">
+                <h3>
+                    <span class="icon settings"></span>
+                    <span class="title" ng-bind="::l10n.editLayer.sections.title.settings.title"></span>
+                    <i ng-bind="::l10n.editLayer.sections.title.settings.info"></i>
+                </h3> 
+                <div>
+                  
+                  <div class="edit-layer-accordion-section-row" ng-if="isParent">
+                        <div class="select-parent">
+                            <label for="" class="select-label"><i ng-bind="::l10n.editLayer.sections.parent" ng-tooltip tooltip="l10n.ParentSection"></i>
+                            </label>
+                            <select ng-model="selectedParentItem" ng-change="updateParentSection(this)" ng-options="section as section.title for section in data.sections" ></select>
+                        </div>
+                    </div>
+                    
+                    <div class="edit-layer-accordion-section-row">
+                        <div>
+                            <div class="col left"> <i ng-bind="::l10n.editLayer.sections.activity" ng-tooltip tooltip="l10n.LayerActivity"></i> </div>
+                            <div class="col right">
+                                <div ng-switcher data="data.currentLayer.activity" ></div>
+                            </div>
+                        </div>  
+                    </div>
+                    
+                                        
+                    <div class="edit-layer-accordion-section-row">                        
+                        <div>
+                            <div class="col left"> <i ng-bind="::l10n.editLayer.sections.changeFile" ng-tooltip tooltip="l10n.ChangeFile"></i> </div>
+                            <div class="col right">
+                                <a href="" ng-click="changeAudio(data.crurrentLayer)" class="button"><span> <i ng-bind="::l10n.editLayer.sections.change"></i> </span></a>
+                            </div>
+                        </div>
+                       <div>
+                            <div class="col left nowrap">
+                                 <div class="file-info"> <i ng-bind="layer.audio.filename"></i> </div>
+                            </div>
+                        </div> 
+                    </div>
+                    
+                    <div class="edit-layer-accordion-section-row">
+                        <div>
+                            <div class="col left"><i ng-bind="::l10n.editLayer.sections.setOffset" ng-tooltip tooltip="l10n.ShiftAnimationsAudio"></i>
+                            </div>
+                            <div class="col right">
+                                <div class="set-offset">
+                                    <input type="text" ng-model="offset" ng-init="0"> <span class="px">px</span>
+                                    <a href="" ng-click="offsetAnimation(offset)" class="button"><span><i ng-bind="::l10n.editLayer.sections.offsetAnim"></i></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="edit-layer-accordion-section-row">
+                        <div>
+                            <div class="col left"><i ng-bind="::l10n.editLayer.sections.deleteAudioAnim" ng-tooltip tooltip="l10n.DeleteAllLayerAnimiationsAudio"></i>
+                            </div>
+                            <div class="col right">
+                                <div ng-delete-all-animation><span><i ng-bind="::l10n.delete"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                    
+                </div>
+            </div>
+            
+            <div class="edit-layer-accordion-section">
+                <h3>
+                    <span class="icon position"></span>
+                    <span class="title" ng-bind="::l10n.editLayer.sections.title.startStop.title"></span>
+                    <i ng-bind="::l10n.editLayer.sections.title.startStop.info"></i>
+                </h3> 
+                <div>            
+                    <div class="edit-layer-accordion-section-row">
+                        <div class="pc-startstop text-center"><a href="" class="button lg" ng-disabled="isAudioStart" ng-click="isAudioStart || startAudio()"><span> <i ng-bind="::l10n.editLayer.sections.start"></i> </span></a>  <a href="" ng-disabled="!isAudioStart" ng-click="!isAudioStart || stopAudio()" class="button lg red" ng-tooltip tooltip="l10n.StartStopAudio"><span> <i ng-bind="::l10n.editLayer.sections.stop"></i> </span></a> </div>
+                    </div>
+                    
+                    <div class="edit-layer-accordion-section-row">
+                       <div>
+                           <div class="col left"><i ng-bind="::l10n.editLayer.sections.loop" ng-tooltip tooltip="l10n.PlayIndefinitely"></i>
+                           </div>
+                                <div class="col right">
+                                <input type="checkbox" value="1" ng-model="data.currentLayer.loop" >
+                            </div>
+                       </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="edit-layer-accordion-section">
+                <h3>
+                    <span class="icon opacity"></span>
+                    <span class="title" ng-bind="::l10n.editLayer.sections.title.volume.title" ng-tooltip tooltip="l10n.Volume"></span>
+                    <i ng-bind="::l10n.editLayer.sections.title.volume.info"></i>
+                </h3>
+                <div>
+            
+               <div class="edit-layer-accordion-section-row">
+                    <div>
+                         <div ng-slider data="frame.volume.value" label="{{l10n.editLayer.sections.volume}}"></div>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

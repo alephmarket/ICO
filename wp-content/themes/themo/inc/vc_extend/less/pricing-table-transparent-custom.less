@@ -1,0 +1,111 @@
+// sourceMap:true, out: ../css/
+@import "shortcodes-custom-helpers";
+
+#@{id}.ideo-pricing-table{
+    .ifNotEmpty(color, @features_text_color);
+    .ifNotEmptyBorder(border-top, @border_top_color, solid 3px);
+    .ifNotEmptyBorder(border-bottom, @border_bottom_color, solid 3px);
+    .ifNotEmptyBorder(border-left, @side_borders_color, solid 1px);
+    .ifNotEmptyBorder(border-right, @side_borders_color, solid 1px);
+    .title{
+        .ifNotEmpty(color, @title_color);
+    }
+    .subtitle{
+        .ifNotEmpty(color, @subtitle_color);
+    }
+    .price{   
+        .ifNotEmpty(background-color, @price_area_background_color); 
+        &:after{
+            .ifNotEmptyCustom(border-color, @price_area_background_color, @price_area_background_color transparent transparent transparent);
+        }
+        .amount{
+           .ifNotEmpty(color, @price_amount_unit_color);
+        }
+        .unit{
+           .ifNotEmpty(color, @price_amount_unit_color); 
+        }
+        .peroid{
+            .ifNotEmpty(color, @price_peroid_color);
+        }
+    }
+    .icon{       
+        .ifNotEmpty(color, @icon_color);
+    }    
+    ul{
+        padding: 0;
+        li{
+            &+li{
+                .ifNotEmptyBorder(border-top, @features_separator_color, solid 1px);
+            }
+            &:last-child{
+                .ifNotEmptyBorder(border-bottom, @features_separator_color, solid 1px);
+            }
+        }
+    }
+    
+    &.highlight-table{
+        .ifNotEmpty(color, @features_text_color);
+        .ifNotEmptyBorder(border-top, @border_top_color, solid 3px);
+        .ifNotEmptyBorder(border-bottom, @border_bottom_color, solid 3px);
+        .header{
+            .ifNotEmpty(background-color, @price_area_background_color);
+        }
+        .title{  
+            .ifNotEmpty(color, @title_color);
+        }
+        .subtitle{
+            .ifNotEmpty(color, @subtitle_color);
+        }
+        .icon{  
+            .ifNotEmpty(color, @icon_color);
+        }
+        .price{ 
+            background-color: transparent; 
+            &:after{
+                width: 50%;
+                top:inherit;
+                left: inherit;
+                right: 0;
+                margin: 0;
+                bottom:-12px;
+                border-width: 12px 0 12px 12px;
+                .ifNotEmptyCustom(border-color, @price_area_background_color, transparent transparent @price_area_background_color transparent);
+            }
+            &:before{
+                position: absolute;
+                bottom:-12px;
+                left: 0;
+                width: 50%;
+                content: "";
+                display: block;
+                border-width: 12px 12px 12px 0;
+                .ifNotEmptyCustom(border-color, @price_area_background_color, transparent transparent @price_area_background_color transparent);
+                border-style: solid;
+            }
+            .amount{
+               .ifNotEmpty(color, @price_amount_unit_color);
+            }
+            .unit{
+               .ifNotEmpty(color, @price_amount_unit_color); 
+            }
+            .peroid{
+                .ifNotEmpty(color, @price_peroid_color);
+            }
+        }
+        ul{ 
+            .ifNotEmpty(background-color, @price_area_background_color); 
+            li{
+                &+li{
+                    .ifNotEmptyBorder(border-top, @features_separator_color, solid 1px);
+                }
+                &:last-child{
+                    .ifNotEmptyBorder(border-bottom, @features_separator_color, solid 1px);
+                }
+            }
+        }
+        .button-wrap{
+            .ifNotEmpty(background-color, @price_area_background_color); 
+        }
+    }
+}
+

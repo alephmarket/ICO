@@ -1,0 +1,14 @@
+// sourceMap:true, out: ../css/
+@import "shortcodes-custom-helpers";
+
+#@{id}.ideo-imagebox {    
+    .ifNotEmpty(color, @text_color);    
+   
+    h4{
+        .ifNotEmpty(color, @title_color);
+        .ifNotEmptyBorder(border-bottom, @separator_color, solid 1px);
+    }
+    p{
+        .ifNotEmpty(color, @text_color);
+    }
+}

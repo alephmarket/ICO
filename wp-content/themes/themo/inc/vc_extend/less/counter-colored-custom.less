@@ -1,0 +1,19 @@
+// sourceMap:true, out: ../css/
+@import "shortcodes-custom-helpers";
+
+#@{id}.ideo-counter{
+   
+   .circle{   
+       .ifNotEmpty(background-color, @counter_background_color);      
+       .number-icon{
+           .number-unit{
+               .ifNotEmpty(color, @number_color);
+               .ifNotEmpty(border-bottom-color, @border_color);
+           }
+           p{
+               .ifNotEmpty(color, @text_color);
+           }
+       }
+   }
+    
+}

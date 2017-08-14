@@ -1,0 +1,23 @@
+@import "shortcodes-custom-helpers";
+
+#@{id}.ideo-single-image-wrap {
+    .ideo-single-image {       
+        .hover {           
+            .ifNotEmpty(background-color, @image_overlay);
+        }        
+        .link {
+            .ifNotEmpty(background-color, @icon_background_color);
+            &:before {
+                .ifNotEmpty(color, @icon_color);
+            }           
+        }
+        &:hover {
+            .link:hover {
+                .ifNotEmpty(background-color, @icon_hover_background_color);
+                &:before {
+                    .ifNotEmpty(color, @icon_hover_color);
+                }           
+            }
+        }
+    }
+}

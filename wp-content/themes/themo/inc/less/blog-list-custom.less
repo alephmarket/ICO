@@ -1,0 +1,129 @@
+// out: null
+#@{id}.blog-lists-posts {
+    &.skin-colored_dark, &.skin-colored-dark, &.skin-colored_light, &.skin-colored-light {
+        .post-title a {
+            color: @title_color;
+            &:hover {
+                color: @accent_color;
+            }
+        }
+        .ideo-blog-entry .date-box {
+            .day {
+                color: @alternative_title_color;
+                background-color: @accent_color;
+            }
+            .month {
+                color: @text_color;
+            }
+            .year {
+                color: @title_color;
+            }
+        }
+        .social a {
+            color: @accent_color;
+            &:hover {
+                color: @accent_color - #222;
+            }
+        }
+        .post-meta {
+            border-bottom-color: fade(@text_color, 20);
+            &, li:before, li:after, a, .author, .categories ul:before, &> div:before {
+                color: @text_color;
+            }
+        }
+        blockquote.quote,
+        blockquote.url {
+            background-color: @accent_color;
+            &:hover {
+                background-color: @accent_color - #222;
+            }
+            &:before {
+                background: @alternative_title_color;
+                color: @accent_color;
+            }
+        }
+        .ideo-entry-excerpt,
+        .ideo-entry-excerpt p a {
+            color: @text_color;
+        }
+        .read-more {
+            color: @title_color;
+            > i {
+                color: @accent_color;
+            }
+        }
+        .mejs-container .mejs-inner .mejs-controls .mejs-playpause-button,
+        .mejs-controls .mejs-time-rail .mejs-time-current,
+        .mejs-horizontal-volume-current,
+        .mejs-controls .mejs-volume-button .mejs-volume-slider .mejs-volume-current {
+            background: @accent_color;
+        }
+    }
+
+    &.ideo-blog-masonry{
+        &.skin-colored_dark, &.skin-colored-dark, &.skin-colored_light, &.skin-colored-light {
+            .ideo-blog-entry {
+                &:after {
+                    border-bottom-color: @accent_color;
+                }
+
+                &:before {
+                    background-color: @background_color;
+                    border-color: @text_color;
+                }
+            }
+        }
+    }
+}
+
+.pagination {
+    &.skin-dark, &.skin-colored-dark {
+        .button {
+            color: @alternative_title_color;
+            background-color: @accent_color;
+            &:hover {
+                background-color: @accent_color - #222;
+            }
+        }
+    }
+    &.skin-light,
+    &.skin-colored-light {
+        .button {
+            color: @alternative_title_color;
+            background-color: @accent_color;
+            &:hover {
+                background-color: @accent_color - #222;
+            }
+        }
+    }
+    &.standard {
+        &.skin-dark, &.skin-colored-dark,
+        &.skin-light, &.skin-colored-light {
+            a{
+                color: @text_color;
+                border: solid 1px fade(@text_color, 40);
+                &:hover{
+                    color: @accent_color !important;
+                    border: solid 1px @accent_color !important;
+                }
+            }
+            .current{
+                color: @alternative_title_color;
+                background-color: @accent_color;
+                border-color: @accent_color;
+                vertical-align: top;
+            }
+            .prev, .next{
+                vertical-align: top;
+                border: solid 1px fade(@text_color, 40);
+                &:hover{
+                    border: solid 1px fade(@text_color, 40) !important;
+                    color: @text_color !important;
+                }
+                &:before{
+                    background-color: fade(@text_color, 20);
+                }
+            }
+        }
+    }
+}

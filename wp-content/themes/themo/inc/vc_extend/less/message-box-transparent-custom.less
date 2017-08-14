@@ -1,0 +1,27 @@
+// sourceMap:true, out: ../css/
+@import "shortcodes-custom-helpers";
+
+#@{id}.ideo-message-box{  
+    .ideo-message-box-content{ 
+        .ifNotEmpty(border-top-color, @content_borders_color);
+        .ifNotEmpty(border-bottom-color, @content_borders_color);
+        
+        .message-close{
+            .ifNotEmpty(color, @desc_color);
+        }
+        span.title {
+            .ifNotEmpty(color, @title_color);
+        }
+        p{
+            .ifNotEmpty(color, @desc_color);
+        }
+    }
+    &.type-custom .ideo-message-box-content{
+        i{
+           .ifNotEmpty(color, @custom_icon_color);
+        }
+        &:before{
+            .ifNotEmpty(background-color, @custom_icon_background_color);
+        }
+    }
+}

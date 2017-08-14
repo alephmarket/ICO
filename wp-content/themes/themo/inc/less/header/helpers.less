@@ -1,0 +1,25 @@
+// out: null
+.breadcrumbsColoring(@text_color, @text_accent_color, @border_color, @background_color) {
+    .breadcrumb {
+        
+        .ifNotEmpty(border-top-color, @border_color);
+        
+        &.bottom {
+            .ifNotEmpty(background-color, @background_color);
+        }
+
+        li {
+          &:before, &, a {
+            .ifNotEmpty(color, @text_color);
+          }
+
+          &.active{
+            .ifNotEmpty(color, @text_accent_color);
+          }
+        }
+
+        .home {
+          .ifNotEmpty(color, @text_color);
+        }
+      }
+}

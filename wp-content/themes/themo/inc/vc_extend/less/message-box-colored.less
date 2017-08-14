@@ -1,0 +1,48 @@
+// sourceMap:true, out: ../css/
+
+&.ideo-message-box{
+    .ideo-message-box-content{
+        background-color: @background_color;
+        &:before{    
+            background-color: rgba(255, 255, 255, 0.75);
+        }
+        &:after{
+             color:#fff;
+        }
+        .message-close{
+            color:@text_color;
+        }
+        span.title {
+            color:@title_color;
+        }
+        p{
+            color:@text_color;
+        }
+    }
+    &.type-info .ideo-message-box-content:before{
+        background-color: rgba(59, 174, 218, 0.75);
+    }
+    &.type-warning .ideo-message-box-content:before{
+        background-color: rgba(251, 110, 82, 0.75);
+    }
+    &.type-success .ideo-message-box-content:before{
+        background-color: rgba(54, 188, 155, 0.75);
+    }
+    &.type-error .ideo-message-box-content:before{
+        background-color: rgba(219, 68, 83, 0.75);
+    }
+    &.type-standard .ideo-message-box-content{
+        &:after{
+            color: #333;
+        }
+    }
+    &.type-custom .ideo-message-box-content{
+        &:before{
+            background-color: fade(@accent_color, 75%);
+        }
+        .icon{
+            color: @alternative_title_color;
+        }
+    }
+    
+}

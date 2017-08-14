@@ -1,0 +1,32 @@
+// sourceMap:true, out: ../css/
+
+&.ideo-pie-chart{
+   
+   .circle{   
+       
+       svg{
+           
+           .bg-circle{
+               fill: none;
+           }
+           .bg-bar{
+               stroke: fade(@title_color,25);
+               stroke-width:1px !important;
+               
+           }
+           .bar{
+               stroke: @accent_color;
+           }
+       }
+       .number-icon{
+           
+           .icon{
+              color: @icon_color;
+           }
+           .number-unit{
+              color: @title_color;
+               border-bottom-color: @accent_color;
+           }
+       }
+   }
+}

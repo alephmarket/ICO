@@ -1,0 +1,31 @@
+// sourceMap:true, out: ../css/
+&.ideo-icons {
+    
+    &.icon-hover{
+        i.icon{
+            &:hover{
+                color: @icon_color - #222;
+            }
+        }
+        
+    }
+    &.style-advanced{
+        i.icon{
+            color: @icon_color;
+            border-color: @accent_color;
+        }
+        &.icon-hover{
+            i.icon{
+                &:hover{
+                    color: @icon_color - #222;
+                    border-color: @accent_color  - #222;
+                }
+            }
+
+        }
+    }
+    i.icon {
+        color: @icon_color;       
+    }
+}
+

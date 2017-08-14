@@ -1,0 +1,44 @@
+#header {
+    .page-title-container {
+        &.skin-light {
+            .page-title h1 {
+                color: @pt_light_title_color;
+            }
+            .page-title .lead {
+                color: @pt_light_subtitle_color;
+            }
+            .portfolio-parameters {
+                li{
+                    border-color: fade(@pt_light_title_color, 30%);
+                }
+                &,
+                & a {
+                    color: @pt_light_title_color;
+                }
+            }
+            .navigator-bar{
+                background-color: #dedede;
+                
+                ul {
+                	
+            	}	
+            	
+                i{
+                    color: #0e4149;
+                    &:hover{
+                        color: #4a8088;
+                    }
+                }
+                
+                .socials {
+                	ul {
+                		&.animated {
+                			border-bottom-color: fade(#0e4149, 20%);
+                		}
+                	}
+                }
+            }
+            .breadcrumbsColoring(@pt_light_b_text_color, @pt_light_b_text_accent_color, @pt_light_b_border_color, @pt_light_b_background_color);
+        }
+    }
+}

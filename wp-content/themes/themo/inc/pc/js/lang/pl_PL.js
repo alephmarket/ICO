@@ -1,0 +1,126 @@
+var _pcl10n = {
+    name: "Nazwa",
+    code: "Kod",
+    content: "Treść",
+    file: "Plik",
+    files: "Pliki",
+    save: "Zapisz",
+    cancel: "Anuluj",
+    yes: "Tak",
+    no: "Nie",
+    on: "ON",
+    off: "OFF",
+    delete: "Usuń",
+    deleteAskAnimation: "Czy napewno usunąć animację?",
+    deleteAskLayer: "Czy napewno usunąć warstwę?",
+    page: "Strona",
+    pages: "Strony",
+    section: "Sekcja",
+    sections: "Sekcje",
+    layer: "Warstwa",
+    layers: "Warstwy",
+    layerVC: "Warstwa VC",
+    globalSection: "Sekcja Globalna",
+    preloader: {
+        pageLoading:{
+            title: "Wgrywanie podglądu",
+            info: "to potrwa tylko chwilke..."
+        },
+        copyAnimation:{
+            title: "Kopiowanie sekwencji animacji",
+            info: "to potrwa tylko chwilke..."
+        }
+        
+    },
+    emptySection:{
+        text1: "This section is empty so",
+        text2: "Add your first layer",
+        link: "Kliknij tutaj"
+    },
+    addLayer:{
+        image: "Warstywa image",
+        audio: "Warstywa audio",
+        shape: "Warstywa shape",
+        multi: "Warstywa multi",
+        text: "Warstywa text",
+          
+    },
+    editLayer:{
+        sections:{
+            title:{
+                global:"Globalne",
+                posScale:"Pozycja i skala",
+                freez:"Zatrzymaj objekt",
+                rotate:"Rotacja",
+                opacity:"Transparencja",
+                color:"Kolor",
+                border:"Obrys",
+                borderRadius:"Zaokrąglenie",
+                start: "Start",
+                startStop: "Odtwarzanie",
+                volume: "Volume",
+                editText: "Edycja tekstu",
+                background: "Tło",
+            },
+            parent: "Element nadrzędny",
+            copyAnim: "Kopiuj sekwencje animacji",
+            pasteAnim: "Wklej sekwencje animacji",
+            deleteAnim: "usuń całą animacje",
+            copyAnimSuccess: "Sekwencja animacji zosała skopiowana!",
+            copyAnimClear: "wyczyść schowek z skopiowaną animacją",
+            copyAnimText: "Pamientaj że sekwencje animacji możesz wkleić tylko w innej warstwie tego samego typu.",
+            visible: "Widoczność",
+            activity: "Aktywność",
+            transformOrigin: "Punkt odniesienia",
+            scaleImage: "Skaluj obrazek",
+            changeImage: "Zmień obrazek",
+            changeImages: "Zmień obrazki",
+            changeFile: "Zmień plik",
+            changeContent: "Zmień treść",
+            change: "zmień",
+            startFreez: "start freez",
+            stopFreez: "stop freez",
+            rotate: "Oś obrotu",
+            type: "Typ:",
+            color: "Kolor",
+            fileUploadSuccess: "Pliki zostały wgrane z powodzniem",
+            showFiles: "[+Rozwiń listę plików]",
+            hideFiles: "[-Zwiń listę plików]",
+            file: "Plik:",
+            ppf: "1 obrazek na pixeli",
+            startAnim: "start animacji",
+            stopAnim: "stop animacji",
+            loopNum: "ilosc powtorzen",
+            loop: "odtwarzaj w nieskonczoność",
+            pasteAnimConflict: "Kopiowanie sekwencji może tylko miedzy warstwami tego samego typu.",
+            start: "start",
+            stop: "stop",
+            size: "Wiekość",
+            spacing: "Odstępy",
+            lineHeight: "Interlinia",
+            padding: "Padding:",
+        }
+    },
+    chooseFile: "Wybierz plik",
+    chooseFiles: "Wybierz pliki",
+    chooseAudioFile: "Wybierz plik dzwiękowy",   
+    modalWindow:{               
+        infoAudio: "Warstwa dźwiękowa obsługuje tylko dźwiękowe .mp3 i .ogg.",
+        infoMulti: "Warstwa mutli bjekt oblugi pliki typu JPG. PNG. GIF.",
+        infoShape: "Warstwa Kształtu obsługuje kod typu CANVAS i zawiera już znaczniki.",
+        add:{
+            image: "Dodaj warstwę image",
+            audio: "Dodaj warstwę audio",
+            shape: "Dodaj warstwę shape",
+            multi: "Dodaj warstwę multi",
+            text:  "Dodaj warstwę text"
+        },
+        edit:{
+            image: "Edytuj warstwę image",
+            audio: "Edytuj warstwę audio",
+            shape: "Edytuj warstwę shape",
+            multi: "Edytuj warstwę multi",
+            text:  "Edytuj warstwę text"
+        }
+    }    
+};

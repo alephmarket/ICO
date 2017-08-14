@@ -1,0 +1,34 @@
+// sourceMap:true, out: ../css/
+@darken: #222;
+
+&.button {
+    &, &>span{
+        color: @title_color;           
+    }
+    
+    border-color: fade(@title_color, 18%); 
+    text-shadow: none;
+    background-color: fade(@title_color, 0%);  
+    &:hover,
+    &:focus {        
+        &, &>span{
+            color: @title_color;           
+        }
+        background-color: fade(@title_color, 18%);  
+        i {
+            border-color: fade(@title_color, 18%);  
+        }
+    }
+    
+    i{  
+        color: @icon_color;
+        border-color: fade(@title_color, 18%); 
+        margin-top: -1px;
+    }   
+    &.button3d {
+        box-shadow: 0 3px 0px fade(@title_color, 18%); 
+        &:hover {                      
+            box-shadow: 0 0px 0px fade(@title_color, 18%); 
+        }
+    }
+}

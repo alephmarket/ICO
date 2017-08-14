@@ -1,0 +1,31 @@
+// sourceMap:true, out: ../css/
+@import "shortcodes-custom-helpers";
+
+#@{id}.ideo-pie-chart{
+   
+   .circle{   
+       
+       svg{
+           
+           .bg-circle{
+               .ifNotEmpty(fill, @counter_background_color);
+           }
+           .bg-bar{
+               .ifNotEmpty(stroke, @round_counter_background_color);
+           }
+           .bar{
+               .ifNotEmpty(stroke, @round_counter_color);
+           }
+       }
+       .number-icon{
+           
+           .icon{
+              .ifNotEmpty(color, @icon_color);
+           }
+           .number-unit{
+              .ifNotEmpty(color, @number_color);
+           }
+       }
+   }
+    
+}

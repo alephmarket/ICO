@@ -1,0 +1,73 @@
+@import "../helpers.less";
+
+.footerColoring(dark, @standard_footer_widget_text_dark, @standard_footer_accent_color_dark, @standard_footer_widget_title_dark);
+.footerColoring(light, @standard_footer_widget_text_light, @standard_footer_accent_color_light, @standard_footer_widget_title_light);
+
+#copyright {
+  &.skin-light {
+    color: @copyrights_light_text_color;
+    background-color: @copyrights_light_background_color;
+  }
+  &.skin-dark {
+    color: @copyrights_dark_text_color;
+    background-color: @copyrights_dark_background_color;
+  }
+}
+
+body.skin-light {
+  .footer-navigator-bar {
+    .ifNotEmptyAlternative(background-color, @portfolio_navigation_background_color, #f0f4f7);
+    .ifNotEmptyAlternative(border-top-color, @portfolio_navigation_border_top_color, #dce0e4);
+    .ifNotEmptyAlternative(border-bottom-color, @portfolio_navigation_border_bottom_color, #dce0e4);
+
+    .previous,
+    .next {
+      a,
+      a:hover {
+        h4 {
+          .ifNotEmptyAlternative(color, @portfolio_navigation_text_color, #7b8695);
+        }
+
+        label,
+        i {
+          .ifNotEmptyAlternative(color, @portfolio_navigation_accent_color, @general_accent_color);
+        }
+      }
+    }
+
+    .list {
+      .mini-square {
+        .ifNotEmptyAlternative(border-color, @portfolio_navigation_text_color, #7b8695);
+      }
+    }
+  }
+}
+
+body.skin-dark {
+  .footer-navigator-bar {
+    .ifNotEmptyAlternative(background-color, @portfolio_navigation_background_color, #272f39);
+    .ifNotEmptyAlternative(border-top-color, @portfolio_navigation_border_top_color, #474f5a);
+    .ifNotEmptyAlternative(border-bottom-color, @portfolio_navigation_border_bottom_color, #474f5a);
+
+    .previous,
+    .next {
+      a,
+      a:hover {
+        h4 {
+          .ifNotEmptyAlternative(color, @portfolio_navigation_text_color, #92a0b1);
+        }
+
+        label,
+        i {
+          .ifNotEmptyAlternative(color, @portfolio_navigation_accent_color, #ffffff);
+        }
+      }
+    }
+
+    .list {
+      .mini-square {
+        .ifNotEmptyAlternative(border-color, @portfolio_navigation_text_color, #92a0b1);
+      }
+    }
+  }
+}

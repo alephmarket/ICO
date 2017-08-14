@@ -1,0 +1,108 @@
+//out: null
+
+/*
+DEFAULT COLORING
+*/
+
+/* Content background color */
+#content {
+  body.skin-light & {
+    background: #f6f6f6;
+  }
+
+  body.skin-dark & {
+    background: #171a1e;
+  }
+}
+    
+ /* Outer area background */
+.background-page {
+    &.skin-light {
+        background-color: #DDDDDD;
+    }
+    &.skin-dark {
+        background-color: #131518;
+    }
+}
+
+.has-background {
+    &.background-page {
+        > .background-video {
+            position: fixed;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            overflow: hidden;
+        }
+        > .ytplayer-container {
+            position: fixed;
+            top: 0;
+        }
+    }
+}
+
+#header {
+    .background-video {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        overflow: hidden;
+        background-size: cover;
+        background-position: center center;
+        @media (min-width: 992px) {
+            background: transparent !important; 
+        }
+        video {
+            position: absolute;           
+            right: 0;
+            bottom: 0;
+            z-index: -1;               
+
+            min-width: 100%;           
+            min-height: 100%;
+            width: auto;               
+            height: auto;
+
+            top: 50%;                  
+            left: 50%;                 
+
+            -webkit-transform: translate(-50%,-50%);
+            -moz-transform: translate(-50%,-50%);
+            -ms-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+        }
+    }
+    .ytplayer-container {
+        position: absolute;
+        top: 0;
+        iframe{  
+            max-width: inherit;
+        }
+    }
+}
+&.background-type-image {
+    &.background-attachment-fixed {
+        background-attachment: fixed;
+        &:before,
+        .pt-overlay {
+            background-attachment: fixed;
+        }
+    }
+}
+.background-overlay,
+.background-overlay-pattern,
+.background-overlay-color {
+    &:before,
+    .pt-overlay {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;        
+        display: block;
+    }
+}

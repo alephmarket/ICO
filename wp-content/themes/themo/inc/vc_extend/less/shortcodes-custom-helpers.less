@@ -1,0 +1,24 @@
+
+.ifNotEmpty(@property, @value) when not (@value = undefined) {
+    @{property}: @value;
+}
+
+.ifNotEmptyImportant(@property, @value) when not (@value = undefined) {
+    @{property}: @value !important;
+}
+
+.ifNotEmptyCustom(@property, @check, @value) when not (@check = undefined) {
+    @{property}: @value;
+}
+
+.ifNotEmptyFade(@property, @value, @opacity) when not (@value = undefined) {
+    @{property}: fade(@value, @opacity);
+}
+
+.ifNotEmptyBorder(@property, @color, @style, @opacity: -1) when not (@color = undefined) and (@opacity >= 0){
+    @{property}: @style fade(@color, @opacity);
+}
+
+.ifNotEmptyBorder(@property, @color, @style, @opacity: -1) when not (@color = undefined) and (@opacity < 0){
+    @{property}: @style @color;
+}

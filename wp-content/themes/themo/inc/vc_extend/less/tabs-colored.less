@@ -1,0 +1,98 @@
+// sourceMap:true, out: ../css/
+&.container-tabs {
+    .tab-content {
+        color: @text_color;
+        background: @background_color;
+    }
+    .nav-tabs {
+        & > li {
+            background: @accent_color;
+            &:hover{
+                background:  @accent_color - #222;           
+            }
+            &.active {
+                background-color: @background_color;
+                a {
+                    color: @title_color;
+                    background: none;
+                }
+            }
+            .blurbox{
+                a{
+                    background: @accent_color; 
+                }
+            }
+            a {
+                color: @alternative_title_color;
+                background: none !important;
+            }
+        }
+    }
+    &.horizontal {
+        .tab-content {
+            border-bottom: solid 2px @accent_color;
+        }
+        .nav-tabs {
+            & > li {
+                &.active {
+                    a {
+                        & {
+                            color: @title_color;
+                            border-right: 0;
+                            @media (min-width:768px) {
+                                border-top: solid 2px @accent_color;                                
+                            }
+                        }
+                    }
+                }
+                &:last-child {
+                    a {
+                        border-right: 0;
+                    }
+                }
+                a {                    
+                    border-top: solid 2px transparent;
+                    @media (min-width:768px) {
+                        
+                        html:not([dir="rtl"]) &{
+                            border-right: solid 1px fade(@alternative_title_color, 25%);                    
+                        }
+                        [dir="rtl"] &{
+                            border-left: solid 1px fade(@alternative_title_color, 25%);                         
+                        }
+                        border-bottom: solid 1px transparent;                        
+                    }
+                    
+                    @media (max-width:767px) {
+                         border-bottom: solid 1px fade(@alternative_title_color, 25%);
+                    }
+                    
+                }
+            }
+        }
+    }
+    &.vertical {
+        .tab-content {
+            border-bottom: solid 2px @accent_color;
+        }
+        .nav-tabs {
+            & > li {
+                &.active {
+                    a {
+                        
+                        border-bottom: solid 0px transparent;
+                        &:before {   
+                            border-color: @accent_color;
+                            border-left-width: 2px;
+                            border-left-style: solid;
+                        }
+                    }
+                }
+                a {
+                    border-right: solid 1px transparent;
+                    border-bottom: solid 1px fade(@alternative_title_color, 25%);
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,87 @@
+// sourceMap:true, out: ../css/
+
+
+.ideo-progress-bar{
+    
+    @animation-time: 1.5s;
+    @animation-delay: 0.5s;
+    @animation-ease: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    
+    
+    position: relative;
+    line-height: 1;
+    &.rounded{
+        .bar{
+            border-radius: 150px;
+            .cover{                
+                border-radius: 150px;        
+            }
+        }
+    }
+    .bar{        
+        width: 100%;                
+        padding: 3px;
+        .cover{
+            width: 0; 
+            -webkit-transition: width @animation-time @animation-delay @animation-ease;
+              transition: width @animation-time @animation-delay @animation-ease;
+            .title{
+                white-space: nowrap;
+                position: absolute;
+                top:50%;
+                left: 10px;
+                margin-top: -0.5em;
+            }
+            .number{
+                position: absolute;                
+                bottom:100%;
+                white-space: nowrap;            
+            }
+        }
+    }
+}
+
+@keyframes wpb {
+    from { width: 0%; }
+    to { width: 70%; }
+}
+@-webkit-keyframes wpb {
+    from { width: 0%; }
+    to { width: 70%; }
+}
+
+&.colored-dark {
+    @accent_color: @colored_dark_accent_color;
+    @title_color: @colored_dark_title_color;
+    @text_color: @colored_dark_text_color;
+    @icon_color: @colored_dark_icon_color;
+    @background_color: @colored_dark_background_color;
+    @alternative_title_color: @colored_dark_alternative_title_color;
+    @import (multiple) 'progress-bar-colored.less';
+}
+
+&.colored-light {
+    @accent_color: @colored_light_accent_color;
+    @title_color: @colored_light_title_color;
+    @text_color: @colored_light_text_color;
+    @icon_color: @colored_light_icon_color;
+    @background_color: @colored_light_background_color;
+    @alternative_title_color: @colored_light_alternative_title_color;
+    @import (multiple) 'progress-bar-colored.less';
+}
+
+&.transparent-dark {
+    @accent_color: @transparent_dark_accent_color;
+    @title_color: @transparent_dark_title_color;
+    @text_color: @transparent_dark_text_color;
+    @icon_color: @transparent_dark_icon_color;
+    @import (multiple) 'progress-bar-transparent.less';
+}
+
+&.transparent-light {
+    @accent_color: @transparent_light_accent_color;
+    @title_color: @transparent_light_title_color;
+    @text_color: @transparent_light_text_color;
+    @icon_color: @transparent_light_icon_color;
+    @import (multiple) 'progress-bar-transparent.less';
+}

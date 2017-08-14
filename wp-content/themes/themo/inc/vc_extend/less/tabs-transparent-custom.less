@@ -1,0 +1,106 @@
+// sourceMap:true, out: ../css/
+@import "shortcodes-custom-helpers";
+
+#@{id}.container-tabs,
+#@{id}_2.container-tabs {
+    .tab-content {
+        //.ifNotEmpty(color, @text_color); to chyba nie jest tutaj potrzebne. 
+        background-color: transparent;
+        .ifNotEmptyBorder(border-bottom, @border_bottom_block_color, solid 1px);
+        border-right: 0;
+    }
+    .nav-tabs {
+        & > li {
+            background-color: transparent;
+            &:hover {
+                a {
+                    background-color: transparent;
+                }
+            }
+            &.active {
+                background-color: transparent;
+                a {
+                    .ifNotEmpty(color, @title_color);
+                    background-color: transparent;
+                }
+            }
+            a {
+                .ifNotEmpty(color, @inactive_section_title_color);
+                &:hover, &:active, &:focus {
+                    .ifNotEmpty(color, @title_color);
+                    background-color: transparent;
+                }
+            }
+        }
+    }
+    &.horizontal {
+        .nav-tabs {
+            & > li {
+                &.active {
+                    a {
+                        position: relative;
+                        &:before {
+                            .ifNotEmptyBorder(border-top, @active_title_border_color, solid 2px);
+                        }
+                        border-bottom: 0;
+                        @media (min-width:768px) {
+                            .ifNotEmptyBorder(border-right, @title_borders_color, solid 1px);
+                            .ifNotEmptyBorder(border-left, @title_borders_color, solid 1px);
+                        }
+                    }
+                }
+                &:last-child {
+                    a {
+                        border-right: 0 !important;
+                    }
+                }
+                &:first-child {
+                    a {
+                        border-left: 0 !important;
+                    }
+                }
+                a {
+                    .ifNotEmptyBorder(border-bottom, @title_borders_color, solid 1px);
+                   /* @media (min-width:768px) {
+                        .ifNotEmptyBorder(border-right, @inactive_section_title_color, solid 1px, 25%);
+                    }*/
+                }
+            }
+        }
+    }
+    &.vertical {
+        .tab-content .tabs-line{
+            @media (min-width:768px) {
+                .ifNotEmptyBorder(border-left, @title_borders_color, solid 1px);
+            }
+        }
+    
+        .nav-tabs {
+            & > li {
+                &.active {
+                    a {
+                        position: relative;
+                        border-right: solid 1px transparent;
+                        .ifNotEmptyBorder(border-top, @title_borders_color, solid 1px);
+                        .ifNotEmptyBorder(border-bottom, @title_borders_color, solid 1px);
+                        &:before {
+                            .ifNotEmptyBorder(border-left, @active_title_border_color, solid 2px);
+                        }
+                    }
+                }
+                &:first-child {
+                    a {
+                        border-top: 0 !important;
+                    }
+                }
+                a {
+                    @media (min-width:768px) {
+                        .ifNotEmptyBorder(border-right, @title_borders_color, solid 1px);
+                    }
+                    //.ifNotEmptyBorder(border-bottom, @inactive_section_title_color, solid 1px, 25%);
+                }
+            }
+        }
+    }
+}
+

@@ -1,0 +1,49 @@
+// out: null
+
+.ideo-custom-list{
+    ul,ol{
+        margin: 0;
+        padding: 0;
+        list-style-position: inside;
+        li{
+            margin-left: 15px;
+            line-height: 1.4em;
+            margin-bottom: 0.6em;
+        }
+        li.with-icon{
+            list-style: none;
+            padding-left: 0;
+            text-indent: inherit;
+            padding-left: 0;
+            margin-left: 1.1em;
+            &>i.icon{
+                display: inline-block;
+                width: 1em;
+                height: 1em;
+                line-height: 1em;
+                margin: 0 0.2em 0 -1.2em;
+                vertical-align: middle;
+                color: @colored_dark_accent_color;
+                &:before{
+                    
+                }
+            }
+            &:before{
+                display: none;
+            }
+        }
+    }
+}
+
+&.transparent-dark {
+    @text_color: @transparent_dark_text_color;
+    @icon_color: @transparent_dark_icon_color;
+    @import (multiple) 'custom-list-transparent.less';
+}
+
+&.transparent-light {
+    @text_color: @transparent_light_text_color;
+    @icon_color: @transparent_light_icon_color;
+    @import (multiple) 'custom-list-transparent.less';
+}
+

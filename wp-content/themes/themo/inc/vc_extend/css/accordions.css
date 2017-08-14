@@ -1,0 +1,126 @@
+.accordion .panel-default {
+  border: none;
+  border-radius: 0;
+  margin: 0;
+  box-shadow: none;
+}
+.accordion.light .panel-default {
+  background: rgba(255,255,255,0.75);
+  color: #3a3a3a;
+}
+.accordion.dark .panel-default {
+  background: rgba(0,0,0,0.75);
+  color: #fff;
+}
+.accordion.transparent .panel-default {
+  background: none;
+}
+.accordion.light.panel-group .panel {
+  border-bottom: solid 2px rgba(243,102,57,0.75);
+}
+.accordion.dark.panel-group .panel {
+  border-bottom: solid 2px rgba(46,204,113,0.75);
+}
+.accordion.dark.transparent.panel-group {
+  border-top: solid 1px rgba(255,255,255,0.2);
+  border-bottom: solid 2px rgba(255,255,255,0.2);
+}
+.accordion.light.transparent.panel-group {
+  border-top: solid 1px rgba(0,0,0,0.2);
+  border-bottom: solid 2px rgba(0,0,0,0.2);
+}
+.accordion.transparent.panel-group .panel {
+  border-top: solid 0px rgba(255,255,255,0.2);
+  border-bottom: solid 0px rgba(255,255,255,0.2);
+}
+.accordion.panel-group .panel + .panel {
+  margin-top: 0 !important;
+}
+.accordion .panel-default>.panel-heading {
+  border-radius: 0;
+  padding: 0;
+}
+.accordion.light .panel-default>.panel-heading {
+  background: none;
+}
+.accordion.light .panel-default>.panel-heading.active {
+  background: rgba(243,102,57,0.75);
+  -webkit-transition: all .2s ease-out;
+  transition: all .2s ease-out;
+}
+.accordion.dark .panel-default>.panel-heading.active {
+  background: rgba(46,204,113,0.75);
+  -webkit-transition: all .2s ease-out;
+  transition: all .2s ease-out;
+}
+.accordion.dark.transparent .panel-default>.panel-heading {
+  border-top: solid 1px rgba(255,255,255,0.2);
+}
+.accordion.light.transparent .panel-default>.panel-heading {
+  border-top: solid 1px rgba(0,0,0,0.2);
+}
+.accordion.dark.transparent .panel-default>.panel-heading.active {
+  border-top: solid 1px rgba(46,204,113,0.75);
+  box-shadow: inset 0px 1px 0px 0px rgba(46,204,113,0.75);
+  background: rgba(255,255,255,0.2);
+  -webkit-transition: all .2s ease-out;
+  transition: all .2s ease-out;
+}
+.accordion.light.transparent .panel-default>.panel-heading.active {
+  border-top: solid 1px rgba(243,102,57,0.2);
+  -webkit-transition: all .2s ease-out;
+  transition: all .2s ease-out;
+}
+.accordion.dark .panel-default>.panel-heading {
+  background: none;
+}
+.accordion .panel-default>.panel-heading .panel-title a {
+  font-size: 0.857em;
+  font-weight: 700;
+  display: block;
+  padding: 16px 15px 12px;
+  outline: none;
+  text-transform: uppercase;
+}
+.accordion .panel-default>.panel-heading .panel-title a:after {
+  content: '\f067';
+  font-family: FontAwesome;
+  font-size: 0.857em;
+  float: right;
+}
+.accordion .panel-default>.panel-heading.active .panel-title a:after {
+  content: '\f068';
+  font-family: FontAwesome;
+  font-size: 0.857em;
+  float: right;
+}
+.accordion.light .panel-default>.panel-heading a {
+  color: #3a3a3a;
+}
+.accordion.light .panel-default>.panel-heading.active a,
+.accordion.dark .panel-default>.panel-heading a {
+  color: #fff;
+}
+.accordion.panel-group .panel-heading+.panel-collapse .panel-body {
+  border: none;
+  font-size: 0.857em;
+}
+.accordion.panel-group .panel-body h5 {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 1.071em;
+  margin-bottom: 1em;
+}
+.accordion.panel-group .panel-body p {
+  line-height: 18px;
+}
+[class^="ss-"].circle {
+  font-size: 2em;
+  display: inline-block;
+  border: solid 1px rgba(255,255,255,0.8);
+  border-radius: 50%;
+  height: 1.5em;
+  width: 1.5em;
+  line-height: 1.64em;
+  text-align: center;
+}

@@ -1,0 +1,21 @@
+// sourceMap:true, out: ../css/
+@import "shortcodes-custom-helpers";
+@animation-time: 200ms ease-in-out;
+
+#@{id}.ideo-progress-bar{
+    
+    
+    .bar{
+        .ifNotEmpty(background-color, @background_color);
+        .ifNotEmpty(color, @titles_color);
+        .cover{
+            .ifNotEmpty(background-color, @bar_color);
+            .number{
+                .ifNotEmpty(color, @titles_color);
+            }
+            .title{
+                .ifNotEmpty(color, @titles_color);
+            }
+        }
+    }
+}

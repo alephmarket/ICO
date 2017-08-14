@@ -1,0 +1,33 @@
+// sourceMap:true, out: ../css/
+@import "shortcodes-custom-helpers";
+
+#@{id}.ideo-icons {
+    
+    &.icon-hover{
+        i.icon{
+            &:hover{
+                .ifNotEmpty(color, @icon_hover_color);
+            }
+        }
+        
+    }
+    &.style-advanced{
+        i.icon{
+            .ifNotEmpty(color, @icon_color);
+            .ifNotEmpty(border-color, @icon_border_color);
+        }
+        &.icon-hover{
+            i.icon{
+                &:hover{
+                    .ifNotEmpty(color, @icon_hover_color);
+                    .ifNotEmpty(border-color, @icon_hover_border_color);
+                }
+            }
+
+        }
+    }
+    i.icon {
+        .ifNotEmpty(color, @icon_color);       
+    }
+}
+

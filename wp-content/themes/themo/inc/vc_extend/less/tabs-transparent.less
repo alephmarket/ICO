@@ -1,0 +1,130 @@
+// sourceMap:true, out: ../css/
+&.container-tabs {
+    .tab-content {       
+       // color: @text_color;
+        background-color: transparent;
+        //border-bottom: solid 1px fade(@title_color,25%);
+        border-right: 0;        
+    }
+    .nav-tabs {
+        & > li {
+            background-color: transparent;
+            &:hover {
+                a {
+                    background-color: transparent;
+                }
+            }
+            &.active {
+                background-color: transparent;
+                a {
+                    color: @accent_color;
+                    background-color: transparent;
+                }
+            }
+            a {
+                color: @title_color;
+                &:hover {
+                    color: @accent_color;
+                    background-color: transparent;
+                }
+            }
+        }
+    }
+    &.horizontal {
+        .tab-content{
+            padding: 0 5px;
+        }
+        .nav-tabs {
+            & > li {
+                margin-left: -1px;
+                &.active {
+                    a {
+                        position: relative;
+                        &:before {
+                            border-top: solid 2px @accent_color;
+                        }
+                        @media (max-width:767px) {
+                            background-color: fade(@title_color,25%);  
+                        }
+                        @media (min-width:768px) {
+                            border-bottom: 0;
+                            border-right: solid 1px fade(@title_color,25%);
+                            border-left: solid 1px fade(@title_color,25%);
+                        }
+                    }
+                }
+                &:last-child {
+                    a {
+                        
+                        html:not([dir="rtl"]) &{
+                            border-right-width: 0 !important;                            
+                        }
+                        [dir="rtl"] &{
+                            border-left-width: 0 !important;                            
+                        }
+                    }
+                }
+                &:first-child {
+                    a {
+                        html:not([dir="rtl"]) &{
+                            border-left-width: 0 !important;                            
+                        }
+                        [dir="rtl"] &{
+                            border-right-width: 0 !important;                            
+                        }
+                    }
+                }
+                a {
+                    border-bottom: solid 1px fade(@title_color, 25%);
+                    @media (min-width:768px) {
+                        border-right: solid 1px transparent;
+                        border-left: solid 1px transparent;
+                    }
+                }
+            }
+        }
+    }
+    &.vertical {
+        .tab-content {
+             position: relative;
+            .tabs-line{
+                position: absolute;
+                left: -1px;
+                bottom: 0px;
+                height: 0;
+                @media (min-width:768px) {
+                    border-left: solid 1px fade(@title_color, 25%);
+                }
+            }
+        }
+        .nav-tabs {
+            & > li {
+                &.active {
+                    a {
+                        position: relative;
+                        border-right: solid 1px transparent;
+                        border-top: solid 1px fade(@title_color, 25%);
+                        border-bottom: solid 1px fade(@title_color, 25%);
+                        &:before {
+                            @media (min-width:768px) {
+                                border-left: solid 2px @accent_color;
+                            }
+                        }
+                    }
+                }
+                &:first-child {
+                    a {
+                        border-top: 0 !important;
+                    }
+                }
+                a {
+                    @media (min-width:768px) {
+                        border-right: solid 1px fade(@title_color, 25%);
+                    }
+                    border-top: solid 1px transparent;
+                    border-bottom: solid 1px transparent;
+                }
+            }
+        }
+    }
+}

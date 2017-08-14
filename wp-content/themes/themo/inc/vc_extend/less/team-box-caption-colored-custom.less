@@ -1,0 +1,44 @@
+// sourceMap:true, out: null
+@import "shortcodes-custom-helpers";
+
+#@{id}.ideo-team-box-caption {
+    .image{
+        .overlay{
+            .ifNotEmpty(color, @hover_icon_color);
+        }
+        
+    }
+    .name-position{  
+        .name{
+            .ifNotEmpty(color, @name_color);
+        }
+        .position{
+            .ifNotEmpty(color, @position_color);
+        }
+    }
+    
+    .social{      
+    
+        .ifNotEmpty(background-color, @social_bar_color);
+        a{            
+            .ifNotEmpty(color, @social_icon_color);
+            &:hover{
+                .icon when not (@social_icon_color = undefined){
+                    color: @social_icon_color - #222;
+                }
+            }
+
+        }
+        
+    }
+    
+    .caption{
+        &, *{
+            .ifNotEmpty(color, @description_color);        
+        }
+        .ifNotEmpty(background-color, @background_color);
+    }
+    
+}
+
+

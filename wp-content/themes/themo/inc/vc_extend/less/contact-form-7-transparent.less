@@ -1,0 +1,107 @@
+// sourceMap:true, out: ../css/
+@darken: #222;
+
+
+&.ideo-contact-form7{
+    .wpcf7-form-control-wrap{
+        &[class*=" menu-"]{
+            background-color: transparent;            
+            &:after{               
+                background: @accent_color;
+            }
+        }
+        
+        &[class*=" checkbox-"],
+        &[class*=" acceptance-"],
+        &[class*=" quiz-"],
+        &[class*=" file-"],
+        &[class*=" range-"],
+        &[class*=" radio-"]{
+            color: @text_color;             
+            background-color: transparent; 
+            border:solid 1px fade(@text_color,50%);
+            border-radius: 0;
+            padding-bottom: 20px;
+        }
+        &[class*=" quiz-"]{
+            input[type="text"]{
+                 border:solid 1px fade(@text_color,50%);
+            }
+        }
+    }
+    p{
+        color: @text_color; 
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="number"],
+    input[type="tel"],
+    input[type="url"],
+    input[type="date"],
+    input[type="phone"],
+    textarea,
+    select{  
+        color: @text_color;
+        border:solid 1px fade(@text_color,50%);
+        background-color: transparent; 
+        &:focus{
+            box-shadow: 0 0 0 2px @accent_color;
+            outline: 0;
+            border-color: transparent;
+        }
+        option{
+            color: #000;
+            line-height: 30px;
+        }
+        &.wpcf7-not-valid{
+            outline: solid 2px red;
+        }
+        &[multiple]{
+            background-color: transparent;
+            option{
+                color: @text_color; 
+                background-color: transparent;
+            }
+        }
+    }
+    input[type="submit"]{
+        background: @accent_color;
+        &:hover, &:focus {
+        }
+    }
+    .underline-style{
+        .wpcf7-form-control-wrap{           
+
+            &[class*=" checkbox-"],
+            &[class*=" acceptance-"],
+            &[class*=" quiz-"],
+            &[class*=" file-"],
+            &[class*=" range-"],
+            &[class*=" radio-"]{              
+                border-width: 0 0 1px;  
+            }
+            &[class*=" quiz-"]{
+                input[type="text"]{
+                      border-width: 0 0 1px;  
+                }
+            }
+        }
+        
+        input[type="text"],
+        input[type="email"],
+        input[type="number"],
+        input[type="tel"],
+        input[type="url"],
+        input[type="date"],
+        input[type="phone"],
+        select,
+        textarea{
+            border-width: 0 0 1px;
+            &:focus{
+                border-color: transparent;
+            }
+        }
+        
+    }
+}
+

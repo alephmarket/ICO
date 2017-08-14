@@ -1,0 +1,115 @@
+// sourceMap:true, out: ../css/
+@animation-time: 200ms ease-in-out;
+.accordion {
+  .panel-default {
+    border: none;
+    border-radius: 0;
+    margin: 0;
+    box-shadow: none;
+    & > .panel-heading {
+      border-radius: 0;
+      padding: 0;
+      background-color: transparent;
+      .panel-title a {
+        font-weight: 700;
+        font-style: normal;
+        display: block;
+        padding: 20px 35px 20px 20px;
+        outline: none;
+        text-decoration: none;
+        transition: all @animation-time;
+        position: relative;
+        &:after {
+
+          position: absolute;
+          right: 15px;
+          top: 50%;
+          width: 20px;
+          text-align: center;
+          -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+          content: '\ea59';
+          font-family: 'ideo-icon';
+          font-size: 0.857em;
+
+        }
+        &.collapsed {
+          &:after {
+            font-size: 1.42em;
+            content: '\ea5a';
+          }
+        }
+      }
+    }
+  }
+    //accordion size 
+    &.small .panel-default {
+        & > .panel-heading .panel-title a {
+            padding: 12px 0px 12px 20px;
+            font-size: 14px;
+          }
+        }
+    &.medium .panel-default {
+        & > .panel-heading .panel-title a {
+            padding: 18px 0px 18px 20px;
+            font-size: 15px;
+          }
+        }
+    &.big .panel-default {
+        & > .panel-heading .panel-title a {
+            padding: 23px 0px 23px 20px;
+            font-size: 18px;
+          }
+        }
+    
+  .panel-body {
+    padding: 0 20px;
+  }
+  &.panel-group {
+    .panel {
+      border-radius: 0;
+      & + .panel {
+        margin-top: 0;
+      }
+    }
+    .panel-heading + .panel-collapse .panel-body {
+      border: none;
+    }
+  }
+}
+
+&.colored-dark {
+  @accent_color: @colored_dark_accent_color;
+  @title_color: @colored_dark_title_color;
+  @text_color: @colored_dark_text_color;
+  @icon_color: @colored_dark_icon_color;
+  @background_color: @colored_dark_background_color;
+  @alternative_title_color: @colored_dark_alternative_title_color;
+  @import (multiple) 'accordion-colored.less';
+}
+
+&.colored-light {
+  @accent_color: @colored_light_accent_color;
+  @title_color: @colored_light_title_color;
+  @text_color: @colored_light_text_color;
+  @icon_color: @colored_light_icon_color;
+  @background_color: @colored_light_background_color;
+  @alternative_title_color: @colored_light_alternative_title_color;
+  @import (multiple) 'accordion-colored.less';
+}
+
+&.transparent-dark {
+  @accent_color: @transparent_dark_accent_color;
+  @title_color: @transparent_dark_title_color;
+  @text_color: @transparent_dark_text_color;
+  @icon_color: @transparent_dark_icon_color;
+  @import (multiple) 'accordion-transparent.less';
+}
+
+&.transparent-light {
+  @accent_color: @transparent_light_accent_color;
+  @title_color: @transparent_light_title_color;
+  @text_color: @transparent_light_text_color;
+  @icon_color: @transparent_light_icon_color;
+  @import (multiple) 'accordion-transparent.less';
+}

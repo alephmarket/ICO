@@ -1,0 +1,5 @@
+<ul class="pc-pages-list">
+    <li ng-repeat="page in data.pages | orderBy: 'title'">
+        <a href="" ng-click="changePage(page)" ng-bind="::page.title"></a>
+    </li> 
+</ul>

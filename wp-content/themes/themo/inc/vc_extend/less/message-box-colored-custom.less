@@ -1,0 +1,27 @@
+// sourceMap:true, out: ../css/
+//@custom_icon_color: `@custom_icon_color ? @custom_icon_color : @title_color`;
+//@custom_icon_background_color: `@custom_icon_background_color ? @custom_icon_background_color : @title_color`;
+@import "shortcodes-custom-helpers";
+
+#@{id}.ideo-message-box {
+    .ideo-message-box-content {
+        .ifNotEmpty(background-color, @content_background_color);
+        .message-close {
+            .ifNotEmpty(color, @desc_color);
+        }
+        span.title {
+            .ifNotEmpty(color, @title_color);
+        }
+        p {
+            .ifNotEmpty(color, @desc_color);
+        }
+    }
+    &.type-custom .ideo-message-box-content when (iscolor(@custom_icon_color)) {
+        i {
+            .ifNotEmpty(color, @custom_icon_color);
+        }
+        &:before {
+            .ifNotEmpty(background-color, @custom_icon_background_color);
+        }
+    }
+}

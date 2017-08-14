@@ -1,0 +1,578 @@
+<div>
+    <div ng-controller="editLayer">
+        <div class="pc-edit-layer-panel">
+
+            <div class="edit-layer-header">
+                <div class="edit-layer-title">
+                    <p class="type" ng-bind="::l10n.addLayer.text"></p>
+                    <p class="title" ng-bind="::data.currentLayer.title"></p>
+                </div>
+            </div>
+
+            <div class="edit-layer-accordion-section settings">
+                <h3>
+                    <span class="icon settings"></span>
+                    <span class="title" ng-bind="::l10n.editLayer.sections.title.settings.title"></span>
+                    <i ng-bind="::l10n.editLayer.sections.title.settings.info"></i>
+                </h3>
+                <div>
+
+                    <div class="edit-layer-accordion-section-row" ng-if="isParent">
+                        <div class="select-parent">
+                            <label for="" class="select-label"><i ng-bind="::l10n.editLayer.sections.parent" ng-tooltip tooltip="l10n.ParentSection"></i>
+                            </label>
+                            <select ng-model="selectedParentItem" ng-change="updateParentSection(this)" ng-options="section as section.title for section in data.sections"></select>
+                        </div>
+                    </div>
+
+
+                    <div class="edit-layer-accordion-section-row" ng-if="isParent">
+                        <div>
+                            <div class="col left"><i ng-bind="::l10n.editLayer.sections.relative2screen" ng-tooltip tooltip="l10n.RelativeToScreen"></i>
+                            </div>
+                            <div class="col right">
+                                <div ng-switcher data="data.currentLayer.relative2screen"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="edit-layer-accordion-section-row" ng-if="data.currentSection.type!='global'">
+                        <div>
+                            <div class="col left"><i ng-bind="::l10n.editLayer.sections.zIndex" ng-tooltip tooltip="l10n.DisplayInFrontOfContent"></i>
+                            </div>
+                            <div class="col right">
+                                <div ng-switcher data="data.currentLayer.zIndex"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="edit-layer-accordion-section-row">
+                        <div>
+                            <div class="col left"><i ng-bind="::l10n.editLayer.sections.align" ng-tooltip tooltip="l10n.AnchorPoint"></i>
+                            </div>
+                            <div class="col right">
+                                <div ng-transform-origin data="data.currentLayer.align"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="edit-layer-accordion-section-row">
+                        <div>
+                            <div class="col left"><i ng-bind="::l10n.editLayer.sections.changeContent"></i></div>
+                            <div class="col right">
+                                <a href="" ng-click="changeText(data.crurrentLayer)" class="button button-change"><span><i ng-bind="::l10n.editLayer.sections.changeContent"></i></span></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="edit-layer-accordion-section-row" ng-if="isParent">
+                        <!--RS optimization-->
+                        <div>
+                            <div class="col left"><i ng-bind="::l10n.editLayer.sections.relative2screenDisableOptimization" ng-tooltip tooltip="l10n.RelativeToScreenOptimization"></i>
+                            </div>
+                            <div class="col right">
+                                <div ng-switcher data="data.currentLayer.relative2screenDisableOptimization"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="edit-layer-accordion-section-row">
+                        <div>
+                            <div class="col left"><i ng-bind="::l10n.editLayer.sections.setOffset" ng-tooltip tooltip="l10n.ShiftAnimations"></i>
+                            </div>
+                            <div class="col right">
+                                <div class="set-offset">
+                                    <input type="text" ng-model="offset" ng-init="0"> <span class="px">px</span>
+                                    <a href="" ng-click="offsetAnimation(offset)" class="button"><span><i ng-bind="::l10n.editLayer.sections.offsetAnim"></i></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="edit-layer-accordion-section-row">
+                        <div>
+                            <div class="col left"><i ng-bind="::l10n.editLayer.sections.deleteAnim" ng-tooltip tooltip="l10n.DeleteAllLayerAnimiations"></i>
+                            </div>
+                            <div class="col right">
+                                <div ng-delete-all-animation><span><i ng-bind="::l10n.delete"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="edit-layer-accordion-section">
+                <h3>
+                    <span class="icon position"></span>
+                    <span class="title" ng-bind="::l10n.editLayer.sections.title.visibility.title" ng-tooltip tooltip="l10n.LayerVisibility"></span>
+                    <i ng-bind="::l10n.editLayer.sections.title.visibility.info"></i>
+                </h3>
+                <div>
+                    <div class="edit-layer-accordion-section-row">
+                        <div class="pc-switcher-group">
+                            <div class="col left"><i ng-bind="::l10n.editLayer.sections.visibleLG"></i>
+                            </div>
+                            <div class="col right">
+                                <div ng-switcher data="data.currentLayer.displayLG" init="true"></div>
+                            </div>
+                        </div>
+                        <div class="pc-switcher-group">
+                            <div class="col left"><i ng-bind="::l10n.editLayer.sections.visibleMD"></i>
+                            </div>
+                            <div class="col right">
+                                <div ng-switcher data="data.currentLayer.displayMD" init="true"></div>
+                            </div>
+                        </div>
+                        <div class="pc-switcher-group">
+                            <div class="col left"><i ng-bind="::l10n.editLayer.sections.visibleSM"></i>
+                            </div>
+                            <div class="col right">
+                                <div ng-switcher data="data.currentLayer.displaySM" init="true"></div>
+                            </div>
+                        </div>
+                        <div class="pc-switcher-group">
+                            <div class="col left"><i ng-bind="::l10n.editLayer.sections.visibleXS"></i>
+                            </div>
+                            <div class="col right">
+                                <div ng-switcher data="data.currentLayer.displayXS" init="true"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="edit-layer-accordion-section">
+                <h3>
+                    <span class="icon position"></span>
+                    <span class="title" ng-bind="::l10n.editLayer.sections.title.position.title" ng-tooltip tooltip="l10n.Position"></span>
+                    <i ng-bind="::l10n.editLayer.sections.title.position.info"></i>
+                </h3>
+                <div>
+                    <div class="edit-layer-accordion-section-row">
+                        <div>
+                            <div class="col left"><i ng-bind="::l10n.editLayer.sections.positionX"></i>
+                            </div>
+                            <div class="col right">
+                                <div ng-spinner data="frame.left" frame="" scrollpos=""></div>
+                                <div ng-switcher-small data="frame.left.precent" color="blue"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="col left"><i ng-bind="::l10n.editLayer.sections.positionY"></i>
+                            </div>
+                            <div class="col right">
+                                <div ng-spinner data="frame.top" frame="frame.frame" scrollpos="scrollPos"></div>
+                                <div ng-switcher-small data="frame.top.precent"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="edit-layer-accordion-section-row" ng-show="isParent">
+                        <div class="text-center pc-freez">
+                            <a href="" ng-disabled="isFreez" ng-click="startFreez()" class="button"><span><i ng-bind="::l10n.editLayer.sections.startFreez"></i></span></a>                            <a href="" ng-disabled="!isFreez" ng-click="stopFreez()" class="button" ng-tooltip tooltip="l10n.Freeze"><span><i ng-bind="::l10n.editLayer.sections.stopFreez"></i></span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="edit-layer-accordion-section">
+                <h3>
+                    <span class="icon scale"></span>
+                    <span class="title" ng-bind="::l10n.editLayer.sections.title.scale.title" ng-tooltip tooltip="l10n.Size"></span>
+                    <i ng-bind="::l10n.editLayer.sections.title.scale.info"></i>
+                </h3>
+                <div>
+
+                    <div class="edit-layer-accordion-section-row" ng-if="data.currentLayer.size">
+                        <div>
+                            <div class="col left">
+                                <i ng-bind="::l10n.editLayer.sections.width"></i>
+                            </div>
+                            <div class="col right">
+                                <span class="pc-spinner"><input type="number" ng-model="frame.width.value"> </span>
+                                <div class="switcher-label-small"><span>%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="col left"><i ng-bind="::l10n.editLayer.sections.height"></i>
+                            </div>
+                            <div class="col right">
+                                <span class="pc-spinner"><input type="number" ng-model="frame.height.value" readonly> </span>
+                                <div class="switcher-label-small"><span>%</span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="edit-layer-accordion-section-row" ng-if="!data.currentLayer.size">
+                        <div class="pc-wh-lock">
+                            <div class="col left"><i ng-bind="::l10n.editLayer.sections.width"></i>
+                            </div>
+                            <div class="col right">
+                                <div ng-spinner data="frame.width" frame="" prop="width" change="changeSize(prop)"></div>
+                                <div ng-switcher-small data="frame.width.precent" color="blue"></div>
+                            </div>
+                            <a href="" class="lock size" ng-class="{active:isSizeLock == true}" ng-click="lockSize()"></a>
+                        </div>
+                        <div>
+                            <div class="col left"><i ng-bind="::l10n.editLayer.sections.height"></i>
+                            </div>
+                            <div class="col right">
+                                <div ng-spinner data="frame.height" frame="" prop="height" change="changeSize(prop)"></div>
+                                <div ng-switcher-small data="frame.height.precent"></div>
+                            </div>
+
+                        </div>
+
+                    </div>                    
+                </div>
+            </div>
+
+            <div class="edit-layer-accordion-section">
+                <h3>
+                    <span class="icon position"></span>
+                    <span class="title" ng-bind="::l10n.editLayer.sections.title.editText.title" ng-tooltip tooltip="l10n.TextEdit"></span>
+                    <i ng-bind="::l10n.editLayer.sections.title.editText.info"></i>
+                </h3>
+
+                <div>
+                    <div class="edit-layer-accordion-section-row">
+                        <div class="pc-font-edit">
+                            <div class="col left">
+                                <i class="font-size nowrap" ng-bind="::l10n.editLayer.sections.fontSize"></i>
+                            </div>
+                            <div class="col right">
+                                <div class="pc-spiner">
+                                    <input type="text" ng-model="frame.fontSize.value">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pc-font-edit">
+                            <div class="col left">
+                                <i class="font-lineheight nowrap" ng-bind="::l10n.editLayer.sections.lineHeight"></i>
+                            </div>
+                            <div class="col right">
+                                <div class="pc-spiner">
+                                    <input type="text" ng-model="frame.lineHeight.value">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="edit-layer-accordion-section-row">
+                        <div>
+                            <i class="fleft" ng-bind="::l10n.editLayer.sections.colorFont"></i>
+                            <input type="text" color="frame.color.value" placeholder="color" ng-color-picker>
+                        </div>
+                    </div>
+                    <div class="edit-layer-accordion-section-row">
+                        <i ng-bind="::l10n.editLayer.sections.padding"></i>
+                        <div class="padding-box">
+                            <div class="padding-box-line">
+                                <div class="pt">
+                                    <input type="text" ng-model="frame.paddingTop.value">
+                                </div>
+                                <div class="pr">
+                                    <input type="text" ng-model="frame.paddingRight.value">
+                                </div>
+                                <div class="pb">
+                                    <input type="text" ng-model="frame.paddingBottom.value">
+                                </div>
+                                <div class="pl">
+                                    <input type="text" ng-model="frame.paddingLeft.value">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="edit-layer-accordion-section-row">
+                        <div>
+                            <div class="col left">
+                                <i class="font-size nowrap" ng-bind="::l10n.editLayer.sections.fontFamily"></i>
+                            </div>
+                            <div class="col right">
+                                <div class="pc-spiner">
+                                    <select ng-model="data.currentLayer.fontFamily" ng-options="f.family for f in fonts" ng-change="setFont(data.currentLayer.fontFamily)">
+                                        <!--option-family="{{data.currentLayer.fontFamily.family}}"-->
+                                        <option value="">Default</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="col left">
+                                <i class="font-size nowrap" ng-bind="::l10n.editLayer.sections.fontWeight"></i>
+                            </div>
+                            <div class="col right">
+                                <div class="pc-spiner">
+                                    <select ng-model="data.currentLayer.fontWeight" ng-options="v for v in data.currentLayer.fontFamily.variants" ng-change="setFontWeight()">
+                                        <option value="">Default</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pc-font-edit">
+                            <div class="col left">
+                                <i class="font-spacing nowrap" ng-bind="::l10n.editLayer.sections.spacing"></i>
+                            </div>
+                            <div class="col right">
+                                <div class="pc-spiner">
+                                    <input type="text" ng-model="data.currentLayer.letterSpacing">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="edit-layer-accordion-section-row">
+                        <div>
+                            <div class="col left"><i class="nowrap" ng-bind="::l10n.editLayer.sections.horizontal"></i>
+                            </div>
+                            <div class="col right">
+                                <a href="" ng-class="{active:data.currentLayer.alignHorizontal=='left'}" ng-click="data.currentLayer.alignHorizontal='left'"
+                                    class="align-items align-left"></a>
+                                <a href="" ng-class="{active:data.currentLayer.alignHorizontal=='center'}" ng-click="data.currentLayer.alignHorizontal='center'"
+                                    class="align-items align-center"></a>
+                                <a href="" ng-class="{active:data.currentLayer.alignHorizontal=='right'}" ng-click="data.currentLayer.alignHorizontal='right'"
+                                    class="align-items align-right"></a>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="col left"><i class="nowrap" ng-bind="::l10n.editLayer.sections.vertical"></i>
+                            </div>
+                            <div class="col right">
+                                <a href="" ng-class="{active:data.currentLayer.alignVertical=='top'}" ng-click="data.currentLayer.alignVertical='top'" class="align-items align-top"></a>
+                                <a href="" ng-class="{active:data.currentLayer.alignVertical=='middle'}" ng-click="data.currentLayer.alignVertical='middle'"
+                                    class="align-items align-middle"></a>
+                                <a href="" ng-class="{active:data.currentLayer.alignVertical=='bottom'}" ng-click="data.currentLayer.alignVertical='bottom'"
+                                    class="align-items align-bottom"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="edit-layer-accordion-section">
+                <h3>
+                    <span class="icon rotate"></span>
+                    <span class="title" ng-bind="::l10n.editLayer.sections.title.transform.title" ng-tooltip tooltip="l10n.Transform"></span>
+                    <i ng-bind="::l10n.editLayer.sections.title.transform.info"></i>
+                </h3>
+                <div>
+
+                    <div class="edit-layer-accordion-section-row">
+                        <div>
+                            <div class="col left"><i class="nowrap" ng-bind="::l10n.editLayer.sections.rotationX"></i>
+                            </div>
+                            <div class="col right">
+                                <div ng-rotation data="frame.rotationX" label="X"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="col left"><i class="nowrap" ng-bind="::l10n.editLayer.sections.rotationY"></i>
+                            </div>
+                            <div class="col right">
+                                <div ng-rotation data="frame.rotationY" label="Y"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="col left"><i class="nowrap" ng-bind="::l10n.editLayer.sections.rotationZ"></i>
+                            </div>
+                            <div class="col right">
+                                <div ng-rotation data="frame.rotationZ" label="Z"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="edit-layer-accordion-section-row">
+                        <div>
+                            <div class="col left"><i class="nowrap" ng-bind="::l10n.editLayer.sections.translateX"></i>
+                            </div>
+                            <div class="col right">
+                                <span class="pc-spinner"><input type="number" ng-model="frame.x.value"> </span>
+                                <div ng-switcher-small data="frame.x.precent"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="col left"><i class="nowrap" ng-bind="::l10n.editLayer.sections.translateY"></i>
+                            </div>
+                            <div class="col right">
+                                <span class="pc-spinner"><input type="number" ng-model="frame.y.value" class=""></span>
+                                <div ng-switcher-small data="frame.y.precent"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="col left"><i class="nowrap" ng-bind="::l10n.editLayer.sections.translateZ"></i>
+                            </div>
+                            <div class="col right">
+                                <span class="pc-spinner"><input type="number" ng-model="frame.z.value" class=""></span>
+                                <div ng-switcher-small data="frame.z.precent"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="edit-layer-accordion-section-row">
+                        <div>
+                            <div class="col left"><i class="nowrap" ng-bind="::l10n.editLayer.sections.scaleX"></i>
+                            </div>
+                            <div class="col right">
+                                <input type="number" ng-model="frame.scaleX.value" class="short" ng-change="changeScale(frame.scaleX)">
+                            </div>
+                        </div>
+                        <div>
+                            <div class="col left"><i class="nowrap" ng-bind="::l10n.editLayer.sections.scaleY"></i>
+                            </div>
+                            <div class="col right">
+                                <input type="number" ng-model="frame.scaleY.value" class="short" ng-change="changeScale(frame.scaleY)">
+                            </div>
+                        </div>
+                        <div>
+                            <div class="col left"><i class="nowrap" ng-bind="::l10n.editLayer.sections.scaleZ"></i>
+                            </div>
+                            <div class="col right">
+                                <input type="number" ng-model="frame.scaleZ.value" class="short" ng-change="changeScale(frame.scaleZ)">
+                            </div>
+                        </div>
+                        <div class="pc-scale-lock" ng-class="{active:isScaleLock == true}">
+                            <a href="" class="lock scale" ng-click="lockScale()"></a>
+                        </div>
+                    </div>
+                    <div class="edit-layer-accordion-section-row">
+                        <div>
+                            <div class="col left"><i class="nowrap" ng-bind="::l10n.editLayer.sections.skewX"></i>
+                            </div>
+                            <div class="col right">
+                                <input type="number" ng-model="frame.skewX.value" class="short">
+                                <sup>o</sup>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="col left"><i class="nowrap" ng-bind="::l10n.editLayer.sections.skewY"></i>
+                            </div>
+                            <div class="col right">
+                                <input type="number" ng-model="frame.skewY.value" class="short">
+                                <sup>o</sup>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="edit-layer-accordion-section-row">
+                        <div>
+                            <div class="col left"><i ng-bind="::l10n.editLayer.sections.transformOrigin" ng-tooltip tooltip="l10n.TransformOrigin"></i>
+                            </div>
+                            <div class="col right">
+                                <div ng-transform-origin data="data.currentLayer.transformOrigin"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="edit-layer-accordion-section-row">
+                        <div>
+                            <div class="col left"><i ng-bind="::l10n.editLayer.sections.backfaceVisibility" ng-tooltip tooltip="l10n.BackfaceVisibility"></i>
+                            </div>
+                            <div class="col right">
+                                <div ng-switcher data="data.currentLayer.backfaceVisibility"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="edit-layer-accordion-section-row">
+                        <div class="">
+                            <div class="col left"><i ng-bind="::l10n.editLayer.sections.perspective" ng-tooltip tooltip="l10n.Perspective"></i>
+                            </div>
+                            <div class="col right">
+                                <div class="set-offset">
+                                    <input type="text" ng-model="data.currentLayer.perspective"> <span class="px">px</span>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="edit-layer-accordion-section">
+                <h3>
+                    <span class="icon opacity"></span>
+                    <span class="title" ng-bind="::l10n.editLayer.sections.title.opacity.title" ng-tooltip tooltip="l10n.Opacity"></span>
+                    <i ng-bind="::l10n.editLayer.sections.title.opacity.info"></i>
+                </h3>
+                <div>
+
+                    <div class="edit-layer-accordion-section-row">
+                        <div>
+                            <div ng-slider data="frame.opacity.value" label="{{l10n.editLayer.sections.opacity}}"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="edit-layer-accordion-section">
+                <h3>
+                    <span class="icon color"></span>
+                    <span class="title" ng-bind="::l10n.editLayer.sections.title.color.title" ng-tooltip tooltip="l10n.Background"></span>
+                    <i ng-bind="::l10n.editLayer.sections.title.color.info"></i>
+                </h3>
+                <div>
+                    <div class="edit-layer-accordion-section-row">
+                        <div>
+                            <i class="fleft" ng-bind="::l10n.editLayer.sections.backgroundColor"></i>
+                            <input type="text" color="frame.backgroundColor.value" ng-color-picker placeholder="color" label="{{l10n.editLayer.sections.opacity}}">
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+
+
+
+            <div class="edit-layer-accordion-section">
+                <h3>
+                    <span class="icon border"></span>
+                    <span class="title" ng-bind="::l10n.editLayer.sections.title.border.title" ng-tooltip tooltip="l10n.LayerBorder"></span>
+                    <i ng-bind="::l10n.editLayer.sections.title.border.info"></i>
+                </h3>
+                <div>
+                    <div class="edit-layer-accordion-section-row">
+                        <div class="pc-border-section">
+                            <i ng-bind="::l10n.editLayer.sections.type"></i>
+                            <select ng-model="frame.borderStyle.value" ng-init="borderType=['solid','dotted','dashed']">
+                                <option ng-repeat="type in borderType">{{type}}</option>
+                            </select>
+
+                            <div class="pc-spinner">
+                                <input class="" type="number" ng-model="frame.borderWidth.value" />
+                                <div class="switcher-label-small"><span>px</span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="edit-layer-accordion-section-row">
+                        <div>
+                            <i class="fleft" ng-bind="::l10n.editLayer.sections.borderColor"></i>
+                            <input type="text" color="frame.borderColor.value" placeholder="color" ng-color-picker>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="edit-layer-accordion-section">
+                <h3>
+                    <span class="icon borderradius"></span>
+                    <span class="title" ng-bind="::l10n.editLayer.sections.title.borderRadius.title" ng-tooltip tooltip="l10n.BorderRadius"></span>
+                    <i ng-bind="::l10n.editLayer.sections.title.borderRadius.info"></i>
+                </h3>
+                <div>
+                    <div class="edit-layer-accordion-section-row">
+                        <div>
+                            <div ng-border-radius data="frame"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

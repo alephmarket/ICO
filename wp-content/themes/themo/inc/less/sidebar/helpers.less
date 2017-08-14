@@ -1,0 +1,8 @@
+
+.sidebarColoring(@skin, @text_color, @accent_color, @title_color) {
+  .sidebar {
+    &.skin-@{skin} {
+      .widgetsColoring(@text_color, @accent_color, @title_color);
+    }
+  }
+}

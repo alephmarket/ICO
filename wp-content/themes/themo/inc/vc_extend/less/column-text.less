@@ -1,0 +1,51 @@
+// sourceMap:true, out: ../css/
+.column-text{
+    padding: 0;
+    p{
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+    &.align-left {
+        @media(min-width: 768px){
+            text-align: left;
+        }
+    }
+    &.align-right {
+        @media(min-width: 768px) {
+            text-align: right;
+        }
+    }
+    &.align-center {
+        @media(min-width: 768px) {
+            text-align: center;
+        }
+    }
+    &.mobile-align-left {
+        @media(max-width: 767px){
+            text-align: left;
+        }
+    }
+    &.mobile-align-right {
+        @media(max-width: 767px) {
+            text-align: right;
+        }
+    }
+    &.mobile-align-center {
+        @media(max-width: 767px) {
+            text-align: center;
+        }
+    }
+}
+
+&.transparent-dark {
+    @text_color: @transparent_dark_text_color;
+    @accent_color: @transparent_dark_accent_color;
+    @import (multiple) 'column-text-transparent.less';
+}
+
+&.transparent-light {
+    @text_color: @transparent_light_text_color;
+    @accent_color: @transparent_light_accent_color;
+    @import (multiple) 'column-text-transparent.less';
+}

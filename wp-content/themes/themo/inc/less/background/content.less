@@ -1,0 +1,32 @@
+@import "../helpers.less";
+
+#content {
+
+  body.skin-light &,
+  body.skin-dark & {
+    &.background-type-color {
+      background-color: @content_background_color; // customizer setting
+    }
+
+    &.background-type-image {
+      .isBackgroundImage(@content_background_upload_image);
+      .backgroundSize(@content_background_cover);
+      background-repeat: @content_background_image_repeat;
+      background-position: @content_background_image_position;
+      background-attachment: @content_background_image_motion;
+    }
+
+    &.background-overlay-pattern {
+      &:before {
+        .overlayImage(@content_background_overlay, @content_background_pattern);
+        background-attachment: @content_background_image_motion;
+      }
+    }
+
+    &.background-overlay-color {
+      &:before {
+        .overlayColor(@content_background_overlay, @content_background_overlay_color);
+      }
+    }
+  }
+}

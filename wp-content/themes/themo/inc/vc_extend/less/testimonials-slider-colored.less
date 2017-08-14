@@ -1,0 +1,41 @@
+// sourceMap:true, out: ../css/
+&.ideo-testimonials-slider {
+    .carousel-inner{
+        background-color: @background_color;                
+    }
+    .item {
+        color: @text_color;
+        .image {            
+            img {
+                border-color: fade(@text_color,18%);
+            }
+        }
+        blockquote {            
+            .content {
+               &, *{
+                    color: @text_color;        
+                }
+            }
+            .author {
+                color: @accent_color;
+            }
+            .company {
+                color: @text_color;
+                
+            }
+        }
+       
+        &.image-bottom {           
+            img {               
+                border-color: fade(@text_color,18%);
+            }
+        }
+    }
+    .carousel-control {  
+        color: @alternative_title_color;
+        background: fade(@accent_color,80%);
+        &:before{
+            background: fade(@background_color,18%);
+        }
+    }
+}

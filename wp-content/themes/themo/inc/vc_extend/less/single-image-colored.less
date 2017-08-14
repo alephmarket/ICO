@@ -1,0 +1,21 @@
+&.ideo-single-image-wrap {    
+    .ideo-single-image {       
+        .hover {           
+            background-color: fade(@accent_color, 80%);
+        }        
+        .link {
+            background-color: @alternative_title_color;
+            &:before {
+                color: @accent_color;
+            }           
+        }
+        &:hover {
+            .link:hover {
+                background-color: @accent_color;
+                &:before {
+                    color: @alternative_title_color;
+                }           
+            }
+        }
+    }
+}

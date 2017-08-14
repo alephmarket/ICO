@@ -1,0 +1,48 @@
+// sourceMap:true, out: ../css/
+@animation-time: 200ms ease-in-out;
+
+&.accordion {
+    
+    border-bottom: solid 1px fade(@title_color, 18%);
+    .panel-default {
+        color: @text_color;
+        background: transparent;
+        &:first-child{
+            &>.panel-heading {
+                .panel-title a {
+                    &.collapsed{
+                        border-top: solid 1px fade(@title_color, 10%);
+                    }
+                }
+            }
+        }
+        &>.panel-heading {
+            color: @title_color;
+            background-color: transparent;
+            .panel-title a {
+                border-top: solid 2px @accent_color;                
+                color: @title_color;
+                &.collapsed{
+                    border-top: solid 1px fade(@title_color, 18%);
+                    color: @title_color;
+                    background-color: transparent;
+                }
+                &:after {
+                    
+                }
+            }
+        }
+    }
+    &.panel-group {
+        .panel {
+            
+            & + .panel {
+               
+            }
+        }
+        .panel-heading+.panel-collapse .panel-body {
+            
+        }
+    }
+}
+

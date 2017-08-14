@@ -1,0 +1,38 @@
+// sourceMap:true, out: ../css/
+@import "shortcodes-custom-helpers";
+@darken: #222;
+
+#@{id}.button {
+    & {
+        &:not(:hover){
+            &, &>span{
+                .ifNotEmpty(color, @font_color);            
+            }
+            .ifNotEmpty(border-color, @borders_color);
+            .ifNotEmptyFade(background-color, @borders_hover_color, 0%);
+            i{
+                .ifNotEmpty(color, @icon_color);
+                .ifNotEmpty(border-color, @borders_color);
+            }
+        }
+    }
+    &:hover,
+    &:focus {        
+        &,&>span{
+            .ifNotEmpty(color, @font_hover_color);                
+        }
+        .ifNotEmpty(border-color, @borders_hover_color);
+        .ifNotEmptyFade(background-color, @font_hover_color, 18%);
+        i {
+            .ifNotEmpty(color, @icon_hover_color);
+            .ifNotEmpty(border-color, @borders_hover_color);
+        }
+    }
+
+    &.button3d {
+        .ifNotEmptyCustom(box-shadow, @borders_color, 0 3px 0px @borders_color);
+        &:hover {
+            .ifNotEmptyCustom(box-shadow, @borders_color, 0 0px 0px @borders_color);
+        }
+    }    
+}
