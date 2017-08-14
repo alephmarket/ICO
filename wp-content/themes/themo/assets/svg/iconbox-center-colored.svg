@@ -1,0 +1,5 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="1040" height="200" enable-background="new 0 0 1040 200" xml:space="preserve">
+<path fill="@color1" d="M1039.9,46v154H0L0,46h475l0,0c0,24.8,20.2,45,45,45s45-20.2,45-45l0,0h475H1039.9z"/>
+<circle fill="@color2" cx="520" cy="46" r="@radius"/>
+</svg>
