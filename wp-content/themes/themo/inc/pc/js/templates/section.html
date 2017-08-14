@@ -1,0 +1,71 @@
+<script type="text/ng-template" id="nodes_renderer.html">
+    <div class="tree-node" ui-tree-handle ng-mouseenter="layerMouseenter(node)" ng-mouseleave="layerMouseleave(node)">        
+        <div class="tree-type pc-layer-type {{::node.type}} icon"></div>
+        <div class="tree-node-content"> 
+                <a class="toggle-collapsed" ng-if="node.nodes && node.nodes.length > 0" data-nodrag="" ng-click="toggle(this)"><span class="glyphicon glyphicon-chevron-right" ng-class="{'glyphicon-chevron-right': collapsed, 'glyphicon-chevron-down': !collapsed}"></span></a>
+                <input ng-click="" ng-model="node.title" value="{{node.title}}" data-nodrag="" >
+                <a class="preview-btn icon" ng-class="{active:node.preview === false}" title="preview layer" data-nodrag ng-click="togglePreview(node,$event)"></a>
+            
+            <div class="btns type-{{node.type}}" data-nodrag="">
+                <a class="delete-btn icon" title="Delete layer" data-nodrag ng-click="deleteLayerConfirm(node,$event)"></a>
+                <a class="clone-btn icon" title="Clone layer" data-nodrag ng-click="cloneLayer(node)"></a>
+                <a class="edit-btn icon" title="Edit layer" data-nodrag ng-click="editLayer(node)"></a>
+            </div>
+            <div class="pc-confirm" data-nodrag="">
+                <div class="header" ng-bind="::l10n.deleteAskLayer"></div>
+                   <div class="pc-confirm-info" ng-if="node.type=='vc'">{{::l10n.deleteVC}}</div>
+                    <a class="button confirm" ng-click="deleteLayer(node)"><span ng-bind="::l10n.delete"></span></a>
+                    <a class="button cancel"><span ng-bind="::l10n.cancel"></span></a>
+                </div>
+        </div>
+    </div>
+    <div ui-tree>
+        <ol ui-tree-nodes="" ng-model="node.nodes" ng-class="{hidden: collapsed}">
+            <li ng-repeat="node in node.nodes" ui-tree-node ng-include="'nodes_renderer.html'">
+            </li>
+        </ol>	
+    </div>
+</script> 
+
+<div class="pc-add-layer">
+    <a href="" class="button add-layer" ng-click="toggleBtnPanel(this)"><i class="icon"></i><span ng-bind="::l10n.addNewLayer"></span></a>
+    
+    <div class="pc-panel-layers" ng-if="collapsedBtnPanel"> 
+        <ul ng-cloak>
+            <li><a href="" ng-click="addLayer('image')"><span class="pc-layer-type image icon"></span> <i ng-bind="::l10n.addLayer.image"></i></a>
+            </li>
+            <li><a href="" ng-click="addLayer('multi')"><span class="pc-layer-type multi icon"></span> <i ng-bind="::l10n.addLayer.multi"></i></a>
+            </li>
+            <li><a href="" ng-click="addLayer('text')"><span class="pc-layer-type text icon"></span> <i ng-bind="::l10n.addLayer.text"></i></a>
+            </li>
+            <li><a href="" ng-click="addLayer('text-block')"><span class="pc-layer-type text-block icon"></span> <i ng-bind="::l10n.addLayer.textblock"></i></a>
+            </li>
+            <li><a href="" ng-click="addLayer('audio')"><span class="pc-layer-type audio icon"></span> <i ng-bind="::l10n.addLayer.audio"></i></a>
+            </li>
+            <!--<li><a href="" ng-click="addLayer('shape')"><span class="pc-layer-type shape icon"></span><i ng-bind="::l10n.addLayer.shape"></i></a>
+            </li>-->
+            <li><a href="" ng-click="addLayer('nullobject')"><span class="pc-layer-type nullobject icon"></span><i ng-bind="::l10n.addLayer.nullobject"></i></a>
+            </li>
+        </ul>
+    </div>
+    
+</div>		
+
+<div ng-controller="treeCtrl">
+    <div ui-tree id="tree-root" data-max-depth="3">
+        <a class="show-all-btn icon" title="show all" ng-click="togglePreviewAll('show')"></a>
+        <a class="hide-all-btn icon" title="hide all" ng-click="togglePreviewAll('hide')"></a>
+        <a class="toggle-all-btn icon" title="inverse seletcted" ng-click="togglePreviewAll('toggle')"></a>
+        <ol ui-tree-nodes="" ng-model="data.currentSection.nodes">
+            <li ng-repeat="node in data.currentSection.nodes" ui-tree-node ng-include="'nodes_renderer.html'" ></li>
+        </ol>
+    </div>
+</div>
+<div class="import-tools">
+    <textarea style="width:100%;position:relative;z-index:2; height:150px">{{ data.currentSection.nodes | json }}</textarea>
+    <textarea style="width:100%;position:relative;z-index:2;  height:150px" ng-model="import"></textarea>
+    <input style="width:100%;position:relative;z-index:2;" ng-model="importOffset" ng-init="0"></input>
+    <button style="position:relative;z-index:2;" ng-click="importLayers()">import</button>
+    <button style="position:relative;z-index:2;" ng-click="deleteAllLayers()">deleteAllLayers</button>
+    <button style="position:relative;z-index:2;" ng-click="hideShowAllLayers()">hideShowAllLayers</button>
+</div>

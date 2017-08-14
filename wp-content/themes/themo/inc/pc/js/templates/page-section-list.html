@@ -1,0 +1,8 @@
+<ul class="pc-sections-list">
+    <li ng-repeat="section in data.sections">
+        <a href="" ng-class="::{'section-global':section.type == 'global'}" ng-click="selectSection(section)" ng-dbclick="editSection()">                       
+            <span class="count"><span ng-bind="::section | countChild"></span></span>
+        </a>        
+        <input ng-model="section.title" value="{{section.title}}" >
+    </li>
+</ul>
