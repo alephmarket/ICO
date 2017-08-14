@@ -1,0 +1,77 @@
+// sourceMap:true, out: ../css/
+@import "shortcodes-custom-helpers";
+
+#@{id}.ideo-pricing-table{
+    .ifNotEmpty(color, @features_text_color);
+    .ifNotEmpty(background-color, @background_color);
+    .ifNotEmptyBorder(border-top, @borders_color, solid 3px);
+    .ifNotEmptyBorder(border-bottom, @borders_color, solid 3px);
+    .ifNotEmptyBorder(border-left, @side_borders_color, solid 1px);
+    .ifNotEmptyBorder(border-right, @side_borders_color, solid 1px);
+    .title{
+        .ifNotEmpty(color, @title_color);
+    }
+    .subtitle{
+        .ifNotEmpty(color, @subtitle_color);
+    }
+    .price{   
+        .ifNotEmpty(background-color, @price_area_background_color);
+        &:after{
+            .ifNotEmptyCustom(border-color, @price_area_background_color, @price_area_background_color transparent transparent transparent);
+        }
+        .amount{
+           .ifNotEmpty(color, @price_amount_unit_color);
+        }
+        .unit{
+           .ifNotEmpty(color, @price_amount_unit_color); 
+        }
+        .peroid{
+            .ifNotEmpty(color, @price_peroid_color);
+        }
+    }
+    .icon{       
+        .ifNotEmpty(color, @icon_color);
+    }    
+    ul{
+        
+        li{
+            &+li{
+                .ifNotEmptyBorder(border-top, @features_separator_color, solid 1px);
+            }
+            &:last-child{
+                .ifNotEmptyBorder(border-bottom, @features_separator_color, solid 1px);
+            }
+        }
+    }
+    
+    &.highlight-table{
+        .ifNotEmpty(background-color, @background_color);
+        .ifNotEmptyBorder(border-top, @borders_color, solid 3px);
+        .ifNotEmptyBorder(border-bottom, @borders_color, solid 3px);
+        .title{
+            .ifNotEmpty(color, @title_color);
+        }
+        .subtitle{
+            .ifNotEmpty(color, @subtitle_color);
+        }
+        .icon{  
+            .ifNotEmpty(color, @icon_color);
+        }
+        .price{ 
+            .ifNotEmpty(background-color, @price_area_background_color);
+            &:after{
+                .ifNotEmptyCustom(border-color, @price_area_background_color, @price_area_background_color transparent transparent transparent);
+            }
+            .amount{
+               .ifNotEmpty(color, @price_amount_unit_color);
+            }
+            .unit{
+               .ifNotEmpty(color, @price_amount_unit_color); 
+            }
+            .peroid{
+                .ifNotEmpty(color, @price_peroid_color);
+            }
+        }
+    }
+}
+

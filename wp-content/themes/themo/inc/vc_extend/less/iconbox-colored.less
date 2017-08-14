@@ -1,0 +1,33 @@
+// sourceMap:true, out: ../css/
+
+&.ideo-iconbox {    
+    color:@text_color;
+    background-color: @background_color;
+    border-bottom: solid 2px @accent_color;
+    
+    .icon{  
+        color: @alternative_title_color;
+         &:after{
+             border-bottom: solid 2px @accent_color;   
+         }
+    }
+    &.btn-off{
+        padding: 1em 1em 40px;
+    }
+    
+    
+    &.type-small-icon {        
+        .icon {
+            background-color: @accent_color;
+            border:solid 1px @accent_color;
+        }
+    }
+    
+    h4{
+        color:@title_color;
+        border-bottom: solid 1px fade(@title_color, 18%);
+    }
+    p{
+        color:@text_color;
+    }
+}

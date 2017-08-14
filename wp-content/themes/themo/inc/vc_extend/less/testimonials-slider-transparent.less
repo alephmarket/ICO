@@ -1,0 +1,37 @@
+// sourceMap:true, out: ../css/
+&.ideo-testimonials-slider {
+    
+    .item {
+        color: @text_color;       
+        .image {            
+            img {
+                border-color: fade(@text_color,18%);
+            }
+        }
+        blockquote {            
+            .content {
+               &, *{
+                    color: @text_color;        
+                }
+            }
+            .author {
+                color: @accent_color;
+            }
+            .company {
+                color: @text_color;
+                
+            }
+        }
+       
+        &.image-bottom {           
+            img {               
+                border-color: fade(@text_color,18%);
+            }
+        }
+    }
+    .carousel-control {        
+        color: @text_color;
+        background: transparent;
+        
+    }
+}

@@ -1,0 +1,41 @@
+// sourceMap:true, out: ../css/
+@animation-time: 200ms ease-in-out;
+
+&.ideo-progress-bar{
+     &.rounded{
+         .number{
+             border-radius: 150px;
+         }
+     }
+    .bar{
+        background-color: fade(@background_color, 10%);
+        .cover{
+            position: relative;
+            background-color: @accent_color;
+            .number{
+                left: 100%;
+                background-color: @accent_color;
+                color: @alternative_title_color;             
+                -webkit-transform: translate(-50%, -10px);
+                transform: translate(-50%, -10px);
+                padding: 0.3em 1em;
+                bottom: 100%;
+                &:after {
+                    content: "";
+                    position: absolute;
+                    left: 50%;
+                    margin-left: -7px;
+                    width: 0px;
+                    bottom: -4px;
+                    height: 0px;
+                    border-style: solid;
+                    border-width: 7px 7px 0px;
+                    border-color: @accent_color transparent transparent;
+                }
+            }
+            .title{
+                color: @alternative_title_color;
+            }
+        }
+    }
+}

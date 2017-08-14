@@ -1,0 +1,37 @@
+// sourceMap:true, out: null
+@import "shortcodes-custom-helpers";
+
+#@{id}.ideo-team-box-caption {
+    .image{
+        .overlay{
+            .ifNotEmpty(color, @hover_icon_color);
+        }
+        
+    }
+    .name-position{  
+        .name{
+            .ifNotEmpty(color, @name_color);
+        }
+        .position{
+            .ifNotEmpty(color, @position_color);
+        }
+    }
+    
+    .social{      
+        .ifNotEmptyBorder(border-bottom, @border_color, solid 1px);
+        a{
+            .ifNotEmpty(color, @social_icon_color);
+
+        }
+        
+    }
+    
+    .caption{
+        &, *{
+            .ifNotEmpty(color, @description_color);        
+        }
+    }
+    
+}
+
+

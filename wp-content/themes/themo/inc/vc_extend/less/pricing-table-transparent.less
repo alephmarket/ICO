@@ -1,0 +1,139 @@
+// sourceMap:true, out: ../css/
+
+&.ideo-pricing-table{
+    color: @text_color;
+    border-top: solid 3px fade(@title_color,25%);
+    border-bottom: solid 3px fade(@title_color,25%);
+    border-left: solid 1px fade(@title_color,25%);
+    border-right: solid 1px fade(@title_color,25%);
+    .title{
+        color: @accent_color;
+    }
+    .subtitle{
+        color: @title_color;
+    }
+    .price{   
+        background-color: fade(@title_color,10%); 
+        &:after{
+            border-color: fade(@title_color,10%) transparent transparent transparent;
+        }
+        .amount{
+           color: @accent_color;
+        }
+        .unit{
+           color: @accent_color; 
+        }
+        .peroid{
+            color: @accent_color;
+        }
+    }
+    .icon{       
+        color: @accent_color;
+    }    
+    ul{
+        padding: 0;
+        margin: 0 3.5%;
+        li{
+            &+li{
+                border-top:solid 1px fade(@text_color,25%);                
+            }
+            &:last-child{
+                border-bottom: solid 1px fade(@text_color,25%);
+            }
+        }
+    }
+    .button-wrap{
+        margin: 10px 0;
+    }
+    &.btn-off{
+        ul{
+            li{
+                &:last-child{
+                    border-bottom: 0px !important;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+    
+    &.highlight-table{
+        color: @text_color;
+        border-top: solid 3px @accent_color;
+        border-bottom: solid 3px @accent_color; 
+        .header{ 
+            background-color: fade(@text_color,10%);
+            margin: 3.5% 3.5% 0;
+        }
+        .title{  
+            color: @accent_color;
+        }
+        .subtitle{
+            color: @title_color;
+        }
+        .icon{  
+            color: @accent_color;
+        }
+        .price{ 
+            background-color: transparent; 
+            &:after{
+                width: 50%;
+                top:inherit;
+                left: inherit;
+                right: 0;
+                margin: 0;
+                bottom:-12px;
+                border-width: 12px 0 12px 12px;
+                border-color: transparent transparent fade(@text_color,10%) transparent;
+            }
+            &:before{
+                position: absolute;
+                bottom:-12px;
+                left: 0;
+                width: 50%;
+                content: "";
+                display: block;
+                border-width: 12px 12px 12px 0;
+                border-color: transparent transparent fade(@text_color,10%) transparent;
+                border-style: solid;
+            }
+            .amount{
+               color: @accent_color;
+            }
+            .unit{
+               color: @accent_color; 
+            }
+            .peroid{
+                color: @accent_color;
+            }
+        }
+        ul{ 
+            background-color: fade(@text_color,10%); 
+            margin: 0 3.5%;
+            padding: 0 10px;
+            li{
+                &+li{
+                    border-top:solid 1px fade(@text_color,25%);                
+                }
+                &:last-child{
+                    border-bottom: solid 1px fade(@text_color,25%);
+                }
+            }
+        }
+        &.btn-off{
+        ul{
+            li{
+                &:last-child{
+                    border-bottom: 0px !important;
+                    margin-bottom: 3.5%;
+                }
+            }
+        }
+    }
+        .button-wrap{
+            margin: 0px 3.5% 3.5%;
+            padding-top: 10px;
+            background-color: fade(@text_color,10%);  
+        }
+    }
+}
+

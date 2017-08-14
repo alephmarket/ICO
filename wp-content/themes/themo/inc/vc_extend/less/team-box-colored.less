@@ -1,0 +1,34 @@
+// sourceMap:true, out: null
+
+&.ideo-team-box {    
+    
+    .image{
+        .overlay{
+            background-color: fade(@background_color,60%);
+        }
+        
+    }
+    .name-position{
+        .name{
+            color: @title_color;
+        }
+        .position{
+            color: @text_color;
+        }
+    }
+    .social{
+        a{            
+            &:hover{
+                .icon{
+                    color: @accent_color;
+                    background-color: @alternative_title_color;
+                }
+            }
+
+        }
+        .icon{            
+            color: @alternative_title_color;
+            background-color: @accent_color;
+        }
+    }
+}

@@ -1,0 +1,68 @@
+// sourceMap:true, out: ../css/
+
+.ideo-counter{
+    position: relative;
+    display: block; 
+    text-align: center;
+    margin-bottom: 30px;
+   .circle{
+       display: table;      
+       width: 100%;  
+       padding: 1em;
+       
+       .number-icon{
+           position: relative;
+           display: table-cell;
+           vertical-align: middle;
+           width: 100%;          
+           .number-unit{
+               font-size: 35px;
+               line-height: 1.45em;
+               display: inline-block;
+               padding: 0 0.1em 0.1em;
+               margin-bottom: 0;
+               border-bottom: solid 5px;
+           }
+           .description{
+               margin: 0.3em 0 0;
+               font-size: 20px;
+           }
+       }
+   }
+}
+
+&.colored-dark {
+    @accent_color: @colored_dark_accent_color;
+    @title_color: @colored_dark_title_color;
+    @text_color: @colored_dark_text_color;
+    @icon_color: @colored_dark_icon_color;
+    @background_color: @colored_dark_background_color;
+    @alternative_title_color: @colored_dark_alternative_title_color;
+    @import (multiple) 'counter-colored.less';
+}
+
+&.colored-light {
+    @accent_color: @colored_light_accent_color;
+    @title_color: @colored_light_title_color;
+    @text_color: @colored_light_text_color;
+    @icon_color: @colored_light_icon_color;
+    @background_color: @colored_light_background_color;
+    @alternative_title_color: @colored_light_alternative_title_color;
+    @import (multiple) 'counter-colored.less';
+}
+
+&.transparent-dark {
+    @accent_color: @transparent_dark_accent_color;
+    @title_color: @transparent_dark_title_color;
+    @text_color: @transparent_dark_text_color;
+    @icon_color: @transparent_dark_icon_color;
+    @import (multiple) 'counter-transparent.less';
+}
+
+&.transparent-light {
+    @accent_color: @transparent_light_accent_color;
+    @title_color: @transparent_light_title_color;
+    @text_color: @transparent_light_text_color;
+    @icon_color: @transparent_light_icon_color;
+    @import (multiple) 'counter-transparent.less';
+}

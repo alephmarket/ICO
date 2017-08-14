@@ -1,0 +1,55 @@
+// sourceMap:true, out: ../css/
+@darken: #222;
+
+&.button {
+    border-color: @accent_color;
+    
+    &.colored-dark-to-transparent-invert,&.colored-light-to-transparent-invert{
+        color: @accent_color;
+        background: transparent;
+        &:hover,
+        &:focus { 
+            color: @alternative_title_color;  
+            background: @accent_color;  
+             i{
+                 color: @alternative_title_color;
+             }
+        }
+        i {
+           color: @accent_color;      
+        }
+    }
+    
+    &.colored-dark-to-transparent,&.colored-light-to-transparent{
+        color: @alternative_title_color; 
+        background: @accent_color;
+        &:hover,
+        &:focus { 
+            color: @accent_color;
+            background: transparent;  
+        }
+    }
+    
+    &:hover,
+    &:focus {        
+        color: @accent_color;
+        border-color: @accent_color;  
+        i {
+            color: @accent_color;
+            border-color: fade(@accent_color,50%);  
+        }
+    }
+    
+    i{  
+        color: @alternative_title_color;
+        border-color: fade(@alternative_title_color,50%);     
+    }   
+    &.button3d {
+        position: relative;
+        box-shadow: 0 3px 0px @accent_color - #222;
+        
+        &:hover {                      
+            box-shadow: 0 0px 0px @accent_color - #222;
+        }
+    }    
+}

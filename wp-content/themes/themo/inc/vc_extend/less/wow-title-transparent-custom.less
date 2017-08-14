@@ -1,0 +1,36 @@
+// sourceMap:true, out: ../css/
+@import "shortcodes-custom-helpers";
+
+#@{id}.ideo-wow-title {  
+    .title{
+        .ifNotEmpty(color, @title_color);
+        .ifNotEmpty(border-color, @border_color);
+    }
+    .title-bg{
+        background-color: transparent;
+    }
+    &.style-simple{ 
+        .title{
+                      
+        }
+        .title-bg{            
+            
+        }
+    }    
+    &.style-icon{
+        .title-icon{
+            .ifNotEmpty(color, @icon_color);  
+            .icon{
+                
+            }
+        }
+    }
+    &.style-underlined{
+        .title{
+            .ifNotEmpty(border-color, @underline_color);
+            &:after{                
+                .ifNotEmpty(border-color, @underline_accent_color);
+            }
+        }
+    }
+}

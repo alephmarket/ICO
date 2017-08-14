@@ -1,0 +1,78 @@
+// sourceMap:true, out: ../css/
+@import "shortcodes-custom-helpers";
+@darken: #222;
+
+#@{id}.button {
+    &{
+        &:not(:hover){
+            &, &>span{
+                .ifNotEmpty(color, @font_color);            
+            }
+            .ifNotEmpty(background, @background_color);
+            .ifNotEmpty(border-color, @borders_color);            
+            i{            
+                .ifNotEmpty(color, @icon_color);
+                .ifNotEmptyFade(border-color, @font_hover_color, 50%);
+            }
+        }
+
+    }
+
+    &.colored-dark-to-transparent-invert,&.colored-light-to-transparent-invert{
+        &:not(:hover){
+            .ifNotEmpty(color, @font_color);
+            .ifNotEmpty(background, @background_color);
+            .ifNotEmpty(border-color, @borders_color);
+        }
+        &:hover,
+        &:focus { 
+            &,&>span{
+                .ifNotEmpty(color, @font_hover_color);                
+            }
+            .ifNotEmpty(background, @background_hover_color);
+            .ifNotEmpty(border-color, @borders_hover_color);
+        }
+        &.button3d {
+            .ifNotEmptyCustom(box-shadow, @borders_color, 0 3px 0px @borders_color);
+            &:hover {
+                .ifNotEmptyCustom(box-shadow, @borders_color, 0 0px 0px @borders_color);
+            }
+        } 
+    }
+    
+    &.colored-dark-to-transparent,&.colored-light-to-transparent{
+        &:not(:hover){
+            .ifNotEmpty(color, @font_color);
+            .ifNotEmpty(background, @background_color);
+            .ifNotEmpty(border-color, @borders_color);
+        }
+        &:hover,
+        &:focus { 
+            &,&>span{
+                .ifNotEmpty(color, @font_hover_color);                
+            }
+            .ifNotEmpty(background, @background_hover_color);
+            .ifNotEmpty(border-color, @borders_hover_color);
+        }
+    }
+    
+    &:hover,
+    &:focus {        
+        &,&>span{
+            .ifNotEmpty(color, @font_hover_color);                
+        }
+        .ifNotEmpty(border-color, @borders_hover_color);
+        .ifNotEmpty(background, @background_hover_color);
+        i {
+            .ifNotEmpty(color, @icon_hover_color);
+            .ifNotEmptyFade(border-color, @font_hover_color, 50%);
+        }
+    }
+
+    &.button3d when not (@background_color = undefined) {
+        box-shadow: 0 3px 0px darken(@background_color, 20%);
+        &:hover {
+            box-shadow: 0 0px 0px darken(@background_color, 20%);
+        }
+    }    
+}

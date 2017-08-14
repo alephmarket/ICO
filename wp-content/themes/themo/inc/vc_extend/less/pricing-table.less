@@ -1,0 +1,155 @@
+// sourceMap:true, out: ../css/
+@animation-time: 100ms ease-out;
+
+.ideo-pricing-table{
+    margin-top: 20px;
+    text-align: center;    
+    line-height: 1;
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+    .header{   
+        padding-top: 30px;
+        padding-bottom: 30px;
+        .icon{
+            display: block;
+            font-size: 35px;
+            &.custom{
+                margin-top: -17px;
+                height: 150px;
+                background-size: contain;
+                background-position: center center;
+            }
+        }
+        .icon + .title{
+            margin-top: 10px;
+        }
+        .title{
+            margin: 0;        
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 1;
+        }
+        .subtitle{
+            margin: 10px 0 0;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 1;
+        }
+        
+    }
+    .price{
+        position: relative;
+        display: block;
+        font-size: 40px; 
+        font-weight: 700;
+        padding: 14px;
+        margin: 0 3.5% 12px;
+        &:after{
+            position: absolute;
+            top:100%;
+            left: 50%;
+            content: "";
+            display: block;
+            border-width: 12px;
+            margin-left: -12px;
+            border-style: solid;
+            
+        }
+        .amount{
+           
+        }
+        .unit{
+          
+        }
+        .peroid{
+            margin-top: 0.35em;
+            font-size: 14px;
+            font-weight: 400;
+            display: block;
+        }
+    }
+    p{
+        margin: 0;
+    }
+    
+    ul{
+        margin: 0;
+        padding: 0 17px;
+        list-style: none;
+        font-size: 15px;
+        li{
+            padding: 18px;
+            margin: 0;
+            text-indent: inherit;
+        }
+    }
+    .button-wrap{
+        margin: 10px 0;
+    }
+    
+    &.highlight-table{
+        margin-top: 0px;
+        .title{ 
+        }
+        .subtitle{
+        }
+        .icon{  
+            font-size: 40px;
+        }
+        .price{ 
+            font-size: 60px;
+            font-weight: 700;
+            padding: 17px;
+            @media (max-width:991px){
+                font-size: 45px;
+            }
+            &:after{  
+            }
+            .amount{
+            }
+            .unit{
+            }
+            .peroid{
+                margin-top: 0.4em;
+            }
+        }
+    }
+}
+
+
+
+&.colored-dark {
+    @accent_color: @colored_dark_accent_color;
+    @title_color: @colored_dark_title_color;
+    @text_color: @colored_dark_text_color;
+    @icon_color: @colored_dark_icon_color;
+    @background_color: @colored_dark_background_color;
+    @alternative_title_color: @colored_dark_alternative_title_color;
+    @import (multiple) 'pricing-table-colored.less';
+}
+
+&.colored-light {
+    @accent_color: @colored_light_accent_color;
+    @title_color: @colored_light_title_color;
+    @text_color: @colored_light_text_color;
+    @icon_color: @colored_light_icon_color;
+    @background_color: @colored_light_background_color;
+    @alternative_title_color: @colored_light_alternative_title_color;
+    @import (multiple) 'pricing-table-colored.less';
+}
+
+&.transparent-dark {
+    @accent_color: @transparent_dark_accent_color;
+    @title_color: @transparent_dark_title_color;
+    @text_color: @transparent_dark_text_color;
+    @icon_color: @transparent_dark_icon_color;
+    @import (multiple) 'pricing-table-transparent.less';
+}
+
+&.transparent-light {
+    @accent_color: @transparent_light_accent_color;
+    @title_color: @transparent_light_title_color;
+    @text_color: @transparent_light_text_color;
+    @icon_color: @transparent_light_icon_color;
+    @import (multiple) 'pricing-table-transparent.less';
+}

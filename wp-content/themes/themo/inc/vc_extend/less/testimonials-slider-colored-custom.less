@@ -1,0 +1,44 @@
+// sourceMap:true, out: ../css/
+@import "shortcodes-custom-helpers";
+
+#@{id}.ideo-testimonials-slider,
+#@{id}_2.ideo-testimonials-slider {
+    .carousel-inner{
+        .ifNotEmpty(background-color, @background_color);                
+    }
+    .item {
+        .ifNotEmpty(color, @quote_color);      
+        .image {            
+            img {
+                .ifNotEmpty(border-color, @author_image_border_color);
+            }
+        }
+        blockquote {            
+            .content {
+               &, *{
+                    .ifNotEmpty(color, @quote_color);        
+                }
+            }
+            .author {
+                .ifNotEmpty(color, @author_text_color);
+            }
+            .company {
+                .ifNotEmpty(color, @company_text_color);
+                
+            }
+        }
+       
+        &.image-bottom {           
+            img {               
+                .ifNotEmpty(border-color, @author_image_border_color);
+            }
+        }
+    }
+    .carousel-control {  
+        .ifNotEmpty(color, @navigation_arrows_color);
+        .ifNotEmpty(background, @navigation_background_color);
+        &:before{
+            .ifNotEmpty(background, @navigation_background_hover_color);
+        }
+    }
+}

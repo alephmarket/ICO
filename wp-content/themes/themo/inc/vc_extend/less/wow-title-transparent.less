@@ -1,0 +1,42 @@
+// sourceMap:true, out: ../css/
+&.ideo-wow-title {  
+    .title{
+        color: @title_color;  
+        border-color: @accent_color;
+    }
+    .title-bg{
+        background-color: transparent;
+    }
+    &.style-simple{ 
+        .title{
+                      
+        }
+        .title-bg{            
+            
+        }
+    }    
+    &.style-icon{
+        .title-icon{
+            color: @icon_color;  
+            .icon{
+                
+            }
+        }
+    }
+    &.style-underlined{
+        .title{
+            border-color: @title_color;
+            &:after{                
+                border-color: @accent_color;
+            }
+        }
+    }
+
+    &.style-simple:not(.with-border),
+    &.style-icon,
+    &.style-underlined {
+        .title-bg {
+            padding: 0.21em 0;
+        }
+    }
+}

@@ -1,0 +1,60 @@
+// sourceMap:true, out: ../css/
+.column-text-styled{
+    padding: 20px 25px 10px;
+    &.align-left {
+        @media(min-width: 768px){
+            text-align: left;
+        }
+    }
+    &.align-right {
+        @media(min-width: 768px) {
+            text-align: right;
+        }
+    }
+    &.align-center {
+        @media(min-width: 768px) {
+            text-align: center;
+        }
+    }
+    &.mobile-align-left {
+        @media(max-width: 767px){
+            text-align: left;
+        }
+    }
+    &.mobile-align-right {
+        @media(max-width: 767px) {
+            text-align: right;
+        }
+    }
+    &.mobile-align-center {
+        @media(max-width: 767px) {
+            text-align: center;
+        }
+    }
+}
+
+&.colored-dark{
+    @accent_color: @colored_dark_accent_color;
+    @text_color: @colored_dark_text_color;
+    @background_color: @colored_dark_background_color;
+    @import (multiple) 'column-text-styled-colored.less';
+}
+
+&.colored-light {
+    @accent_color: @colored_light_accent_color;
+    @text_color: @colored_light_text_color;
+    @background_color: @colored_light_background_color;
+    @import (multiple) 'column-text-styled-colored.less';
+}
+
+&.transparent-dark {
+    @text_color: @transparent_dark_text_color;
+    @accent_color: @transparent_dark_accent_color;
+    @import (multiple) 'column-text-styled-transparent.less';
+}
+
+&.transparent-light {
+    @text_color: @transparent_light_text_color;
+    @accent_color: @transparent_light_accent_color;
+    @import (multiple) 'column-text-styled-transparent.less';
+}

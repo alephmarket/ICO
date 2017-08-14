@@ -1,0 +1,97 @@
+// sourceMap:true, out: ../css/
+
+&.ideo-pricing-table{
+    color: @text_color;
+    background-color:  @background_color;
+    border-top: solid 3px @accent_color;
+    border-bottom: solid 3px @accent_color;
+    margin-top: 20px; 
+    .title{
+        color: @title_color;
+    }
+    .subtitle{
+        color: @title_color;
+    }
+    .price{   
+        background-color: @accent_color;
+        &:after{
+            border-color: @accent_color transparent transparent transparent;
+        }
+        .amount{
+           color: @alternative_title_color;
+        }
+        .unit{
+           color: @alternative_title_color; 
+        }
+        .peroid{
+            color: @alternative_title_color;
+        }
+    }
+    .icon{       
+        color: @accent_color;
+    }    
+    ul{
+        
+        li{
+            &+li{
+                border-top: solid 1px fade(@text_color,25%);                
+            }
+            &:last-child{
+                border-bottom: solid 1px fade(@text_color,25%);
+            }
+        }
+    }
+    &.btn-off{
+        ul{
+            li{
+                &:last-child{
+                    border-bottom: 0px !important;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+    &.highlight-table{
+        color: @alternative_title_color;
+        background-color: @accent_color;
+        border-top: solid 3px @background_color;
+        border-bottom: solid 3px @background_color;
+        margin-top: 0px; 
+        .title{  
+            color: @alternative_title_color;
+        }
+        .subtitle{
+            color: @alternative_title_color;
+        }
+        .icon{  
+            color: @alternative_title_color;
+        }
+        .price{ 
+            background-color: @background_color;
+            &:after{                
+                border-color: @background_color transparent transparent transparent;
+            }
+            .amount{
+               color: @accent_color;
+            }
+            .unit{
+               color: @accent_color; 
+            }
+            .peroid{
+                color: @title_color;
+            }
+        }
+        ul{
+        
+            li{
+                &+li{
+                    border-top: solid 1px fade(@alternative_title_color,25%);                
+                }
+                &:last-child{
+                    border-bottom: solid 1px fade(@alternative_title_color,25%);
+                }
+            }
+        }
+    }
+}
+

@@ -1,0 +1,126 @@
+// sourceMap:true, out: ../css/
+@import "shortcodes-custom-helpers";
+@darken: #222;
+
+#@{id}.ideo-contact-form7{
+    .ifNotEmpty(color, @text_color); 
+    .wpcf7-form-control-wrap{
+        &[class*=" menu-"]{
+            .ifNotEmpty(background-color, @background_color);            
+            &:after{               
+                .ifNotEmpty(background, @active_borders_color);
+            }
+            select{
+                background-color: transparent;
+            }
+        }
+        
+        &[class*=" checkbox-"],
+        &[class*=" acceptance-"],
+        &[class*=" quiz-"],
+        &[class*=" file-"],
+        &[class*=" range-"],
+        &[class*=" radio-"]{
+            .ifNotEmpty(color, @placeholder_color);
+            &::-moz-placeholder {
+                .ifNotEmpty(color, @placeholder_color);
+                opacity: 1;
+            }
+            &:-ms-input-placeholder { .ifNotEmpty(color, @placeholder_color); }
+            &::-webkit-input-placeholder  { .ifNotEmpty(color, @placeholder_color); }
+            .ifNotEmpty(background-color, @background_color); 
+        }
+        &[class*=" quiz-"]{
+            input[type="text"]{
+                .ifNotEmptyBorder(border, @text_color, solid 1px, 50%);
+            }
+        }
+    }
+    p{
+        .ifNotEmpty(color, @text_color); 
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="number"],
+    input[type="tel"],
+    input[type="url"],
+    input[type="date"],
+    input[type="phone"],
+    textarea,
+    select{
+        .ifNotEmpty(color, @text_color);
+        &::-moz-placeholder {
+            .ifNotEmpty(color, @placeholder_color);
+            opacity: 1;
+        }
+        &:-ms-input-placeholder { .ifNotEmpty(color, @placeholder_color); }
+        &::-webkit-input-placeholder  { .ifNotEmpty(color, @placeholder_color); }
+        .ifNotEmpty(background-color, @background_color);       
+        &:focus{
+            .ifNotEmptyCustom(box-shadow, @active_borders_color, 0 0 0 2px @active_borders_color);
+        }
+        option{
+            color: #000;
+            line-height: 30px;
+        }
+        &.wpcf7-not-valid{
+            .ifNotEmptyCustom(outline, @alert_border_color, solid 2px @alert_border_color);
+        }
+        &[multiple]{
+            .ifNotEmptyImportant(background-color, @background_color);
+            option{
+                .ifNotEmpty(color, @text_color); 
+                background-color: transparent;
+            }
+        }
+    }
+    input[type="submit"]{
+        .ifNotEmpty(background, @active_borders_color);
+        &:hover, &:focus {
+        }
+    }
+    
+    &.button-type-button3d input[type="submit"] when not (@active_borders_color = undefined) {
+        box-shadow: 0 3px 0px @active_borders_color - @darken;
+        &:hover {
+            box-shadow: 0 0px 0px @active_borders_color - @darken;
+        }
+    }
+    
+    .underline-style{
+        .wpcf7-form-control-wrap{           
+
+            &[class*=" checkbox-"],
+            &[class*=" acceptance-"],
+            &[class*=" quiz-"],
+            &[class*=" file-"],
+            &[class*=" range-"],
+            &[class*=" radio-"]{
+                .ifNotEmptyBorder(border-bottom, @active_borders_color, solid 1px);
+            }
+            &[class*=" quiz-"]{
+                input[type="text"]{
+                    .ifNotEmptyBorder(border-bottom, @active_borders_color, solid 1px);
+                }
+            }
+        }
+        
+        input[type="text"],
+        input[type="email"],
+        input[type="number"],
+        input[type="tel"],
+        input[type="url"],
+        input[type="date"],
+        input[type="phone"],
+        select,
+        textarea{
+            .ifNotEmptyBorder(border-bottom, @active_borders_color, solid 1px);
+            &:focus{
+                border-color: transparent;
+            }
+        }
+        
+    }
+    
+}
+

@@ -1,0 +1,50 @@
+// sourceMap:true, out: ../css/
+@import "shortcodes-custom-helpers";
+@animation-time: 200ms ease-in-out;
+
+#@{id}.accordion, 
+#@{id}_2.accordion{
+
+    .ifNotEmptyBorder(border-bottom, @sections_separators_color, solid 1px);
+    .panel-default {
+        background: transparent;
+        &:first-child{
+            &>.panel-heading {
+                .panel-title a {
+                    &.collapsed{
+                        .ifNotEmptyBorder(border-top, @sections_separators_color, solid 1px);
+                    }
+                }
+            }
+        }
+        &>.panel-heading {
+            .ifNotEmpty(color, @title_color);
+            background-color: transparent;
+            .panel-title a {
+                &:not(.collapsed) {
+                    .ifNotEmptyBorder(border-top, @active_section_border_top_color, solid 2px);
+                    .ifNotEmpty(color, @active_section_title_color);
+                }
+                &.collapsed{
+                    .ifNotEmptyBorder(border-top, @sections_separators_color, solid 1px);
+                    .ifNotEmpty(color, @title_color);
+                    background-color: transparent;
+                }
+                &:after {
+                    
+                }
+            }
+        }
+    }
+    &.panel-group {
+        .panel {
+            
+            & + .panel {
+               
+            }
+        }
+        .panel-heading+.panel-collapse .panel-body {
+            
+        }
+    }
+}

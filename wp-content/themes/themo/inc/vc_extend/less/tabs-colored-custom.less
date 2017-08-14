@@ -1,0 +1,108 @@
+// sourceMap:true, out: ../css/
+@import "shortcodes-custom-helpers";
+
+#@{id}.container-tabs,
+#@{id}_2.container-tabs {
+    .tab-content {
+        .ifNotEmpty(color, @title_color);
+        .ifNotEmpty(background, @background_color);
+    }
+    .nav-tabs {
+        & > li {
+            .ifNotEmpty(background, @inactive_title_background_color);
+            &:hover when not (@inactive_title_background_color = undefined){
+                background:  @inactive_title_background_color - #222;           
+            }
+            &.active {
+                .ifNotEmpty(background-color, @background_color);
+                a {
+                    .ifNotEmpty(color, @title_color);
+                    background: none;
+                }
+                .blurbox{
+                    a{
+                        .ifNotEmptyImportant(background, @background_color);
+                    }
+                }
+            }
+            .blurbox{
+                a{
+                    .ifNotEmptyImportant(background, @inactive_title_background_color);
+                }
+            }
+            a {
+                .ifNotEmpty(color, @inactive_section_title_color);
+                background: none !important;                
+            }
+        }
+    }
+    &.horizontal {
+        .tab-content {
+            .ifNotEmptyBorder(border-bottom, @border_bottom_block_color, solid 2px);
+        }
+        .nav-tabs {
+            & > li {
+                &.active {
+                    a {
+                        & {
+                            .ifNotEmpty(color, @title_color);
+                            @media (min-width:768px) {
+                                .ifNotEmptyBorder(border-top, @active_title_border_color, solid 2px);
+                            }
+                            html:not([dir="rtl"]) &{
+                                border-right: 0;               
+                            }
+                            [dir="rtl"] &{
+                                border-left:0;                         
+                            }
+                        }
+                    }
+                }
+                &:last-child {
+                    a {
+                        
+                        html:not([dir="rtl"]) &{
+                            border-right: 0;               
+                        }
+                        [dir="rtl"] &{
+                            border-left:0;                         
+                        }
+                    }
+                }
+                a {
+                   // border-top: solid 2px transparent;
+
+                    @media (min-width:768px)  {
+                        .ifNotEmptyBorder(border-right, @inactive_section_title_color, solid 1px, 25%);
+                    }
+                    border-bottom: solid 1px transparent;
+                    @media (max-width:767px) {
+                        .ifNotEmptyBorder(border-bottom, @inactive_section_title_color, solid 1px, 25%);
+                    }
+                }
+            }
+        }
+    }
+    &.vertical {
+        .tab-content {
+            border-bottom: solid 2px @border_bottom_block_color;
+        }
+        .nav-tabs {
+            & > li {
+                &.active {
+                    a {
+                        
+                        border-bottom: solid 0px transparent;
+                        &:before {
+                            .ifNotEmptyBorder(border-left, @active_title_border_color, solid 2px);
+                        }
+                    }
+                }
+                a {
+                    border-right: solid 1px transparent;
+                    .ifNotEmptyBorder(border-bottom, @inactive_section_title_color, solid 1px, 25%);
+                }
+            }
+        }
+    }
+}

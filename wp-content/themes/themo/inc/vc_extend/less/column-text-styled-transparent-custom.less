@@ -1,0 +1,16 @@
+// sourceMap:true, out: ../css/
+@import "shortcodes-custom-helpers";
+
+#@{id}.column-text-styled{
+    &, *:not(a){
+        .ifNotEmpty(color, @text_color);      
+    }
+    .ifNotEmptyCustom(border-bottom, @border_bottom_block_color, solid 1px @border_bottom_block_color);
+    
+    & a {
+        .ifNotEmpty(color, @link_color);
+             &:hover when not (@link_color = undefined){
+                .ifNotEmpty(color, @link_color - #222);
+            }
+        }
+    }

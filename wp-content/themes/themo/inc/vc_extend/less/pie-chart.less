@@ -1,0 +1,77 @@
+// sourceMap:true, out: ../css/
+.ideo-pie-chart {
+    position: relative;
+    display: block;
+    margin-top: 0;
+    margin-right: auto;
+    margin-bottom: 30px;
+    margin-left: auto;
+    text-align: center;
+    border-radius: 50%;
+    .circle {
+        display: table;
+        width: 100%;
+        svg {
+            position: absolute;
+            top: 0;
+            -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+            .bar {}
+        }
+        .number-icon {
+            position: relative;
+            display: table-cell;
+            vertical-align: middle;
+            
+            width: 100%;
+            .icon {
+                margin: 0 0 0.2em;
+                width: auto;
+                height: auto;
+                line-height: 1;
+                font-size: 40px;
+            }
+            .number-unit {
+                display: inline-block;
+                line-height: 1em;
+                font-size: 22px;
+            }
+        }
+    }
+}
+
+&.colored-dark {
+    @accent_color: @colored_dark_accent_color;
+    @title_color: @colored_dark_title_color;
+    @text_color: @colored_dark_text_color;
+    @icon_color: @colored_dark_icon_color;
+    @background_color: @colored_dark_background_color;
+    @alternative_title_color: @colored_dark_alternative_title_color;
+    @import (multiple) 'pie-chart-colored.less';
+}
+
+&.colored-light {
+    @accent_color: @colored_light_accent_color;
+    @title_color: @colored_light_title_color;
+    @text_color: @colored_light_text_color;
+    @icon_color: @colored_light_icon_color;
+    @background_color: @colored_light_background_color;
+    @alternative_title_color: @colored_light_alternative_title_color;
+    @import (multiple) 'pie-chart-colored.less';
+}
+
+&.transparent-dark {
+    @accent_color: @transparent_dark_accent_color;
+    @title_color: @transparent_dark_title_color;
+    @text_color: @transparent_dark_text_color;
+    @icon_color: @transparent_dark_icon_color;
+    @import (multiple) 'pie-chart-transparent.less';
+}
+
+&.transparent-light {
+    @accent_color: @transparent_light_accent_color;
+    @title_color: @transparent_light_title_color;
+    @text_color: @transparent_light_text_color;
+    @icon_color: @transparent_light_icon_color;
+    @import (multiple) 'pie-chart-transparent.less';
+}

@@ -1,0 +1,104 @@
+// sourceMap:true, out: ../css/
+@darken: #222;
+
+
+&.ideo-contact-form7{
+    
+    .wpcf7-form-control-wrap{
+        &[class*=" menu-"]{
+            background-color: @background_color;            
+            &:after{               
+                background: @accent_color;
+            }
+        }
+        
+        &[class*=" checkbox-"],
+        &[class*=" acceptance-"],
+        &[class*=" quiz-"],
+        &[class*=" file-"],
+        &[class*=" range-"],
+        &[class*=" radio-"]{
+            color: @text_color;             
+            background-color: @background_color; 
+        }
+        &[class*=" quiz-"]{
+            input[type="text"]{
+                border:solid 1px fade(@text_color,50%);
+            }
+        }
+    }
+    p{
+        color: @background_color; 
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="number"],    
+    input[type="tel"],
+    input[type="url"],
+    input[type="date"],
+    input[type="phone"],
+    textarea,
+    select{
+        color: @text_color;
+        background-color: @background_color;       
+        &:focus{
+            box-shadow: 0 0 0 2px @accent_color;
+            outline: 0;
+        }
+        option{
+            color: #000;
+            line-height: 30px;
+        }
+        &.wpcf7-not-valid{
+            outline: solid 2px red;
+        }
+        &[multiple]{
+            padding: 0;
+            background-color: @background_color !important; 
+            option{
+                color: @text_color; 
+                background-color: transparent;
+            }
+        }
+    }    
+    input[type="submit"]{
+        background: @accent_color;
+        &:hover, &:focus {
+        }
+    }
+    
+    .underline-style{
+        .wpcf7-form-control-wrap{           
+
+            &[class*=" checkbox-"],
+            &[class*=" acceptance-"],
+            &[class*=" quiz-"],
+            &[class*=" file-"],
+            &[class*=" range-"],
+            &[class*=" radio-"]{              
+                border-bottom: solid 1px @accent_color;
+            }
+            &[class*=" quiz-"]{
+                input[type="text"]{
+                      border-bottom: solid 1px @accent_color;
+                }
+            }
+        }
+        
+        input[type="text"],
+        input[type="email"],
+        input[type="number"],
+        input[type="tel"],
+        input[type="url"],
+        input[type="date"],
+        input[type="phone"],
+        select,
+        textarea{
+            border-bottom: solid 1px @accent_color;
+            &:focus{
+                border-color: transparent;
+            }
+        }
+        
+    }
+}

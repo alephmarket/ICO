@@ -1,0 +1,62 @@
+// sourceMap:true, out: ../css/
+
+.vc_column_container {
+    position: relative;
+    margin: 0;
+    &.sticky > .wpb_wrapper{
+        position: fixed;
+    }
+    
+    .vc_page_section .row &, .vc_page_section &{
+        padding: 0px 15px;
+        @media (max-width:767px) {
+            float: left;
+            width: 100%;
+        }
+    }
+    
+    .blurbox > & {
+       border-top:1px solid transparent;
+    }
+    
+    &:before {
+        position: absolute;
+        content: "";
+        display: block;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+    }
+    .vc_column_container_hover {
+        opacity: 0;
+        transition: opacity 0.5s ease;
+        &, &:before {
+            position: absolute;
+            content: "";
+            display: block;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+        }
+    }
+    &:hover {
+        & > .vc_column_container_hover {
+            opacity: 1;
+        }
+    }
+    .wpb_wrapper {
+        position: relative;
+    }
+    .vc_column_container_link {
+        position: absolute;
+        content: "";
+        display: block;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        cursor: pointer;
+    }
+}

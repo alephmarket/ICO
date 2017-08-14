@@ -1,0 +1,73 @@
+// sourceMap:true, out: ../css/
+@animation-time: 200ms ease-in-out;
+.ideo-imagebox {
+    position: relative;
+    padding: 1em;    
+    
+    &.align-text-left {
+        text-align: left;
+    }
+    &.align-text-center {
+        text-align: center;
+    }
+    &.align-text-right {
+        text-align: right;
+    }
+    &.align-text-justify {
+        text-align: justify;
+    }
+    .button {
+        margin: 1em 0;
+    }    
+    
+    h4 {
+        font-size: 18px;
+        font-weight: 700;
+        padding-bottom: 0.5em;
+    }
+    p {
+        margin: 0;
+        &+p{
+            margin-top: 1em;
+        }
+    }
+    .image{
+        max-width: 100%;
+    }
+}
+
+&.colored-dark {
+    @accent_color: @colored_dark_accent_color;
+    @title_color: @colored_dark_title_color;
+    @text_color: @colored_dark_text_color;
+    @icon_color: @colored_dark_icon_color;
+    @background_color: @colored_dark_background_color;
+    @alternative_title_color: @colored_dark_alternative_title_color;
+    @import (multiple) 'imagebox-colored.less';
+}
+
+&.colored-light {
+    @accent_color: @colored_light_accent_color;
+    @title_color: @colored_light_title_color;
+    @text_color: @colored_light_text_color;
+    @icon_color: @colored_light_icon_color;
+    @background_color: @colored_light_background_color;
+    @alternative_title_color: @colored_light_alternative_title_color;
+    @import (multiple) 'imagebox-colored.less';
+}
+
+&.transparent-dark {
+    @accent_color: @transparent_dark_accent_color;
+    @title_color: @transparent_dark_title_color;
+    @text_color: @transparent_dark_text_color;
+    @icon_color: @transparent_dark_icon_color;
+    @import (multiple) 'imagebox-transparent.less';
+}
+
+&.transparent-light {
+    @accent_color: @transparent_light_accent_color;
+    @title_color: @transparent_light_title_color;
+    @text_color: @transparent_light_text_color;
+    @icon_color: @transparent_light_icon_color;
+    @import (multiple) 'imagebox-transparent.less';
+}
