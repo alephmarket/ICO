@@ -1,0 +1,15 @@
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /themo_22_06/
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /themo_22_06/index.php [L]
+<IfModule>
+
+# END WordPress
+
+php_value memory_limit 128M
+php_value max_execution_time 120
+php_value max_input_vars 3000
