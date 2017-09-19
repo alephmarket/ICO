@@ -1,5 +1,7 @@
-_pushSite.sh
 .DS_Store
+_pushSite.sh
+_pullSite.sh
+rsync_exclusion.txt
 wp-config.php
 wp-content/plugins/
 wp-content/upgrade/
