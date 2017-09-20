@@ -1,6 +1,10 @@
 .DS_Store
 _pushSite.sh
 _pullSite.sh
+_pullDatabase.sh
+_dumpDatabase.sh
+_loadDatabase.sh
+db_backup.sql
 rsync_exclusion.txt
 wp-config.php
 wp-content/plugins/
