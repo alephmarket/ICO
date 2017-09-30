@@ -34,7 +34,46 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 <p><?php
 	printf(
-		__( 'From your account dashboard you can view your <a href="%1$s">recent orders</a>, manage your <a href="%2$s">shipping and billing addresses</a> and <a href="%3$s">edit your password and account details</a>.', 'woocommerce' ),
+		__( 'From your account dashboard you can view your <a href="%1$s">recent orders</a>, manage your <a href="%2$s">shipping and billing addresses</a> and <a href="%3$s">edit your password and account details</a><br><br><a href="#" class="myButton">REINVEST</a>
+		<style>.myButton {
+	-moz-box-shadow:inset 0px -9px 0px 0px #ffffff;
+	-webkit-box-shadow:inset 0px -9px 0px 0px #ffffff;
+	box-shadow:inset 0px -9px 0px 0px #ffffff;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ffffff), color-stop(1, #ffffff));
+	background:-moz-linear-gradient(top, #ffffff 5%, #ffffff 100%);
+	background:-webkit-linear-gradient(top, #ffffff 5%, #ffffff 100%);
+	background:-o-linear-gradient(top, #ffffff 5%, #ffffff 100%);
+	background:-ms-linear-gradient(top, #ffffff 5%, #ffffff 100%);
+	background:linear-gradient(to bottom, #ffffff 5%, #ffffff 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ffffff',GradientType=0);
+	background-color:#ffffff;
+	-moz-border-radius:19px;
+	-webkit-border-radius:19px;
+	border-radius:19px;
+	border:3px solid #bd26bd;
+	display:inline-block;
+	cursor:pointer;
+	color:#666666;
+	font-family:Arial;
+	font-size:19px;
+	font-weight:bold;
+	padding:16px 48px;
+	text-decoration:none;
+}
+.myButton:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ffffff), color-stop(1, #ffffff));
+	background:-moz-linear-gradient(top, #ffffff 5%, #ffffff 100%);
+	background:-webkit-linear-gradient(top, #ffffff 5%, #ffffff 100%);
+	background:-o-linear-gradient(top, #ffffff 5%, #ffffff 100%);
+	background:-ms-linear-gradient(top, #ffffff 5%, #ffffff 100%);
+	background:linear-gradient(to bottom, #ffffff 5%, #ffffff 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ffffff',GradientType=0);
+	background-color:#ffffff;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}</style>.', 'woocommerce' ),
 		esc_url( wc_get_endpoint_url( 'orders' ) ),
 		esc_url( wc_get_endpoint_url( 'edit-address' ) ),
 		esc_url( wc_get_endpoint_url( 'edit-account' ) )
