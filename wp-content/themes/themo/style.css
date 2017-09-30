@@ -8,3 +8,18 @@ License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: themo
 */
+@-webkit-keyframes purplePulse {
+  from { background-color: #6D009B; -webkit-box-shadow: 0 0 9px #333; }
+  50% { background-color: #A620DF; -webkit-box-shadow: 0 0 18px #A620DF; }
+  to { background-color: #6D009B; -webkit-box-shadow: 0 0 9px #333; }
+}
+.single-product .product .single_add_to_cart_button.button{
+	-webkit-animation-name: purplePulse;
+  	-webkit-animation-duration: 2s;
+  	-webkit-animation-iteration-count: infinite;
+}
+.woocommerce .product .add_to_cart_button.button{
+	-webkit-animation-name: purplePulse;
+  	-webkit-animation-duration: 2s;
+  	-webkit-animation-iteration-count: infinite;
+}
