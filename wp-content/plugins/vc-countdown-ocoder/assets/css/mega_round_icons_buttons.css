@@ -1,0 +1,51 @@
+.uc_mega_round_icons_buttons *{
+	margin: 0;
+	padding: 0;
+}
+.uc_mega_round_icons_buttons {
+	width: 100%;
+    margin: 40px 0;
+}
+.uc_mega_round_icons_buttons .uc_icons_link{
+	text-align: center;
+	position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.uc_mega_round_icons_buttons .uc_icons_link .uc_icon{
+	margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    text-decoration: none;
+    color: #ffff33;
+    transition: color 0.5s;
+    -webkit-transition: color 0.5s;
+}
+.uc_mega_round_icons_buttons .uc_icons_link .uc_icon .fa{
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.uc_mega_round_icons_buttons .uc_icons_link .uc_icon i {
+	color: #fff;
+    font-size: 20px;
+    margin: 0 2px;
+    border: 2px solid #5c6065;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    text-align: center;
+    display: inline-block;
+    width: 33px;
+    padding: 4px 0;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}
+.uc_mega_round_icons_buttons .uc_icons_link .uc_icon i:hover {
+	color: #474c51;
+    border-color: #ffff33;
+    background: #ffff33;
+}

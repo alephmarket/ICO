@@ -1,0 +1,168 @@
+.body_background {
+    position: fixed;
+    width: 100%;
+    z-index: -999999;
+    top: 0;
+    left: 0;
+    height: 100%;
+}
+.body_background .carousel {
+    height: 100%;
+}
+.body_background .carousel .carousel-inner {
+    height: 100%;
+}
+.body_background .carousel .carousel-inner .item {
+    height: 100%;
+}
+.body_background .carousel .carousel-inner .item img {
+    min-width: 100%;
+    min-height: 100%
+}
+body .uc_mega_round_icons_buttons {
+    margin: 50px 0 0 0;
+}
+body .uc_mega_round_icons_buttons .uc_icons_link {
+    text-align: center;
+}
+body .uc_mega_round_icons_buttons .uc_icons_link .uc_icon i {
+    font-size: 28px;
+    width: 40px;
+    border: 0;
+    border-radius: 0;
+    background: darkmagenta;
+}
+body .uc_mega_round_icons_buttons .uc_icons_link .uc_icon .blue {
+    background: #32a7d3;
+}
+body .uc_mega_round_icons_buttons .uc_icons_link .uc_icon .red {
+    background: #d44032;
+}
+body .uc_mega_round_icons_buttons .uc_icons_link .uc_icon .yellow {
+    background: #e8a800;
+}
+body .uc_mega_round_icons_buttons .uc_icons_link .uc_icon .green {
+    background: #00b159;
+}
+
+.wrap-count-down .count-down-title {
+    color: #fff;
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 60px;
+}
+.wrap-count-down .count-down-title h1 {
+    font-size: 64px;
+    font-weight: 300;
+    text-transform: capitalize;
+    color: #fff;
+}
+.wrap-count-down .count-down-title p {
+    color: #fff;
+    font-weight: 300;
+    font-size: 20px;
+}
+.clean_bg.wrap-count-down .uc_clean_countdown .uc_box {
+    width: 21%;
+    margin: 0 2%;
+    float: left;
+    text-align: center;
+}
+.clean_bg.wrap-count-down .uc_clean_countdown .uc_box .uc_number {
+    font-size: 70px;
+    font-weight: 300;
+    width: 70%;
+    margin: 0 auto;
+    padding: 15px 0;
+}
+.wrap-count-down .uc_clean_countdown .uc_box .uc_number_d {
+    background: #dd3333;
+}
+.wrap-count-down .uc_clean_countdown .uc_box .uc_number_h {
+    background: #8224e3;
+}
+.wrap-count-down .uc_clean_countdown .uc_box .uc_number_m {
+    background:#00b159;
+}
+.wrap-count-down .uc_clean_countdown .uc_box .uc_number_s {
+    background:  #32a7d3;
+}
+.clean_bg.wrap-count-down .uc_clean_countdown .uc_box .uc_label {
+    color: #fff;
+    font-size: 20px;
+    margin-top: 10px;
+}
+.wrap-count-down .count-down-subscribe form {
+    margin: 60px 0 50px 0;
+    position: relative;
+}
+.wrap-count-down .count-down-subscribe form input[type=text] {
+    width: 100%;
+    font-size: 18px;
+    padding: 10px 132px 10px 20px;
+    border-radius: 0;
+    color: #000;
+    background: #fff;
+    font-weight: 300;
+    border: 3px solid #fff;
+}
+.wrap-count-down .count-down-subscribe form input[type=text]:focus {
+    border-color: #d44032;
+    outline: 0;
+}
+.wrap-count-down .count-down-subscribe form button {
+    border: 0;
+    font-size: 18px;
+    color: #fff;
+    display: block;
+    position: absolute;
+    margin: 0;
+    top: 0;
+    right: 0;
+    font-weight: 300;
+    background: #d44032;
+    padding: 13px 20px;
+    opacity: 1;
+}
+.clr {
+    clear: both;
+}
+@media (min-width: 380px) and (max-width: 540px) {
+    body .uc_mega_round_icons_buttons .uc_icons_link {
+        text-align: center;
+    }
+    body .uc_mega_round_icons_buttons .uc_icons_link .uc_icon i {
+        font-size: 24px;
+        width: 34px;
+    }
+    body .wrap-count-down .count-down-title h1 {
+        font-size: 40px;
+    }
+    body .wrap-count-down .count-down-title p {
+        font-size: 18px;
+    }
+    body .wrap-count-down .uc_clean_countdown .uc_box .uc_number {
+        font: 50px Roboto;
+        width: 100%;
+    }
+    body .wrap-count-down .uc_clean_countdown .uc_box .uc_label {
+        font: 14px "Open Sans";
+    }
+    body .wrap-count-down .count-down-subscribe form button {
+        padding: 13px 10px;
+    }
+}
+@media screen and (max-width: 380px){
+    .clean_bg.wrap-count-down .uc_clean_countdown .uc_box {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+}
+@media screen and (min-width: 381px) and (max-width: 749px) {
+    .clean_bg.wrap-count-down .uc_clean_countdown .uc_box {
+        width: 50%;
+        margin: 0 0 15px 0;
+    }
+
+}
+

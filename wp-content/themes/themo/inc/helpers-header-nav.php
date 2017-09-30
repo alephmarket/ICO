@@ -253,7 +253,7 @@ if (!function_exists('ideothemo_get_logo_header')) {
             }
         }
 
-        return '<img src="' . $src . '"' . $data . ' alt="' . $alt . '" class="logo-' . ($header_type == 'mobile' ? 'mobile' : 'standard') . ' ' . ($src == '' ? 'no-src' : '') . '">';
+        return '<img src="http://alephmarket.io/wp-content/uploads/2017/02/logo-uni-01-dark.png"' . $data . ' alt="' . $alt . '" class="logo-' . ($header_type == 'mobile' ? 'mobile' : 'standard') . ' ' . ($src == '' ? 'no-src' : '') . '">';
     }
 }
 if (!function_exists('ideothemo_get_offcanvas_bar_logo')) {

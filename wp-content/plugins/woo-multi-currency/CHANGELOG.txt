@@ -1,0 +1,136 @@
+/*1.4.8.9.3 - 2017.05.31*/
+- Fixed: URL with subfolder on checkout page
+
+/*1.4.8.9.2 - 2017.05.17*/
+- Fixed: Allow multi Payment
+- Added: Support Bitcoin
+- Fixed: Active WooCommerce
+
+/*1.4.8.9.1 - 2017.05.12*/
+- Updated: Currency symbol
+
+/*1.4.8.9 - 2017.05.10*/
+- Fixed: Allow multi currency
+
+/*1.4.8.8 - 2017.05.06*/
+- Fixed: Conflict Select2 with WooCommerce
+
+/*1.4.8.7 - 2017.05.06*/
+- Fixed: Price on WooCommerce 3.0
+
+/*1.4.8.6 - 2017.04.28*/
+- Fixed: Error wp-admin and subtotal cart
+
+/*1.4.8.5 - 2017.04.27*/
+- Fixed: Exchange rate mini cart
+
+/*1.4.8.4 - 2017.04.20*/
+- Fixed: Tax on shipping on WooCommerce 3.0
+
+/*1.4.8.3 - 2017.04.19*/
+- Fixed: Convert price in WooCommerce 3.0 or higher
+
+/*1.4.8.2 - 2017.04.13*/
+- Fixed: Compatible WooCommerce 3.0
+
+/**v.1.4.8.1 - 2017.04.11 */
+- Added: Compatible with WooCommerce Subscriptions
+
+/**v.1.4.8 - 2017.04.07 */
+- Fixed: JS in backend
+
+/**v.1.4.7 - 2017.2.19 */
+- Fixed: Shipping Class
+- Fixed: Free Shipping
+
+/**v.1.4.6 - 2017.2.1 */
+- Fixed: Min and Max value of Coupon
+
+/**v.1.4.5 - 2017.1.6 */
+- Fixed: Shipping with allow multi payment
+- Added: Global function change price
+
+/**v.1.4.4 - 2016.12.20 */
+- Fixed: Change URL with variable on URL
+- Fixed: Filter price
+
+/**v.1.4.3.1 - 2016.12.7*/
+- Fixed: Tax on shipping
+
+/**v.1.4.2 - 2016.11.30*/
+- Fixed: Some minor errors
+- Fixed: Filter price with WooCommerce new version
+- Fixed: Shipping price
+
+/**v.1.4.1 - 2016.11.25*/
+- Fixed: Setting page
+
+/**v.1.4 - 2016.11.22**/
+- Update more hook*/
+- Added: More hook and filter
+
+/**v.1.3.6 - 2016.10.26*/
+- Removed: Features related to Yahoo API
+- Changed: Disabled Approximate Price, Auto update exchange rate, Get Rate because Yahoo API law
+
+/**v.1.3.5 - 2016.10.17*/
+- Added: hook 'wmc_after_option'
+- Fixed: Dont show Approximate Price
+
+/**v.1.3.4 - 2016.08.23*/
+- Added: More country and currency
+- Fixed: Some minor error
+
+/**v.1.3.3 - 2016.08.06*/
+- Optimize speed auto detect country
+
+/**v.1.3.2 - 2016.06.21*/
+- Added: some hooks
+- Fixed: some minor error
+
+/**v.1.3.1 - 2016.06.20*/
+- Fixed: Currency positon, decimal for approximate price as default currency
+
+/**v.1.3 - 2016.06.09*/
+- Fixed: Show wrong (GBP) as defult currency in admin report.
+- Added: Change coupon value by rate option
+- Added: Admin bar
+
+/**v.1.2.4 - 2016.06.04*/
+- Added: Convert currency widget
+
+/**v.1.2.3 - Released 5th May 2016**/
+- Fixed: Select currency on IE, Safari
+
+/**v.1.2.2 - Released 29th April 2016**/
+- Fixed: Show wrong symbol in product plugin
+- Fixed: Dont show regular price in latest WooCommerce.
+- Fixed: Show product which was not entered price as Free!
+
+/**v.1.2.1 - Released 14th April 2016**/
+- Fixed: Disable change rate of main currency function
+- Fixed: Update data when reactive.
+
+/**v.1.2 - Released Feb 4th April 2016**/
+- Fixed: Filter price
+- Fixed: Change currency in backend
+- Fixed: Number of decimal
+- Fixed: Some minors issues
+- Updated: Hidden global currency
+- Updated: Note for pro version
+
+/**v.1.1.1 - Released Feb 2nd April 2016**/
+- Fixed: Detect IP
+
+/**v.1.1 - Released Feb 1st April 2016**/
+- Fixed: Widget filter price.
+- Fixed: Widget mini cart.
+- Fixed: INR Symbol.
+- Fixed: Number of Decimals.
+- Fixed: Change save currency to cookie.
+- Fixed: Some minors error.
+- Added: Prefer items.
+
+/**v.1.0.0 - Released Feb 23th 2016**/
+- The first released
+== Upgrade Notice ==

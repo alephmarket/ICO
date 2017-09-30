@@ -1,0 +1,891 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-08-04 17:52+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: woocommerce-all-currencies.php:106
+msgid "Settings"
+msgstr ""
+
+#: woocommerce-all-currencies.php:108
+msgid "Unlock All"
+msgstr ""
+
+#: woocommerce-all-currencies.php:154
+#, php-format
+msgid ""
+"<strong>All Currencies for WooCommerce</strong> plugin successfully updated "
+"to version %s."
+msgstr ""
+
+#: woocommerce-all-currencies.php:157
+msgid ""
+"Something went wrong when updating <strong>All Currencies for WooCommerce</"
+"strong> plugin."
+msgstr ""
+
+#: includes/currencies.php:57
+msgid "UAE dirham"
+msgstr ""
+
+#: includes/currencies.php:58
+msgid "Afghan afghani"
+msgstr ""
+
+#: includes/currencies.php:59
+msgid "Albanian lek"
+msgstr ""
+
+#: includes/currencies.php:60
+msgid "Armenian dram"
+msgstr ""
+
+#: includes/currencies.php:61
+msgid "Netherlands Antillean gulden"
+msgstr ""
+
+#: includes/currencies.php:62
+msgid "Angolan kwanza"
+msgstr ""
+
+#: includes/currencies.php:63
+msgid "Argentine peso"
+msgstr ""
+
+#: includes/currencies.php:64
+msgid "Australian dollar"
+msgstr ""
+
+#: includes/currencies.php:65
+msgid "Aruban florin"
+msgstr ""
+
+#: includes/currencies.php:66
+msgid "Azerbaijani manat"
+msgstr ""
+
+#: includes/currencies.php:67
+msgid "Bosnia and Herzegovina konvertibilna marka"
+msgstr ""
+
+#: includes/currencies.php:68
+msgid "Barbadian dollar"
+msgstr ""
+
+#: includes/currencies.php:69
+msgid "Bangladeshi taka"
+msgstr ""
+
+#: includes/currencies.php:70
+msgid "Bulgarian lev"
+msgstr ""
+
+#: includes/currencies.php:71
+msgid "Bahraini dinar"
+msgstr ""
+
+#: includes/currencies.php:72
+msgid "Burundi franc"
+msgstr ""
+
+#: includes/currencies.php:73
+msgid "Brunei dollar"
+msgstr ""
+
+#: includes/currencies.php:74
+msgid "Bolivian boliviano"
+msgstr ""
+
+#: includes/currencies.php:75
+msgid "Brazilian real"
+msgstr ""
+
+#: includes/currencies.php:76
+msgid "Bahamian dollar"
+msgstr ""
+
+#: includes/currencies.php:77
+msgid "Bhutanese ngultrum"
+msgstr ""
+
+#: includes/currencies.php:78
+msgid "Botswana pula"
+msgstr ""
+
+#: includes/currencies.php:79
+msgid "Belarusian ruble"
+msgstr ""
+
+#: includes/currencies.php:80
+msgid "Belize dollar"
+msgstr ""
+
+#: includes/currencies.php:81
+msgid "Canadian dollar"
+msgstr ""
+
+#: includes/currencies.php:82
+msgid "Congolese franc"
+msgstr ""
+
+#: includes/currencies.php:83
+msgid "Swiss franc"
+msgstr ""
+
+#: includes/currencies.php:84
+msgid "Chilean peso"
+msgstr ""
+
+#: includes/currencies.php:85
+msgid "Chinese renminbi"
+msgstr ""
+
+#: includes/currencies.php:86
+msgid "Colombian peso"
+msgstr ""
+
+#: includes/currencies.php:87
+msgid "Costa Rican colon"
+msgstr ""
+
+#: includes/currencies.php:88
+msgid "Cuban peso"
+msgstr ""
+
+#: includes/currencies.php:89
+msgid "Cape Verdean escudo"
+msgstr ""
+
+#: includes/currencies.php:90
+msgid "Czech koruna"
+msgstr ""
+
+#: includes/currencies.php:91
+msgid "Djiboutian franc"
+msgstr ""
+
+#: includes/currencies.php:92
+msgid "Danish krone"
+msgstr ""
+
+#: includes/currencies.php:93
+msgid "Dominican peso"
+msgstr ""
+
+#: includes/currencies.php:94
+msgid "Algerian dinar"
+msgstr ""
+
+#: includes/currencies.php:95
+msgid "Estonian kroon"
+msgstr ""
+
+#: includes/currencies.php:96
+msgid "Egyptian pound"
+msgstr ""
+
+#: includes/currencies.php:97
+msgid "Eritrean nakfa"
+msgstr ""
+
+#: includes/currencies.php:98
+msgid "Ethiopian birr"
+msgstr ""
+
+#: includes/currencies.php:99
+msgid "European euro"
+msgstr ""
+
+#: includes/currencies.php:100
+msgid "Fijian dollar"
+msgstr ""
+
+#: includes/currencies.php:101
+msgid "Falkland Islands pound"
+msgstr ""
+
+#: includes/currencies.php:102
+msgid "British pound"
+msgstr ""
+
+#: includes/currencies.php:103
+msgid "Georgian lari"
+msgstr ""
+
+#: includes/currencies.php:104
+msgid "Ghanaian cedi"
+msgstr ""
+
+#: includes/currencies.php:105
+msgid "Gibraltar pound"
+msgstr ""
+
+#: includes/currencies.php:106
+msgid "Gambian dalasi"
+msgstr ""
+
+#: includes/currencies.php:107
+msgid "Guinean franc"
+msgstr ""
+
+#: includes/currencies.php:108 includes/currencies.php:208
+msgid "Central African CFA franc"
+msgstr ""
+
+#: includes/currencies.php:109
+msgid "Guatemalan quetzal"
+msgstr ""
+
+#: includes/currencies.php:110
+msgid "Guyanese dollar"
+msgstr ""
+
+#: includes/currencies.php:111
+msgid "Hong Kong dollar"
+msgstr ""
+
+#: includes/currencies.php:112
+msgid "Honduran lempira"
+msgstr ""
+
+#: includes/currencies.php:113
+msgid "Croatian kuna"
+msgstr ""
+
+#: includes/currencies.php:114
+msgid "Haitian gourde"
+msgstr ""
+
+#: includes/currencies.php:115
+msgid "Hungarian forint"
+msgstr ""
+
+#: includes/currencies.php:116
+msgid "Indonesian rupiah"
+msgstr ""
+
+#: includes/currencies.php:117
+msgid "Israeli new sheqel"
+msgstr ""
+
+#: includes/currencies.php:118
+msgid "Indian rupee"
+msgstr ""
+
+#: includes/currencies.php:119
+msgid "Iraqi dinar"
+msgstr ""
+
+#: includes/currencies.php:120
+msgid "Iranian rial"
+msgstr ""
+
+#: includes/currencies.php:121
+msgid "Icelandic krona"
+msgstr ""
+
+#: includes/currencies.php:122
+msgid "Jamaican dollar"
+msgstr ""
+
+#: includes/currencies.php:123
+msgid "Jordanian dinar"
+msgstr ""
+
+#: includes/currencies.php:124
+msgid "Japanese yen"
+msgstr ""
+
+#: includes/currencies.php:125
+msgid "Kenyan shilling"
+msgstr ""
+
+#: includes/currencies.php:126
+msgid "Kyrgyzstani som"
+msgstr ""
+
+#: includes/currencies.php:127
+msgid "Cambodian riel"
+msgstr ""
+
+#: includes/currencies.php:128
+msgid "Lao kip"
+msgstr ""
+
+#: includes/currencies.php:129
+msgid "Comorian franc"
+msgstr ""
+
+#: includes/currencies.php:130
+msgid "North Korean won"
+msgstr ""
+
+#: includes/currencies.php:131
+msgid "South Korean won"
+msgstr ""
+
+#: includes/currencies.php:132
+msgid "Kuwaiti dinar"
+msgstr ""
+
+#: includes/currencies.php:133
+msgid "Cayman Islands dollar"
+msgstr ""
+
+#: includes/currencies.php:134
+msgid "Kazakhstani tenge"
+msgstr ""
+
+#: includes/currencies.php:135
+msgid "Lebanese lira"
+msgstr ""
+
+#: includes/currencies.php:136
+msgid "Sri Lankan rupee"
+msgstr ""
+
+#: includes/currencies.php:137
+msgid "Liberian dollar"
+msgstr ""
+
+#: includes/currencies.php:138
+msgid "Lesotho loti"
+msgstr ""
+
+#: includes/currencies.php:139
+msgid "Lithuanian litas"
+msgstr ""
+
+#: includes/currencies.php:140
+msgid "Latvian lats"
+msgstr ""
+
+#: includes/currencies.php:141
+msgid "Libyan dinar"
+msgstr ""
+
+#: includes/currencies.php:142
+msgid "Moroccan dirham"
+msgstr ""
+
+#: includes/currencies.php:143
+msgid "Moldovan leu"
+msgstr ""
+
+#: includes/currencies.php:144
+msgid "Malagasy ariary"
+msgstr ""
+
+#: includes/currencies.php:145
+msgid "Macedonian denar"
+msgstr ""
+
+#: includes/currencies.php:146
+msgid "Myanma kyat"
+msgstr ""
+
+#: includes/currencies.php:147
+msgid "Mongolian tugrik"
+msgstr ""
+
+#: includes/currencies.php:148
+msgid "Macanese pataca"
+msgstr ""
+
+#: includes/currencies.php:149
+msgid "Mauritanian ouguiya"
+msgstr ""
+
+#: includes/currencies.php:150
+msgid "Mauritian rupee"
+msgstr ""
+
+#: includes/currencies.php:151
+msgid "Maldivian rufiyaa"
+msgstr ""
+
+#: includes/currencies.php:152
+msgid "Malawian kwacha"
+msgstr ""
+
+#: includes/currencies.php:153
+msgid "Mexican peso"
+msgstr ""
+
+#: includes/currencies.php:154
+msgid "Malaysian ringgit"
+msgstr ""
+
+#: includes/currencies.php:155
+msgid "Mozambican metical"
+msgstr ""
+
+#: includes/currencies.php:156
+msgid "Namibian dollar"
+msgstr ""
+
+#: includes/currencies.php:157
+msgid "Nigerian naira"
+msgstr ""
+
+#: includes/currencies.php:158
+msgid "Nicaraguan cordoba"
+msgstr ""
+
+#: includes/currencies.php:159
+msgid "Norwegian krone"
+msgstr ""
+
+#: includes/currencies.php:160
+msgid "Nepalese rupee"
+msgstr ""
+
+#: includes/currencies.php:161
+msgid "New Zealand dollar"
+msgstr ""
+
+#: includes/currencies.php:162
+msgid "Omani rial"
+msgstr ""
+
+#: includes/currencies.php:163
+msgid "Panamanian balboa"
+msgstr ""
+
+#: includes/currencies.php:164
+msgid "Peruvian nuevo sol"
+msgstr ""
+
+#: includes/currencies.php:165
+msgid "Papua New Guinean kina"
+msgstr ""
+
+#: includes/currencies.php:166
+msgid "Philippine peso"
+msgstr ""
+
+#: includes/currencies.php:167
+msgid "Pakistani rupee"
+msgstr ""
+
+#: includes/currencies.php:168
+msgid "Polish zloty"
+msgstr ""
+
+#: includes/currencies.php:169
+msgid "Paraguayan guarani"
+msgstr ""
+
+#: includes/currencies.php:170
+msgid "Qatari riyal"
+msgstr ""
+
+#: includes/currencies.php:171
+msgid "Chinese Yuan"
+msgstr ""
+
+#: includes/currencies.php:172
+msgid "Romanian leu"
+msgstr ""
+
+#: includes/currencies.php:173
+msgid "Serbian dinar"
+msgstr ""
+
+#: includes/currencies.php:174
+msgid "Russian ruble"
+msgstr ""
+
+#: includes/currencies.php:175
+msgid "Rwandan franc"
+msgstr ""
+
+#: includes/currencies.php:176
+msgid "Saudi riyal"
+msgstr ""
+
+#: includes/currencies.php:177
+msgid "Solomon Islands dollar"
+msgstr ""
+
+#: includes/currencies.php:178
+msgid "Seychellois rupee"
+msgstr ""
+
+#: includes/currencies.php:179
+msgid "Sudanese pound"
+msgstr ""
+
+#: includes/currencies.php:180
+msgid "Swedish krona"
+msgstr ""
+
+#: includes/currencies.php:181
+msgid "Singapore dollar"
+msgstr ""
+
+#: includes/currencies.php:182
+msgid "Saint Helena pound"
+msgstr ""
+
+#: includes/currencies.php:183
+msgid "Slovak koruna"
+msgstr ""
+
+#: includes/currencies.php:184
+msgid "Sierra Leonean leone"
+msgstr ""
+
+#: includes/currencies.php:185
+msgid "Somali shilling"
+msgstr ""
+
+#: includes/currencies.php:186
+msgid "Surinamese dollar"
+msgstr ""
+
+#: includes/currencies.php:187
+msgid "Sao Tome and Principe dobra"
+msgstr ""
+
+#: includes/currencies.php:188
+msgid "Syrian pound"
+msgstr ""
+
+#: includes/currencies.php:189
+msgid "Swazi lilangeni"
+msgstr ""
+
+#: includes/currencies.php:190
+msgid "Thai baht"
+msgstr ""
+
+#: includes/currencies.php:191
+msgid "Tajikistani somoni"
+msgstr ""
+
+#: includes/currencies.php:192
+msgid "Turkmen manat"
+msgstr ""
+
+#: includes/currencies.php:193
+msgid "Tunisian dinar"
+msgstr ""
+
+#: includes/currencies.php:194
+msgid "Paanga"
+msgstr ""
+
+#: includes/currencies.php:195
+msgid "Turkish new lira"
+msgstr ""
+
+#: includes/currencies.php:196
+msgid "Trinidad and Tobago dollar"
+msgstr ""
+
+#: includes/currencies.php:197
+msgid "New Taiwan dollar"
+msgstr ""
+
+#: includes/currencies.php:198
+msgid "Tanzanian shilling"
+msgstr ""
+
+#: includes/currencies.php:199
+msgid "Ukrainian hryvnia"
+msgstr ""
+
+#: includes/currencies.php:200
+msgid "Ugandan shilling"
+msgstr ""
+
+#: includes/currencies.php:201
+msgid "United States dollar"
+msgstr ""
+
+#: includes/currencies.php:202
+msgid "Uruguayan peso"
+msgstr ""
+
+#: includes/currencies.php:203
+msgid "Uzbekistani som"
+msgstr ""
+
+#: includes/currencies.php:204
+msgid "Venezuelan bolivar"
+msgstr ""
+
+#: includes/currencies.php:205
+msgid "Vietnamese dong"
+msgstr ""
+
+#: includes/currencies.php:206
+msgid "Vanuatu vatu"
+msgstr ""
+
+#: includes/currencies.php:207
+msgid "Samoan tala"
+msgstr ""
+
+#: includes/currencies.php:209
+msgid "East Caribbean dollar"
+msgstr ""
+
+#: includes/currencies.php:210
+msgid "Special Drawing Rights"
+msgstr ""
+
+#: includes/currencies.php:211
+msgid "West African CFA franc"
+msgstr ""
+
+#: includes/currencies.php:212
+msgid "CFP franc"
+msgstr ""
+
+#: includes/currencies.php:213
+msgid "Yemeni rial"
+msgstr ""
+
+#: includes/currencies.php:214
+msgid "South African rand"
+msgstr ""
+
+#: includes/currencies.php:215
+msgid "Zambian kwacha"
+msgstr ""
+
+#: includes/currencies.php:216
+msgid "Zimbabwean dollar"
+msgstr ""
+
+#: includes/currencies.php:230
+msgid "Auroracoin"
+msgstr ""
+
+#: includes/currencies.php:231
+msgid "Bitcoin"
+msgstr ""
+
+#: includes/currencies.php:232
+msgid "BitConnect"
+msgstr ""
+
+#: includes/currencies.php:233
+msgid "Coinye"
+msgstr ""
+
+#: includes/currencies.php:234
+msgid "DigitalNote"
+msgstr ""
+
+#: includes/currencies.php:235
+msgid "Emercoin"
+msgstr ""
+
+#: includes/currencies.php:236
+msgid "Ethereum"
+msgstr ""
+
+#: includes/currencies.php:237
+msgid "Ethereum Classic"
+msgstr ""
+
+#: includes/currencies.php:238
+msgid "Freemasoncoin"
+msgstr ""
+
+#: includes/currencies.php:239
+msgid "Gridcoin"
+msgstr ""
+
+#: includes/currencies.php:240
+msgid "IOTA"
+msgstr ""
+
+#: includes/currencies.php:241
+msgid "Litecoin"
+msgstr ""
+
+#: includes/currencies.php:242
+msgid "MazaCoin"
+msgstr ""
+
+#: includes/currencies.php:243
+msgid "Monero"
+msgstr ""
+
+#: includes/currencies.php:244
+msgid "Namecoin"
+msgstr ""
+
+#: includes/currencies.php:245
+msgid "NEM"
+msgstr ""
+
+#: includes/currencies.php:246
+msgid "Nxt"
+msgstr ""
+
+#: includes/currencies.php:247
+msgid "Omni"
+msgstr ""
+
+#: includes/currencies.php:248
+msgid "Peercoin"
+msgstr ""
+
+#: includes/currencies.php:249
+msgid "PotCoin"
+msgstr ""
+
+#: includes/currencies.php:250
+msgid "Primecoin"
+msgstr ""
+
+#: includes/currencies.php:251
+msgid "Ripple"
+msgstr ""
+
+#: includes/currencies.php:252
+msgid "SixEleven"
+msgstr ""
+
+#: includes/currencies.php:253
+msgid "Synereo AMP"
+msgstr ""
+
+#: includes/currencies.php:254
+msgid "Titcoin"
+msgstr ""
+
+#: includes/currencies.php:255
+msgid "Ubiq"
+msgstr ""
+
+#: includes/currencies.php:256
+msgid "Vertcoin"
+msgstr ""
+
+#: includes/currencies.php:257
+msgid "Zcash"
+msgstr ""
+
+#: includes/admin/admin-functions.php:20
+#: includes/admin/class-wc-currencies-settings-list.php:24
+msgid "Country Currencies"
+msgstr ""
+
+#: includes/admin/admin-functions.php:25
+#: includes/admin/class-wc-currencies-settings-list-crypto.php:24
+msgid "Crypto Currencies"
+msgstr ""
+
+#: includes/admin/admin-functions.php:34
+#: includes/admin/class-wc-currencies-settings-general.php:65
+#: includes/admin/class-wc-currencies-settings-general.php:132
+#, php-format
+msgid ""
+"You will need <a target=\"_blank\" href=\"%s\">All Currencies for "
+"WooCommerce Pro</a> plugin to change currency symbol."
+msgstr ""
+
+#: includes/admin/class-wc-currencies-settings-general.php:23
+msgid "General"
+msgstr ""
+
+#: includes/admin/class-wc-currencies-settings-general.php:59
+msgid "Currency Symbol"
+msgstr ""
+
+#: includes/admin/class-wc-currencies-settings-general.php:60
+msgid "This sets the currency symbol."
+msgstr ""
+
+#: includes/admin/class-wc-currencies-settings-general.php:82
+msgid "General Options"
+msgstr ""
+
+#: includes/admin/class-wc-currencies-settings-general.php:87
+msgid "WooCommerce All Currencies"
+msgstr ""
+
+#: includes/admin/class-wc-currencies-settings-general.php:88
+msgid "Enable plugin"
+msgstr ""
+
+#: includes/admin/class-wc-currencies-settings-general.php:89
+msgid "Add all world currencies to your WooCommerce store."
+msgstr ""
+
+#: includes/admin/class-wc-currencies-settings-general.php:99
+msgid "Lists Options"
+msgstr ""
+
+#: includes/admin/class-wc-currencies-settings-general.php:104
+msgid "Add Country Currencies"
+msgstr ""
+
+#: includes/admin/class-wc-currencies-settings-general.php:105
+#: includes/admin/class-wc-currencies-settings-general.php:112
+msgid "Add"
+msgstr ""
+
+#: includes/admin/class-wc-currencies-settings-general.php:111
+msgid "Add Crypto Currencies"
+msgstr ""
+
+#: includes/admin/class-wc-currencies-settings-general.php:122
+msgid "Symbol Options"
+msgstr ""
+
+#: includes/admin/class-wc-currencies-settings-general.php:127
+msgid "Current Currency Symbol"
+msgstr ""
+
+#: includes/admin/class-wc-currencies-settings-general.php:136
+msgid "Use Currency Code as Symbol"
+msgstr ""
+
+#: includes/admin/class-wc-currencies-settings-general.php:137
+msgid "Enable"
+msgstr ""
+
+#: includes/admin/class-wc-currencies-settings-general.php:143
+msgid "Hide Currency Symbol on Frontend"
+msgstr ""
+
+#: includes/admin/class-wc-currencies-settings-general.php:144
+msgid "Hide"
+msgstr ""
+
+#: includes/admin/class-wc-currencies-settings-section.php:58
+msgid "Reset Section Settings"
+msgstr ""
+
+#: includes/admin/class-wc-currencies-settings-section.php:63
+msgid "Reset Settings"
+msgstr ""
+
+#: includes/admin/class-wc-currencies-settings-section.php:64
+msgid "Reset"
+msgstr ""
+
+#: includes/admin/class-wc-settings-currencies.php:23
+msgid "Currencies"
+msgstr ""

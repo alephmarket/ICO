@@ -1,0 +1,53 @@
+.uc_clean_countdown *{
+    margin: 0;
+    padding: 0;
+}
+.clean_custome_background{
+    text-align: center;
+} 
+.clean_custome_background .uc_clean_countdown .uc_box_wraper {
+    float: none;
+    width: auto;
+    text-align: center;
+    display: inline-block;
+    padding-right: 5px;
+}
+
+.clean_custome_background .uc_clean_countdown .uc_number {
+    display: block;
+    font-size: 36px;
+    color: #fff;
+    letter-spacing: 1px;
+}
+.clean_custome_background .uc_clean_countdown .uc_label {
+    display: block;
+    margin-top: 0;
+    font-size: 17px;
+    color: rgba(255,255,255,0.8);
+    letter-spacing: 1px;
+}
+ 
+.clean_custome_background .uc_box{
+    width: 140px;
+    height: 140px;
+    display: table-cell;
+    vertical-align: middle;
+     background-size: cover;
+}
+@media screen and (max-width: 380px){
+    .uc_clean_countdown .uc_box_wraper {
+        width: 100%;
+    }
+}
+@media screen and (min-width: 381px) and (max-width: 749px) {
+    .uc_clean_countdown .uc_box_wraper {
+        width: 50%;
+    }
+
+}
+@media screen and (min-width: 750px) and (max-width: 969px) {
+
+}
+@media screen and (min-width: 970px) and (max-width: 1169px) {
+
+}

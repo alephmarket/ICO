@@ -1,0 +1,470 @@
+# Loco Gettext template
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Woo Multi Currency\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: Mon Mar 21 2016 00:44:38 GMT+0700 (SE Asia Standard Time)\n"
+"POT-Revision-Date: Thu Jun 09 2016 10:38:02 GMT+0700 (SE Asia Standard Time)\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: ..\n"
+"X-Poedit-KeywordsList: _:1;gettext:1;dgettext:2;ngettext:1,2;dngettext:2,3;"
+"__:1;_e:1;_c:1;_n:1,2;_n_noop:1,2;_nc:1,2;__ngettext:1,2;__ngettext_noop:1,2;"
+"_x:1,2c;_ex:1,2c;_nx:1,2,4c;_nx_noop:1,2,3c;_n_js:1,2;_nx_js:1,2,3c;"
+"esc_attr__:1;esc_html__:1;esc_attr_e:1;esc_html_e:1;esc_attr_x:1,2c;"
+"esc_html_x:1,2c;comments_number_link:2,3;t:1;st:1;trans:1;transChoice:1,2\n"
+"X-Generator: Loco - https://localise.biz/"
+
+msgid "Woo Multi Currency"
+msgstr ""
+
+#. URI of the plugin
+msgid "http://villatheme.com"
+msgstr ""
+
+#. Description of the plugin
+msgid ""
+"Creat a price switcher or approximate price with unlimit currency. Working "
+"base on WooCommerce plugin."
+msgstr ""
+
+#. Author of the plugin
+msgid "Cuong Nguyen and Andy Ha (tuhn@villatheme.com)"
+msgstr ""
+
+#: ../woo-multi-currency.php:367 ../woo-multi-currency.php:369 ../woo-multi-
+#: currency.php:371
+msgid "Approximately"
+msgstr ""
+
+#: ../woo-multi-currency.php:500
+msgid "Settings"
+msgstr ""
+
+#: ../woo-multi-currency.php:661
+msgid "GENERAL OPTIONS"
+msgstr ""
+
+#: ../woo-multi-currency.php:667
+msgid "Approximate Price"
+msgstr ""
+
+#: ../woo-multi-currency.php:670
+msgid ""
+"Enable Approximate Price on your shop page. It will auto detect customer's "
+"country ."
+msgstr ""
+
+#: ../woo-multi-currency.php:676
+msgid "Allow multi currency payment"
+msgstr ""
+
+#: ../woo-multi-currency.php:679
+msgid "Enable multi currency payment on your shop page."
+msgstr ""
+
+#: ../woo-multi-currency.php:684
+msgid "Recalculate coupon value"
+msgstr ""
+
+#: ../woo-multi-currency.php:687
+msgid ""
+"Recalculate coupon value base on rate of order currency with main currency. "
+"Example: coupon AAA value=10, main currency=USD, order currency=EUR, rate: 1 "
+"USD = 0.8 EUR, so when \"Allow multi currency payment\" enabled, client apply "
+"coupon code AAA, discount value is 10*0.8=8 EUR"
+msgstr ""
+
+#: ../woo-multi-currency.php:692 ../templates/woo-multi-currency_admin_setting.
+#: php:111
+msgid "Auto update exchange rate"
+msgstr ""
+
+#: ../woo-multi-currency.php:695
+msgid "Check to enable auto update exchange rate."
+msgstr ""
+
+#: ../woo-multi-currency.php:711
+msgid "CURRENCY OPTIONS"
+msgstr ""
+
+#: ../woo-multi-currency.php:794
+msgid "United Arab Emirates Dirham"
+msgstr ""
+
+#: ../woo-multi-currency.php:795
+msgid "Argentine Peso"
+msgstr ""
+
+#: ../woo-multi-currency.php:796
+msgid "Australian Dollars"
+msgstr ""
+
+#: ../woo-multi-currency.php:797
+msgid "Bangladeshi Taka"
+msgstr ""
+
+#: ../woo-multi-currency.php:798
+msgid "Bulgarian Lev"
+msgstr ""
+
+#: ../woo-multi-currency.php:799
+msgid "Brazilian Real"
+msgstr ""
+
+#: ../woo-multi-currency.php:800
+msgid "Canadian Dollars"
+msgstr ""
+
+#: ../woo-multi-currency.php:801
+msgid "Swiss Franc"
+msgstr ""
+
+#: ../woo-multi-currency.php:802
+msgid "Chilean Peso"
+msgstr ""
+
+#: ../woo-multi-currency.php:803
+msgid "Chinese Yuan"
+msgstr ""
+
+#: ../woo-multi-currency.php:804
+msgid "Colombian Peso"
+msgstr ""
+
+#: ../woo-multi-currency.php:805
+msgid "Czech Koruna"
+msgstr ""
+
+#: ../woo-multi-currency.php:806
+msgid "Danish Krone"
+msgstr ""
+
+#: ../woo-multi-currency.php:807
+msgid "Dominican Peso"
+msgstr ""
+
+#: ../woo-multi-currency.php:808
+msgid "Egyptian Pound"
+msgstr ""
+
+#: ../woo-multi-currency.php:809
+msgid "Euros"
+msgstr ""
+
+#: ../woo-multi-currency.php:810
+msgid "Pounds Sterling"
+msgstr ""
+
+#: ../woo-multi-currency.php:811
+msgid "Hong Kong Dollar"
+msgstr ""
+
+#: ../woo-multi-currency.php:812
+msgid "Croatia kuna"
+msgstr ""
+
+#: ../woo-multi-currency.php:813
+msgid "Hungarian Forint"
+msgstr ""
+
+#: ../woo-multi-currency.php:814
+msgid "Indonesia Rupiah"
+msgstr ""
+
+#: ../woo-multi-currency.php:815
+msgid "Israeli Shekel"
+msgstr ""
+
+#: ../woo-multi-currency.php:816
+msgid "Indian Rupee"
+msgstr ""
+
+#: ../woo-multi-currency.php:817
+msgid "Icelandic krona"
+msgstr ""
+
+#: ../woo-multi-currency.php:818
+msgid "Japanese Yen"
+msgstr ""
+
+#: ../woo-multi-currency.php:819
+msgid "Kenyan shilling"
+msgstr ""
+
+#: ../woo-multi-currency.php:820
+msgid "South Korean Won"
+msgstr ""
+
+#: ../woo-multi-currency.php:821
+msgid "Lao Kip"
+msgstr ""
+
+#: ../woo-multi-currency.php:822
+msgid "Mexican Peso"
+msgstr ""
+
+#: ../woo-multi-currency.php:823
+msgid "Malaysian Ringgits"
+msgstr ""
+
+#: ../woo-multi-currency.php:824
+msgid "Nigerian Naira"
+msgstr ""
+
+#: ../woo-multi-currency.php:825
+msgid "Norwegian Krone"
+msgstr ""
+
+#: ../woo-multi-currency.php:826
+msgid "Nepali Rupee"
+msgstr ""
+
+#: ../woo-multi-currency.php:827
+msgid "New Zealand Dollar"
+msgstr ""
+
+#: ../woo-multi-currency.php:828
+msgid "Philippine Pesos"
+msgstr ""
+
+#: ../woo-multi-currency.php:829
+msgid "Pakistani Rupee"
+msgstr ""
+
+#: ../woo-multi-currency.php:830
+msgid "Polish Zloty"
+msgstr ""
+
+#: ../woo-multi-currency.php:831
+msgid "Paraguayan Guaraní"
+msgstr ""
+
+#: ../woo-multi-currency.php:832
+msgid "Romanian Leu"
+msgstr ""
+
+#: ../woo-multi-currency.php:833
+msgid "Russian Ruble"
+msgstr ""
+
+#: ../woo-multi-currency.php:834
+msgid "Saudi Riyal"
+msgstr ""
+
+#: ../woo-multi-currency.php:835
+msgid "Swedish Krona"
+msgstr ""
+
+#: ../woo-multi-currency.php:836
+msgid "Singapore Dollar"
+msgstr ""
+
+#: ../woo-multi-currency.php:837
+msgid "Thai Baht"
+msgstr ""
+
+#: ../woo-multi-currency.php:838
+msgid "Turkish Lira"
+msgstr ""
+
+#: ../woo-multi-currency.php:839
+msgid "Taiwan New Dollars"
+msgstr ""
+
+#: ../woo-multi-currency.php:840
+msgid "Ukrainian Hryvnia"
+msgstr ""
+
+#: ../woo-multi-currency.php:841
+msgid "US Dollars"
+msgstr ""
+
+#: ../woo-multi-currency.php:842
+msgid "Vietnamese Dong"
+msgstr ""
+
+#: ../woo-multi-currency.php:843
+msgid "South African rand"
+msgstr ""
+
+#: ../admin/settings.php:24
+msgid "Upgrade Woo Multi Currency Pro"
+msgstr ""
+
+#: ../admin/settings.php:44
+msgid ""
+"The following options affect how prices are displayed on the frontend. Woo "
+"Multi Currency is working. Please go to "
+msgstr ""
+
+#: ../admin/settings.php:44
+msgid "Woo Multi Currency setting page"
+msgstr ""
+
+#: ../admin/settings.php:44
+msgid " to set default currency."
+msgstr ""
+
+#: ../admin/settings.php:84
+msgid ""
+"You can get <strong> Woo Multi Currency Premium version</strong> at <a "
+"target=\"_blank\" href=\"http://villatheme.com/extensions/woo-multi-"
+"currency/\">here</a> then please active."
+msgstr ""
+
+#: ../admin/settings.php:87
+msgid "Use Now"
+msgstr ""
+
+#: ../admin/settings.php:89
+msgid "Hidden"
+msgstr ""
+
+#: ../templates/woo-multi-currency_admin_setting.php:8
+msgid "Add currency"
+msgstr ""
+
+#: ../templates/woo-multi-currency_admin_setting.php:10
+msgid "Get All Exchange"
+msgstr ""
+
+#: ../templates/woo-multi-currency_admin_setting.php:15
+msgid "Default"
+msgstr ""
+
+#: ../templates/woo-multi-currency_admin_setting.php:16
+msgid "Currency"
+msgstr ""
+
+#: ../templates/woo-multi-currency_admin_setting.php:17
+msgid "Position"
+msgstr ""
+
+#: ../templates/woo-multi-currency_admin_setting.php:18
+msgid "Rate"
+msgstr ""
+
+#: ../templates/woo-multi-currency_admin_setting.php:21 ../templates/woo-multi-
+#: currency_admin_setting.php:60 ../templates/woo-multi-currency_admin_setting.
+#: php:96
+msgid "Number of Decimals"
+msgstr ""
+
+#: ../templates/woo-multi-currency_admin_setting.php:33
+msgid "Check to set this Currency as main currency"
+msgstr ""
+
+#: ../templates/woo-multi-currency_admin_setting.php:45 ../templates/woo-multi-
+#: currency_admin_setting.php:85
+msgid "Left $99"
+msgstr ""
+
+#: ../templates/woo-multi-currency_admin_setting.php:47 ../templates/woo-multi-
+#: currency_admin_setting.php:86
+msgid "Right 99$"
+msgstr ""
+
+#: ../templates/woo-multi-currency_admin_setting.php:49 ../templates/woo-multi-
+#: currency_admin_setting.php:88
+msgid "Left with space $ 99"
+msgstr ""
+
+#: ../templates/woo-multi-currency_admin_setting.php:51 ../templates/woo-multi-
+#: currency_admin_setting.php:90
+msgid "Right with space 99 $"
+msgstr ""
+
+#: ../templates/woo-multi-currency_admin_setting.php:55 ../templates/woo-multi-
+#: currency_admin_setting.php:93
+msgid "Exchange rate"
+msgstr ""
+
+#: ../templates/woo-multi-currency_admin_setting.php:61 ../templates/woo-multi-
+#: currency_admin_setting.php:97
+msgid "Get Exchange"
+msgstr ""
+
+#: ../templates/woo-multi-currency_admin_setting.php:64 ../templates/woo-multi-
+#: currency_admin_setting.php:100
+msgid "Delete"
+msgstr ""
+
+#: ../templates/woo-multi-currency_admin_setting.php:66
+msgid "Do you want to delete"
+msgstr ""
+
+#: ../templates/woo-multi-currency_admin_setting.php:107
+msgid "Setting time to update"
+msgstr ""
+
+#: ../templates/woo-multi-currency_admin_setting.php:113
+msgid "Update Every"
+msgstr ""
+
+#: ../templates/woo-multi-currency_admin_setting.php:121
+msgid "Min"
+msgstr ""
+
+#: ../templates/woo-multi-currency_admin_setting.php:123
+msgid "Hour"
+msgstr ""
+
+#: ../templates/woo-multi-currency_admin_setting.php:125
+msgid "Day"
+msgstr ""
+
+#: ../templates/woo-multi-currency_admin_setting.php:128
+msgid "Enter your time value."
+msgstr ""
+
+#: ../templates/woo-multi-currency_converter_widget.php:38
+msgid "Enter your value"
+msgstr ""
+
+#: ../templates/woo-multi-currency_converter_widget.php:52
+msgid "To"
+msgstr ""
+
+#: ../templates/woo-multi-currency_converter_widget.php:68
+msgid "Convert"
+msgstr ""
+
+#. Base ID
+#: ../widgets/wmc_widget.php:12
+msgid "Woo Currency Selecter"
+msgstr ""
+
+#: ../widgets/wmc_widget.php:13
+msgid "Change display currency on shop page"
+msgstr ""
+
+#: ../widgets/wmc_widget.php:40
+msgid "Select Your Currency"
+msgstr ""
+
+#: ../widgets/wmc_widget.php:43 ../widgets/wmc_widget_converter.php:49
+msgid "Title:"
+msgstr ""
+
+#. Base ID
+#: ../widgets/wmc_widget_converter.php:18
+msgid "Woo Currency Calculator"
+msgstr ""
+
+#: ../widgets/wmc_widget_converter.php:19
+msgid "You can calculate from currency to other currency."
+msgstr ""
+
+#: ../widgets/wmc_widget_converter.php:46
+msgid "Currency Calculator"
+msgstr ""

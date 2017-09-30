@@ -1,0 +1,63 @@
+/*
+* Admin styles override for the custom column layouts
+*/
+
+.vc_row-fluid .wpb_content_holder[data-width="1/5"] {
+	width: 20% !important;
+	float: left;
+	padding-left: 15px;
+	padding-right: 15px;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+
+.vc_row-fluid .wpb_content_holder[data-width="2/5"] {
+	width: 40% !important;
+	float: left;
+	padding-left: 15px;
+	padding-right: 15px;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+
+.vc_row-fluid .wpb_content_holder[data-width="3/5"] {
+	width: 60% !important;
+	float: left;
+	padding-left: 15px;
+	padding-right: 15px;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}	
+
+.vc_row-fluid .wpb_content_holder[data-width="4/5"] {
+	width: 80% !important;
+	float: left;
+	padding-left: 15px;
+	padding-right: 15px;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+
+.controls_row .vc_row_layouts:hover {
+	max-width: 100% !important;
+}
+
+.controls_row .set_columns.l_15_15_15_15_15 {
+	background-image: url('../custom-vc-column-layout/assets/15_15_15_15_15.png');
+}
+
+#vc-row-layout-panel .vc-layout-switcher .vc-layout-btn.l_15_15_15_15_15 .icon {
+	background-image: url('../custom-vc-column-layout/assets/15_15_15_15_15_sprite.png');
+}
+
+#vc-row-layout-panel .vc-layout-switcher .vc-layout-btn.l_15_15_15_15_15:hover .icon {
+  	background-position: 0 -11px;
+}
+
+#wpwrap #vc-row-layout-panel {
+	width: 440px;
+}

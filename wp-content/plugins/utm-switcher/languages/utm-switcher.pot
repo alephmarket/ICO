@@ -1,0 +1,213 @@
+# Copyright (C) 2016 utm-switcher
+# This file is distributed under the same license as the utm-switcher package.
+msgid ""
+msgstr ""
+"Project-Id-Version: utm-switcher\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2016-MO-DA HO:MI+ZONE\n"
+"Last-Translator: David Alberts <mrrockgroin@gmail.com>\n"
+"Language-Team: ShamleyInc <jeff@shamleyinc.com>\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n\n"
+
+#: admin/class-utm-switcher-admin.php:277, admin/class-utm-switcher-admin.php:293, admin/views/admin_page_cf7.php:35, admin/views/admin_page_general.php:35
+msgid "UTM Switcher Help"
+msgstr ""
+
+#: admin/class-utm-switcher-admin.php:279, admin/class-utm-switcher-admin.php:295
+msgid "Help"
+msgstr ""
+
+#: admin/class-utm-switcher-admin.php:351
+msgid "UTM"
+msgstr ""
+
+#: admin/views/admin_page_cf7.php:39, admin/views/admin_page_general.php:39
+msgid "General"
+msgstr ""
+
+#: admin/views/admin_page_cf7.php:41, admin/views/admin_page_general.php:41
+msgid "Contact Form 7"
+msgstr ""
+
+#: admin/views/admin_page_cf7.php:45, admin/views/admin_page_general.php:45
+msgid "General Usage"
+msgstr ""
+
+#: admin/views/admin_page_cf7.php:71, admin/views/admin_page_general.php:71
+msgid "Main Content Header"
+msgstr ""
+
+#: admin/views/admin_page_cf7.php:77, admin/views/admin_page_general.php:77
+msgid "WordPress started in 2003 with a single bit of code to enhance the typography of everyday writing and with fewer users than you can count on your fingers and toes. Since then it has grown to be the largest self-hosted blogging tool in the world, used on millions of sites and seen by tens of millions of people every day."
+msgstr ""
+
+#: admin/views/admin_page_cf7.php:117, admin/views/admin_page_general.php:117
+msgid "Sidebar Content Header"
+msgstr ""
+
+#: admin/views/admin_page_cf7.php:123, admin/views/admin_page_general.php:123
+msgid "Everything you see here, from the documentation to the code itself, was created by and for the community. WordPress is an Open Source project, which means there are hundreds of people all over the world working on it. (More than most commercial platforms.) It also means you are free to use it for anything from your cat’s home page to a Fortune 500 web site without paying anyone a license fee and a number of other important freedoms."
+msgstr ""
+
+#: admin/views/utm_switcher_tag_pane.php:11
+msgid "Name"
+msgstr ""
+
+#: admin/views/utm_switcher_tag_pane.php:25
+msgid "id"
+msgstr ""
+
+#: admin/views/utm_switcher_tag_pane.php:25, admin/views/utm_switcher_tag_pane.php:33
+msgid "optional"
+msgstr ""
+
+#: admin/views/utm_switcher_tag_pane.php:33
+msgid "class"
+msgstr ""
+
+#: admin/views/utm_switcher_tag_pane.php:45
+msgid "Copy this code and paste it into the form left."
+msgstr ""
+
+#: includes/post-meta.php:21
+msgid "UTM Switcher Options"
+msgstr ""
+
+#: includes/post-meta.php:27
+msgid "Match Element"
+msgstr ""
+
+#: includes/post-meta.php:29
+msgid "A selector that will be targeted for replacement. Uses jQuery syntax."
+msgstr ""
+
+#: includes/post-meta.php:31
+msgid "Switcher Type"
+msgstr ""
+
+#: includes/post-meta.php:33
+msgid "Choose a type. Phone Number Element will replace the whole element with an anchor link with a tel: attribute. Text replacement replaces all text in the above element."
+msgstr ""
+
+#: includes/post-meta.php:37, post-types/utm-switcher.php:207
+msgid "Phone Number Element"
+msgstr ""
+
+#: includes/post-meta.php:39, post-types/utm-switcher.php:213
+msgid "Text Replacement"
+msgstr ""
+
+#: includes/post-meta.php:49
+msgid "UTM Source (utm_source=[thisvalue])"
+msgstr ""
+
+#: includes/post-meta.php:51
+msgid "Replacement Value"
+msgstr ""
+
+#: post-types/utm-switcher.php:11
+msgid "UTM Switch"
+msgstr ""
+
+#: post-types/utm-switcher.php:13
+msgid "UTM Switcher"
+msgstr ""
+
+#: post-types/utm-switcher.php:15
+msgid "All UTM Switchers"
+msgstr ""
+
+#: post-types/utm-switcher.php:17
+msgid "New UTM Switcher"
+msgstr ""
+
+#: post-types/utm-switcher.php:19
+msgid "Add New"
+msgstr ""
+
+#: post-types/utm-switcher.php:21
+msgid "Add New UTM Switcher"
+msgstr ""
+
+#: post-types/utm-switcher.php:23
+msgid "Edit UTM Switcher"
+msgstr ""
+
+#: post-types/utm-switcher.php:25
+msgid "View UTM Switcher"
+msgstr ""
+
+#: post-types/utm-switcher.php:27
+msgid "Search UTM Switchers"
+msgstr ""
+
+#: post-types/utm-switcher.php:29
+msgid "No UTM Switchers found"
+msgstr ""
+
+#: post-types/utm-switcher.php:31
+msgid "No UTM Switchers found in trash"
+msgstr ""
+
+#: post-types/utm-switcher.php:33
+msgid "Parent UTM Switcher"
+msgstr ""
+
+#: post-types/utm-switcher.php:35
+msgid "UTM Switchers"
+msgstr ""
+
+#: post-types/utm-switcher.php:95, post-types/utm-switcher.php:101
+msgid "UTM Switcher updated."
+msgstr ""
+
+#: post-types/utm-switcher.php:97
+msgid "Custom field updated."
+msgstr ""
+
+#: post-types/utm-switcher.php:99
+msgid "Custom field deleted."
+msgstr ""
+
+#: post-types/utm-switcher.php:105
+msgid "UTM Switcher restored to revision from %s"
+msgstr ""
+
+#: post-types/utm-switcher.php:107
+msgid "UTM Switcher published."
+msgstr ""
+
+#: post-types/utm-switcher.php:109
+msgid "UTM Switcher saved."
+msgstr ""
+
+#: post-types/utm-switcher.php:111
+msgid "UTM Switcher submitted. "
+msgstr ""
+
+#: post-types/utm-switcher.php:113
+msgid "UTM Switcher scheduled for: <strong>%1$s</strong>."
+msgstr ""
+
+#: post-types/utm-switcher.php:117
+msgid "UTM Switcher draft updated."
+msgstr ""
+
+#: post-types/utm-switcher.php:157
+msgid "Identifier"
+msgstr ""
+
+#: post-types/utm-switcher.php:161
+msgid "Type"
+msgstr ""
+
+#: public/class-utm-switcher.php:737
+msgid "Please leave this field empty."
+msgstr ""

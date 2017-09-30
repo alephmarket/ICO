@@ -1,0 +1,77 @@
+.uc_white_line_circle_countdown{
+    text-align: center;
+}
+
+.uc_white_line_circle_countdown .uc_box {
+	position: relative;
+	height: 140px;
+	width: 140px;
+	border: 1px solid rgba(255,255,255,0.5);
+	border-radius: 50%;
+	box-sizing: border-box;
+	text-align: center;
+        display: inline-block;
+}
+.uc_white_line_circle_countdown .uc_box:not(:first-child) {
+	margin-left: 62px;
+}
+.uc_white_line_circle_countdown .uc_circle {
+	position: absolute;
+	display: block;
+	height: 100%;
+	width: 100%;
+	transform: rotate(48deg) scale( -1, 1);
+	transform-origin: center center;
+}
+.uc_white_line_circle_countdown .uc_number {
+	display: block;
+	font-size: 55px;
+	color: #fff;
+ }
+.uc_white_line_circle_countdown .uc_label {
+	display: block;
+	font-size: 24px;
+	color: #fff;
+}
+@media screen and (max-width: 380px){
+    .uc_white_line_circle_countdown .uc_box:not(:first-child) {
+		margin-left: 0;
+	}
+        .uc_white_line_circle_countdown .uc_box{
+        margin-bottom: 30px;
+    }
+}
+@media screen and (min-width: 381px) and (max-width: 749px) {
+	.uc_white_line_circle_countdown {
+	    width: 350px;
+	    margin: 0 auto;
+	}
+        .uc_white_line_circle_countdown .uc_box:not(:first-child){
+            margin: 0;
+            margin-right: 30px;
+        } 
+	.uc_white_line_circle_countdown div.uc_box {
+		margin-left: 0;
+                margin-right: 30px;
+                margin-bottom: 30px;
+	}
+	
+    
+}
+@media screen and (min-width: 750px) and (max-width: 969px) {
+	 
+	.uc_white_line_circle_countdown .uc_number {
+            margin-top: 10%;
+	    font-size: 50px;
+	}
+	 
+	.uc_white_line_circle_countdown .uc_box {
+	    margin-right: 30px;
+	}
+}
+@media screen and (min-width: 970px) and (max-width: 1199px) {
+	 
+	.uc_white_line_circle_countdown .uc_box:not(:first-child) {
+            margin-right: 30px;
+	}
+}

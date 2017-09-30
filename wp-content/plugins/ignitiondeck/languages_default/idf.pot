@@ -1,0 +1,696 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: IgnitionDeck Framework\n"
+"POT-Creation-Date: 2017-07-27 19:06-0400\n"
+"PO-Revision-Date: 2016-10-05 20:02-0400\n"
+"Last-Translator: Nathan Hangen <nhangen@gmail.com>\n"
+"Language-Team: IgnitionDeck <hello@virtuousgiant.com>\n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.2\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: _e;__;_n\n"
+"X-Poedit-SearchPath-0: ../.\n"
+
+#: .././classes/class-id_modules.php:52
+msgid "(DEV_MODE)"
+msgstr ""
+
+#: .././classes/class-idf_requirements.php:21
+msgid "Your PHP version"
+msgstr ""
+
+#: .././classes/class-idf_requirements.php:21
+msgid "meets"
+msgstr ""
+
+#: .././classes/class-idf_requirements.php:21
+msgid "does not meet"
+msgstr ""
+
+#: .././classes/class-idf_requirements.php:21
+msgid "the minimum requirement of PHP version"
+msgstr ""
+
+#: .././classes/class-idf_requirements.php:32
+msgid "Missing extension"
+msgstr ""
+
+#: .././classes/class-idf_requirements.php:35
+msgid "Required extension"
+msgstr ""
+
+#: .././classes/class-idf_requirements.php:35
+msgid "is installed"
+msgstr ""
+
+#: .././classes/modules/helix/helix-admin.php:6
+msgid "Helix"
+msgstr ""
+
+#: .././classes/modules/helix/helix-idcf.php:69
+msgid "Create Project"
+msgstr ""
+
+#: .././classes/modules/helix/helix-menu.php:6
+msgid "Helix Primary Menu"
+msgstr ""
+
+#: .././classes/modules/helix/inc/helix-idc.php:42
+msgid "Credits"
+msgstr ""
+
+#: .././classes/modules/helix/inc/templates/_helixWCMenu.php:2
+msgid "Cart"
+msgstr ""
+
+#: .././classes/modules/helix/templates/_helixCommerceMenu.php:2
+#: .././idf-admin.php:18 .././idf-admin.php:21
+msgid "Dashboard"
+msgstr ""
+
+#: .././classes/modules/helix/templates/_helixCommerceMenu.php:3
+msgid "Account"
+msgstr ""
+
+#: .././classes/modules/helix/templates/_helixCommerceMenu.php:4
+msgid "Order History"
+msgstr ""
+
+#: .././classes/modules/helix/templates/_helixCrowdfundingMenu.php:2
+msgid "Backer Profile"
+msgstr ""
+
+#: .././classes/modules/helix/templates/_helixCrowdfundingMenu.php:4
+msgid "Creator Profile"
+msgstr ""
+
+#: .././classes/modules/helix/templates/_helixCrowdfundingMenu.php:6
+msgid "Creator Settings"
+msgstr ""
+
+#: .././classes/modules/helix/templates/_helixMenuItems.php:2
+msgid "Logout"
+msgstr ""
+
+#: .././classes/modules/helix/templates/_helixPopout.php:2
+msgid "People are on the Helix waiting list. "
+msgstr ""
+
+#: .././classes/modules/helix/templates/_primaryMenu.php:44
+msgid "Create Account"
+msgstr ""
+
+#: .././classes/modules/helix/templates/_primaryMenu.php:45
+msgid "What is this?"
+msgstr ""
+
+#: .././classes/modules/helix/templates/_primaryMenu.php:69
+#: .././classes/modules/helix/templates/_primaryMenu.php:73
+msgid "Incorrect username or password"
+msgstr ""
+
+#: .././classes/modules/helix/templates/_primaryMenu.php:70
+msgid "Critical Issue"
+msgstr ""
+
+#: .././classes/modules/helix/templates/_primaryMenu.php:70
+msgid "Helix depends on IgnitionDeck Framework. Please install it first."
+msgstr ""
+
+#: .././classes/modules/helix/templates/_primaryMenu.php:75
+msgid "Username or Password should not be empty"
+msgstr ""
+
+#: .././classes/modules/helix/templates/_primaryMenu.php:76
+msgid "Forgot your password?"
+msgstr ""
+
+#: .././classes/modules/helix/templates/admin/_settingsMenu.php:2
+#: .././classes/modules/helix/templates/admin/_settingsMenu.php:12
+msgid "Helix Settings"
+msgstr ""
+
+#: .././classes/modules/helix/templates/admin/_settingsMenu.php:4
+#: .././templates/admin/_idfMenu-old.php:4
+#: .././templates/admin/_idfMenu.php:135 .././templates/admin/_idfMenu.php:138
+msgid "Support"
+msgstr ""
+
+#: .././classes/modules/helix/templates/admin/_settingsMenu.php:5
+#: .././templates/admin/_idfMenu-old.php:5
+#: .././templates/admin/_idfMenu.php:139
+msgid "Documentation"
+msgstr ""
+
+#: .././classes/modules/helix/templates/admin/_settingsMenu.php:15
+msgid "Menu Settings"
+msgstr ""
+
+#: .././classes/modules/helix/templates/admin/_settingsMenu.php:17
+msgid "Menu Position"
+msgstr ""
+
+#: .././classes/modules/helix/templates/admin/_settingsMenu.php:24
+msgid "Menu Style"
+msgstr ""
+
+#: .././classes/modules/helix/templates/admin/_settingsMenu.php:32
+#: .././templates/admin/_idfMenu-old.php:58
+#: .././templates/admin/_idfMenu.php:108
+msgid "Save"
+msgstr ""
+
+#: .././classes/modules/maven/class-maven_msg_init.php:13
+msgid "message"
+msgstr ""
+
+#: .././classes/modules/maven/class-maven_msg_init.php:17
+msgid "Messages"
+msgstr ""
+
+#: .././classes/modules/maven/class-maven_msg_init.php:18
+msgid "Message"
+msgstr ""
+
+#: .././classes/modules/maven/class-maven_msg_init.php:20
+msgid "Create New Message"
+msgstr ""
+
+#: .././classes/modules/maven/class-maven_msg_init.php:21
+msgid "Edit Message"
+msgstr ""
+
+#: .././classes/modules/maven/class-maven_msg_init.php:22
+msgid "New Message"
+msgstr ""
+
+#: .././classes/modules/maven/class-maven_msg_init.php:23
+msgid "View Message"
+msgstr ""
+
+#: .././classes/modules/maven/class-maven_msg_init.php:24
+msgid "View Messages"
+msgstr ""
+
+#: .././classes/modules/maven/class-maven_msg_init.php:25
+msgid "Search Messages"
+msgstr ""
+
+#: .././classes/modules/maven/class-maven_msg_init.php:26
+msgid "No messages found"
+msgstr ""
+
+#: .././classes/modules/maven/class-maven_msg_init.php:27
+msgid "No messages found in trash"
+msgstr ""
+
+#: .././classes/modules/maven/class-maven_msg_init.php:29
+msgid "All Messages"
+msgstr ""
+
+#: .././classes/modules/maven/class-maven_msg_init.php:30
+msgid "Message Archives"
+msgstr ""
+
+#: .././classes/modules/maven/class-maven_msg_init.php:31
+msgid "Insert into message"
+msgstr ""
+
+#: .././classes/modules/maven/class-maven_msg_init.php:59
+msgid "message type"
+msgstr ""
+
+#: .././classes/modules/maven/class-maven_msg_init.php:61
+msgid "Message Types"
+msgstr ""
+
+#: .././classes/modules/maven/class-maven_msg_init.php:62
+msgid "Message Type"
+msgstr ""
+
+#: .././classes/modules/maven/class-maven_msg_init.php:64
+msgid "Add New Message Type"
+msgstr ""
+
+#: .././classes/modules/maven/class-maven_msg_init.php:65
+msgid "Edit Message Type"
+msgstr ""
+
+#: .././classes/modules/maven/class-maven_msg_init.php:66
+msgid "New Message Type"
+msgstr ""
+
+#: .././classes/modules/maven/class-maven_msg_init.php:67
+msgid "View Message Type"
+msgstr ""
+
+#: .././classes/modules/maven/class-maven_msg_init.php:68
+msgid "View Message Types"
+msgstr ""
+
+#: .././classes/modules/maven/class-maven_msg_init.php:69
+msgid "Search Message Types"
+msgstr ""
+
+#: .././classes/modules/maven/class-maven_msg_init.php:70
+msgid "No message types found"
+msgstr ""
+
+#: .././classes/modules/maven/class-maven_msg_init.php:71
+msgid "No message types found in trash"
+msgstr ""
+
+#: .././classes/modules/maven/class-maven_msg_init.php:72
+msgid "Parent Message Type"
+msgstr ""
+
+#: .././idf-admin.php:18 .././templates/admin/_idfMenu.php:2
+msgid "IgnitionDeck"
+msgstr ""
+
+#: .././idf-admin.php:21
+msgid "IgnitionDeck Dashboard"
+msgstr ""
+
+#: .././idf-admin.php:22
+msgid "Themes"
+msgstr ""
+
+#: .././idf-admin.php:23 .././templates/admin/_idfMenu.php:118
+msgid "Modules"
+msgstr ""
+
+#: .././idf-admin.php:38 .././templates/admin/_devTools.php:3
+msgid "Dev Tools"
+msgstr ""
+
+#: .././idf-admin.php:209
+msgid "Your IgnitionDeck Commerce installation is out of date."
+msgstr ""
+
+#: .././idf-admin.php:209
+msgid "Click here"
+msgstr ""
+
+#: .././idf-admin.php:209
+msgid "to update to the latest version."
+msgstr ""
+
+#: .././idf.php:184
+msgid "Update Plugin"
+msgstr ""
+
+#: .././templates/admin/_devTools.php:5
+msgid "Show PHP Info"
+msgstr ""
+
+#: .././templates/admin/_extensionList.php:3
+msgid "IgnitionDeck Modules"
+msgstr ""
+
+#: .././templates/admin/_extensionList.php:3
+msgid "Flush Module Cache"
+msgstr ""
+
+#: .././templates/admin/_extensionList.php:16
+msgid "Get Module"
+msgstr ""
+
+#: .././templates/admin/_extensionList.php:23
+msgid "Activate Plugin"
+msgstr ""
+
+#: .././templates/admin/_extensionList.php:27
+msgid "Installed"
+msgstr ""
+
+#: .././templates/admin/_extensionList.php:35
+#: .././templates/admin/_themeList.php:17
+#: .././templates/admin/_themeList.php:30
+msgid "Activate"
+msgstr ""
+
+#: .././templates/admin/_extensionList.php:39
+msgid "Deactivate"
+msgstr ""
+
+#: .././templates/admin/_extensionList.php:50
+msgid "Docs"
+msgstr ""
+
+#: .././templates/admin/_idfMenu-old.php:2
+msgid "IgnitionDeck Framework"
+msgstr ""
+
+#: .././templates/admin/_idfMenu-old.php:12
+msgid "IgnitionDeck Account"
+msgstr ""
+
+#: .././templates/admin/_idfMenu-old.php:16
+msgid ""
+"Register for an IgnitionDeck account in order to activate crowdfunding "
+"functionality."
+msgstr ""
+
+#: .././templates/admin/_idfMenu-old.php:17
+msgid "Register"
+msgstr ""
+
+#: .././templates/admin/_idfMenu-old.php:20
+msgid ""
+"You have registered successfully, and IgnitionDeck has been installed and "
+"activated."
+msgstr ""
+
+#: .././templates/admin/_idfMenu-old.php:21
+msgid "Here's how to get started using IgnitionDeck:"
+msgstr ""
+
+#: .././templates/admin/_idfMenu-old.php:23
+#: .././templates/admin/_idfMenu.php:13
+msgid "Activate Theme 500"
+msgstr ""
+
+#: .././templates/admin/_idfMenu-old.php:23
+#: .././templates/admin/_idfMenu.php:13
+msgid ", if you wish to use it"
+msgstr ""
+
+#: .././templates/admin/_idfMenu-old.php:24
+msgid "Configure IgnitionDeck Crowdfunding"
+msgstr ""
+
+#: .././templates/admin/_idfMenu-old.php:25
+#: .././templates/admin/_idfMenu.php:15
+msgid "Create your first project"
+msgstr ""
+
+#: .././templates/admin/_idfMenu-old.php:26
+msgid "Ready to accept pledges"
+msgstr ""
+
+#: .././templates/admin/_idfMenu-old.php:26
+msgid "Upgrade to a premium version of the plugins"
+msgstr ""
+
+#: .././templates/admin/_idfMenu-old.php:26
+msgid "to activate a payment gateway."
+msgstr ""
+
+#: .././templates/admin/_idfMenu-old.php:27
+msgid ""
+"Use the commerce selector below to choose an eCommerce platform for use with "
+"IgnitionDeck Crowdfunding (IDCF)"
+msgstr ""
+
+#: .././templates/admin/_idfMenu-old.php:29 .././templates/admin/_idfMenu.php:8
+msgid "Disconnect Account"
+msgstr ""
+
+#: .././templates/admin/_idfMenu-old.php:37
+msgid "IDCF Commerce Settings"
+msgstr ""
+
+#: .././templates/admin/_idfMenu-old.php:40
+#: .././templates/admin/_idfMenu.php:89
+msgid "Select a commerce platform for use with IgnitionDeck Crowdfunding"
+msgstr ""
+
+#: .././templates/admin/_idfMenu-old.php:41
+msgid ""
+"Note: Use of IgnitionDeck Commerce and/or WooCommerce requires purchase of "
+"an IgnitionDeck License."
+msgstr ""
+
+#: .././templates/admin/_idfMenu-old.php:43
+#: .././templates/admin/_idfMenu.php:92
+msgid "Commerce Platform"
+msgstr ""
+
+#: .././templates/admin/_idfMenu-old.php:47
+#: .././templates/admin/_idfMenu.php:96
+msgid "IgnitionDeck Commerce"
+msgstr ""
+
+#: .././templates/admin/_idfMenu-old.php:49
+#: .././templates/admin/_idfMenu.php:98
+msgid "WooCommerce"
+msgstr ""
+
+#: .././templates/admin/_idfMenu-old.php:51
+#: .././templates/admin/_idfMenu.php:100
+msgid "Easy Digital Downloads"
+msgstr ""
+
+#: .././templates/admin/_idfMenu-old.php:53
+#: .././templates/admin/_idfMenu.php:102
+msgid "Legacy IgnitionDeck"
+msgstr ""
+
+#: .././templates/admin/_idfMenu-old.php:67
+#: .././templates/admin/_idfMenu.php:55
+msgid "License Settings"
+msgstr ""
+
+#: .././templates/admin/_idfMenu-old.php:70
+msgid ""
+"Entering your <a href=\"http://ignitiondeck.com/id/documentation/"
+"ignitiondeck-crowdfunding/setup-ignitiondeck/ignitiondeck-license-keys/\" "
+"target=\"_blank\">license key</a> will enable automatic updates via the "
+"WordPress admin for the duration of your license period."
+msgstr ""
+
+#: .././templates/admin/_idfMenu-old.php:74
+#: .././templates/admin/_idfMenu.php:62
+msgid "IDCF License Key"
+msgstr ""
+
+#: .././templates/admin/_idfMenu-old.php:80
+#: .././templates/admin/_idfMenu.php:68
+msgid "IDC License Key"
+msgstr ""
+
+#: .././templates/admin/_idfMenu-old.php:85
+#: .././templates/admin/_idfMenu.php:73
+msgid "Validate"
+msgstr ""
+
+#: .././templates/admin/_idfMenu-old.php:91
+#: .././templates/admin/_idfMenu.php:79
+msgid " License Valid for"
+msgstr ""
+
+#: .././templates/admin/_idfMenu.php:3
+msgid ""
+"Welcome to the IgnitionDeck platform! Follow the instructions below to get "
+"started selling, fundraising, and crowdfunding."
+msgstr ""
+
+#: .././templates/admin/_idfMenu.php:10
+msgid ""
+"You have registered successfully, and IgnitionDeck Crowdfunding and "
+"IgnitionDeck Commerce have been installed and activated"
+msgstr ""
+
+#: .././templates/admin/_idfMenu.php:11
+msgid "Here's how to get started"
+msgstr ""
+
+#: .././templates/admin/_idfMenu.php:14
+msgid "Configure IgnitionDeck Crowdfunding and IgnitionDeck Commerce"
+msgstr ""
+
+#: .././templates/admin/_idfMenu.php:16
+msgid "Need to unlock more features"
+msgstr ""
+
+#: .././templates/admin/_idfMenu.php:16
+msgid "Upgrade to IgnitionDeck Echelon or IgnitionDeck Enterprise"
+msgstr ""
+
+#: .././templates/admin/_idfMenu.php:17
+msgid ""
+"Use the commerce selector below to choose an eCommerce platform for use with "
+"IgnitionDeck Crowdfunding"
+msgstr ""
+
+#: .././templates/admin/_idfMenu.php:21
+msgid "Benefits of Activation"
+msgstr ""
+
+#: .././templates/admin/_idfMenu.php:25
+msgid "Automatic installation of our free plugins"
+msgstr ""
+
+#: .././templates/admin/_idfMenu.php:26
+msgid "Access to support forums"
+msgstr ""
+
+#: .././templates/admin/_idfMenu.php:27
+msgid "News and updates"
+msgstr ""
+
+#: .././templates/admin/_idfMenu.php:28
+msgid "Access to more free themes and modules"
+msgstr ""
+
+#: .././templates/admin/_idfMenu.php:34
+msgid "Activate Now"
+msgstr ""
+
+#: .././templates/admin/_idfMenu.php:35
+msgid "Account creation is fast and"
+msgstr ""
+
+#: .././templates/admin/_idfMenu.php:35
+msgid "you won&rsquo;t leave your website"
+msgstr ""
+
+#: .././templates/admin/_idfMenu.php:37
+msgid "Cannot Activate"
+msgstr ""
+
+#: .././templates/admin/_idfMenu.php:55 .././templates/admin/_idfMenu.php:86
+#: .././templates/admin/_idfMenu.php:118 .././templates/admin/_idfMenu.php:135
+#: .././templates/admin/_idfMenu.php:150
+msgid "Toggle panel"
+msgstr ""
+
+#: .././templates/admin/_idfMenu.php:57
+msgid ""
+"Entering your <a href=\"https://ignitiondeck.com/id/documentation/"
+"ignitiondeck-crowdfunding/setup-ignitiondeck/ignitiondeck-license-keys/?"
+"utm_source=licensepage&utm_medium=link&utm_campaign=freemium\" target="
+"\"_blank\">license key</a> will enable automatic updates via the WordPress "
+"admin for the duration of your license period."
+msgstr ""
+
+#: .././templates/admin/_idfMenu.php:86
+msgid "Crowdfunding Integration"
+msgstr ""
+
+#: .././templates/admin/_idfMenu.php:90
+msgid ""
+"Note: Enabling WooCommerce requires the purchase of an IgnitionDeck License."
+msgstr ""
+
+#: .././templates/admin/_idfMenu.php:131
+#, php-format
+msgid "View All %d Modules"
+msgstr ""
+
+#: .././templates/admin/_idfMenu.php:137
+msgid ""
+"Our support team is available 9am-5pm EST Monday-Friday. Click the links "
+"below to view our step-by-step documentation or visit the support forums."
+msgstr ""
+
+#: .././templates/admin/_idfMenu.php:140
+msgid "Like this product? Help us out with a"
+msgstr ""
+
+#: .././templates/admin/_idfMenu.php:140
+msgid "review"
+msgstr ""
+
+#: .././templates/admin/_idfMenu.php:141
+msgid "Not a fan?"
+msgstr ""
+
+#: .././templates/admin/_idfMenu.php:141
+msgid "Tell us why"
+msgstr ""
+
+#: .././templates/admin/_idfMenu.php:150
+msgid "Available Upgrades"
+msgstr ""
+
+#: .././templates/admin/_idfMenu.php:153
+msgid "IgnitionDeck Echelon"
+msgstr ""
+
+#: .././templates/admin/_idfMenu.php:155
+msgid "Get Echelon"
+msgstr ""
+
+#: .././templates/admin/_idfMenu.php:157
+msgid "IgnitionDeck Enterprise"
+msgstr ""
+
+#: .././templates/admin/_idfMenu.php:159
+msgid "Get Enterprise"
+msgstr ""
+
+#: .././templates/admin/_themeList.php:3
+msgid "IgnitionDeck Themes"
+msgstr ""
+
+#: .././templates/admin/_themeList.php:12
+msgid "Get Theme"
+msgstr ""
+
+#: .././templates/admin/_themeList.php:20
+msgid "Configure"
+msgstr ""
+
+#: .././templates/admin/_wcSettings.php:5
+msgid "WooCommerce Checkout Page"
+msgstr ""
+
+#: .././templates/admin/_wcSettings.php:10
+msgid "Cart URL"
+msgstr ""
+
+#: .././templates/admin/_wcSettings.php:11
+msgid "Checkout URL"
+msgstr ""
+
+#, fuzzy
+#~ msgid "IgnitionDeck MakerKit"
+#~ msgstr "IgnitionDeck Framework"
+
+#~ msgid "Get Plugin"
+#~ msgstr "Get Plugin"
+
+#~ msgid "Updates"
+#~ msgstr "Updates"
+
+#~ msgid "Automatically updates IgnitionDeck plugins and themes"
+#~ msgstr "Automatically updates IgnitionDeck plugins and themes"
+
+#~ msgid "IgnitionDeck Crowdfunding"
+#~ msgstr "IgnitionDeck Crowdfunding"
+
+#~ msgid "Update IDCF"
+#~ msgstr "Update IDCF"
+
+#~ msgid "Extensions"
+#~ msgstr "Extensions"
+
+#~ msgid "See Quick Start Guide"
+#~ msgstr "See Quick Start Guide"
+
+#~ msgid "See docs on creating a project"
+#~ msgstr "See docs on creating a project"
+
+#~ msgid ""
+#~ "With IgnitionDeck Crowdfunding, you have the option of using one of a few "
+#~ "select Commerce Platforms."
+#~ msgstr ""
+#~ "With IgnitionDeck Crowdfunding, you have the option of using one of a few "
+#~ "select Commerce Platforms."
+
+#~ msgid ""
+#~ "note: Depending on your plugin package you may require the use of "
+#~ "IgnitionDeck Commerce."
+#~ msgstr ""
+#~ "note: Depending on your plugin package you may require the use of "
+#~ "IgnitionDeck Commerce."
+
+#~ msgid "Configure IgnitionDeck"
+#~ msgstr "Configure IgnitionDeck"

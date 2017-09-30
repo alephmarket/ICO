@@ -1,0 +1,14 @@
+{
+  "dependencies": {
+    "public.js": {
+      "files": [
+        "js/public.js"
+      ],
+      "main": true
+    }
+  },
+  "paths": {
+      "source": "public/assets/",
+      "dist": "public/dist/"
+  }
+}

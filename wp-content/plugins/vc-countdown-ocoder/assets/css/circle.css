@@ -1,0 +1,60 @@
+.circle .uc_white_line_circle_countdown .uc_number {
+        line-height: 0.75;
+        margin-top: 22%;
+}
+
+.body_background {
+  position: fixed;
+  width: 100%;
+  z-index: -999999;
+  top: 0;
+  left: 0;
+  height: 100%;
+}
+.body_background .carousel {
+  height: 100%;
+}
+.body_background .carousel .carousel-inner {
+  height: 100%;
+}
+.body_background .carousel .carousel-inner .item {
+  height: 100%;
+}
+.body_background .carousel .carousel-inner .item img {
+    min-width: 100%;
+    min-height: 100%
+}
+ 
+.wrap-count-down .count-down-title {
+  color: #fff;
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+.wrap-count-down .count-down-title h1 {
+  font-size: 48px;
+}
+.wrap-count-down .count-down-subscribe form {
+  position: relative;
+}
+.wrap-count-down .count-down-subscribe form input[type=text] {
+  width: 100%;
+  opacity: 0.8;
+  background: cadetblue;
+  border: 1px solid darkcyan;
+  border-radius: 3px;
+  color: #fff;
+  padding: 5px 132px 5px 20px;
+  font-size: 18px;
+}
+.wrap-count-down .count-down-subscribe form button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 37px;
+  border-radius: 3px;
+  background: cyan;
+  border: 0;
+  padding: 0 21px;
+  font-size: 18px;
+}

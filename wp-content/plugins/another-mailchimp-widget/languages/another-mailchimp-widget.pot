@@ -1,0 +1,216 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2017-03-01 15:12+0200\n"
+"PO-Revision-Date: 2015-12-21 10:51+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en_GB\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.8\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: lib/an_mc_plugin.class.php:124
+msgid "Dismiss this notice"
+msgstr ""
+
+#: lib/an_mc_plugin.class.php:155 lib/an_mc_plugin.class.php:168
+msgid "Another MailChimp Widget Settings"
+msgstr ""
+
+#: lib/an_mc_plugin.class.php:156
+msgid "What you're trying to do looks a little shady."
+msgstr ""
+
+#: lib/an_mc_plugin.class.php:169
+msgid ""
+"Enter a valid <a href=\"http://kb.mailchimp.com/accounts/management/about-"
+"api-keys#Find-or-Generate-Your-API-Key\" target=\"_blank\">MailChimp API "
+"key</a> here to get started. You will need to have at least one MailChimp "
+"list set up."
+msgstr ""
+
+#: lib/an_mc_plugin.class.php:174
+msgid "MailChimp API Key"
+msgstr ""
+
+#: lib/an_mc_plugin.class.php:193
+msgid "Update Lists"
+msgstr ""
+
+#: lib/an_mc_plugin.class.php:196
+msgid "Synchronize"
+msgstr ""
+
+#: lib/an_mc_plugin.class.php:201
+msgid "Save Changes"
+msgstr ""
+
+#: lib/an_mc_plugin.class.php:297
+msgid "Another MailChimp"
+msgstr ""
+
+#: lib/an_mc_plugin.class.php:355
+#, php-format
+msgid "%s list updated."
+msgid_plural "%s lists updated."
+msgstr[0] ""
+msgstr[1] ""
+
+#: lib/an_widget_mailchimp.class.php:19 lib/an_widget_mailchimp.class.php:286
+#: shortcodes/forms/an_shortcode_mailchimp.php:85
+#: shortcodes/items/an_shortcode_mailchimp.php:27
+#: shortcodes/items/an_shortcode_mailchimp_class.php:27
+msgid "There was a problem processing your submission."
+msgstr ""
+
+#: lib/an_widget_mailchimp.class.php:20
+#: shortcodes/forms/an_shortcode_mailchimp.php:57
+#: shortcodes/items/an_shortcode_mailchimp.php:19
+#: shortcodes/items/an_shortcode_mailchimp_class.php:28
+msgid "Subscribe"
+msgstr ""
+
+#: lib/an_widget_mailchimp.class.php:21 lib/an_widget_mailchimp.class.php:287
+#: shortcodes/forms/an_shortcode_mailchimp.php:81
+#: shortcodes/items/an_shortcode_mailchimp.php:26
+#: shortcodes/items/an_shortcode_mailchimp_class.php:29
+msgid "Thank you for joining our mailing list."
+msgstr ""
+
+#: lib/an_widget_mailchimp.class.php:25
+msgid "Another Mailchimp Widget"
+msgstr ""
+
+#: lib/an_widget_mailchimp.class.php:26
+msgid "Displays a sign-up form for a MailChimp mailing list."
+msgstr ""
+
+#: lib/an_widget_mailchimp.class.php:54 lib/an_widget_mailchimp.class.php:173
+#: shortcodes/forms/an_shortcode_mailchimp.php:65
+#: shortcodes/items/an_shortcode_mailchimp.php:20
+msgid "First Name"
+msgstr ""
+
+#: lib/an_widget_mailchimp.class.php:55 lib/an_widget_mailchimp.class.php:174
+#: shortcodes/forms/an_shortcode_mailchimp.php:73
+#: shortcodes/items/an_shortcode_mailchimp.php:21
+msgid "Last Name"
+msgstr ""
+
+#: lib/an_widget_mailchimp.class.php:56 lib/an_widget_mailchimp.class.php:175
+#: shortcodes/forms/an_shortcode_mailchimp.php:53
+#: shortcodes/items/an_shortcode_mailchimp.php:22
+msgid "Your E-mail"
+msgstr ""
+
+#: lib/an_widget_mailchimp.class.php:199
+msgid "Title"
+msgstr ""
+
+#: lib/an_widget_mailchimp.class.php:203
+#: shortcodes/forms/an_shortcode_mailchimp.php:41
+#: templates/notice/change-settings.php:4
+msgid "You need to configure MailChimp settings first."
+msgstr ""
+
+#: lib/an_widget_mailchimp.class.php:206
+#: shortcodes/forms/an_shortcode_mailchimp.php:44
+msgid "Select lists and groups your users will be signed up to"
+msgstr ""
+
+#: lib/an_widget_mailchimp.class.php:210
+#: shortcodes/forms/an_shortcode_mailchimp.php:49
+msgid "Use ctrl/cmd key to select multiple options."
+msgstr ""
+
+#: lib/an_widget_mailchimp.class.php:213
+#: shortcodes/forms/an_shortcode_mailchimp.php:52
+msgid "Email label"
+msgstr ""
+
+#: lib/an_widget_mailchimp.class.php:217
+#: shortcodes/forms/an_shortcode_mailchimp.php:56
+msgid "Submit button label"
+msgstr ""
+
+#: lib/an_widget_mailchimp.class.php:222
+#: shortcodes/forms/an_shortcode_mailchimp.php:61
+msgid "Collect first name"
+msgstr ""
+
+#: lib/an_widget_mailchimp.class.php:225
+#: shortcodes/forms/an_shortcode_mailchimp.php:64
+msgid "First name label"
+msgstr ""
+
+#: lib/an_widget_mailchimp.class.php:230
+#: shortcodes/forms/an_shortcode_mailchimp.php:69
+msgid "Collect last name"
+msgstr ""
+
+#: lib/an_widget_mailchimp.class.php:233
+#: shortcodes/forms/an_shortcode_mailchimp.php:72
+msgid "Last name label"
+msgstr ""
+
+#: lib/an_widget_mailchimp.class.php:238
+#: shortcodes/forms/an_shortcode_mailchimp.php:77
+msgid "Display labels as placeholders"
+msgstr ""
+
+#: lib/an_widget_mailchimp.class.php:241
+#: shortcodes/forms/an_shortcode_mailchimp.php:80
+msgid "Success message"
+msgstr ""
+
+#: lib/an_widget_mailchimp.class.php:245
+#: shortcodes/forms/an_shortcode_mailchimp.php:84
+msgid "Failure message"
+msgstr ""
+
+#: lib/mailchimp_api.class.php:162
+msgid "Data format error."
+msgstr ""
+
+#: lib/mailchimp_api.class.php:245 lib/mailchimp_api.class.php:248
+#: lib/mailchimp_api.class.php:249 lib/mailchimp_api.class.php:252
+msgid "Invalid MailChimp API key"
+msgstr ""
+
+#: lib/mailchimp_api.class.php:323
+msgid "Unable to subscribe user."
+msgstr ""
+
+#: shortcodes/forms/an_shortcode_mailchimp.php:20
+msgid "Insert Mailchimp Subscription Form"
+msgstr ""
+
+#: shortcodes/forms/an_shortcode_mailchimp.php:87
+msgid "Insert"
+msgstr ""
+
+#: templates/admin/notice.php:5
+msgid "Settings saved."
+msgstr ""
+
+#: templates/notice/change-settings.php:6 templates/notice/empty-list.php:5
+msgid ""
+"There is an error in subscription form. Contact website administrator please."
+msgstr ""
+
+#: templates/notice/empty-list.php:3
+msgid "Select at least one MailChim list."
+msgstr ""
+
+#: templates/notice/invalid-api-key.php:3
+msgid "MailChimp API key is invalid."
+msgstr ""

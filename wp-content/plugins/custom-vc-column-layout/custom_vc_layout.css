@@ -1,0 +1,61 @@
+/*
+* Stylesheet for the front-end display of the custom columns (user-view)
+* Updated version of plugin styles (compatible up to version 4.3.1 of Visual Composer)
+*/
+
+.vc_responsive .wpb_row .vc_1\/5, .vc_responsive .wpb_row .1\/5 {
+	position: relative;
+	min-height: 1px;
+	padding-left: 15px;
+	padding-right: 15px;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+.vc_responsive .wpb_row .vc_2\/5, .vc_responsive .wpb_row .2\/5 {
+	position: relative;
+	min-height: 1px;
+	padding-left: 15px;
+	padding-right: 15px;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+.vc_responsive .wpb_row .vc_3\/5, .vc_responsive .wpb_row .3\/5 {
+	position: relative;
+	min-height: 1px;
+	padding-left: 15px;
+	padding-right: 15px;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+.vc_responsive .wpb_row .vc_4\/5, .vc_responsive .wpb_row .4\/5 {
+	position: relative;
+	min-height: 1px;
+	padding-left: 15px;
+	padding-right: 15px;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+
+
+@media (min-width: 768px) {
+	.vc_responsive .wpb_row .vc_1\/5, .vc_responsive .wpb_row .1\/5 {
+		float: left;
+		width: 20%;
+	}
+	.vc_responsive .wpb_row .vc_2\/5, .vc_responsive .wpb_row .2\/5 {
+		float: left;
+		width: 40%;
+	}
+	.vc_responsive .wpb_row .vc_3\/5, .vc_responsive .wpb_row .3\/5 {
+		float: left;
+		width: 60%;
+	}
+	.vc_responsive .wpb_row .vc_4\/5, .vc_responsive .wpb_row .4\/5 {
+		float: left;
+		width: 80%;
+	}
+}

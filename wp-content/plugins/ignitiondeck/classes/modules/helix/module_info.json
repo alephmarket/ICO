@@ -1,0 +1,11 @@
+{
+  "title":"Helix",
+  "short_desc":"Helix is a sleek and sexy navigation module for WordPress that integrates with IgnitionDeck and WooCommerce.",
+  "doclink":"https://ignitiondeck.com/id/documentation/ignitiondeck-modules/helix-documentation/",
+  "status":"live",
+  "type":"module",
+  "requires": "",
+  "priority": "high",
+  "category": "",
+  "tag": "spotlight"
+}

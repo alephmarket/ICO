@@ -8,5 +8,3 @@ db_backup.sql
 db_backup*
 rsync_exclusion.txt
 wp-config.php
-wp-content/plugins/
-wp-content/upgrade/

@@ -1,0 +1,86 @@
+#btn_add_curr {
+	border-radius: 3px;
+}
+
+.wmc_wrap {
+	height: 40px;
+	margin-top: 10px;
+}
+
+.wmc_wrap_description {
+	margin-top: 25px;
+	overflow: hidden;
+}
+
+.wmc_description_ismain {
+	width: 55px;
+	float: left;
+	font-size: 15px;
+}
+
+.wmc_description {
+	width: 180px;
+	float: left;
+	font-size: 15px;
+	text-align: center;
+}
+
+.wmc_rate_description {
+	width: 115px;
+}
+
+.num_of_dec_description {
+	width: 160px;
+}
+
+.wmc_is_main_css {
+	margin-right: 15px !important;
+}
+
+div.wmc_select2 {
+	width: 180px;
+	display: inline-block !important;
+}
+
+div.wmc_auto_update_time_type {
+	width: 80px;
+	display: inline-block !important;
+}
+
+.wmc_rate_css {
+	border-radius: 3px;
+	border: 1px solid #ccc;
+	width: 100px;
+}
+
+.num_of_dec {
+	border-radius: 3px;
+	border: 1px solid #ccc;
+	width: 160px;
+}
+
+.btn_get_exchange {
+	border-radius: 3px;
+	/*width: 100px !important;*/
+}
+
+.btn_delete {
+	border-radius: 3px;
+	width: 80px !important;
+}
+
+.wmc_img {
+	width: 20px;
+	height: 20px;
+	cursor: move;
+}
+
+.wmc_pos_css option {
+	width: 200px;
+}
+
+.wmc_auto_update_rates_time {
+	width: 80px;
+}
+
+

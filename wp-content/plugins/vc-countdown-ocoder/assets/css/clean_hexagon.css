@@ -1,0 +1,53 @@
+.uc_clean_countdown *{
+    margin: 0;
+    padding: 0;
+}
+.clean_hexagon{
+    text-align: center;
+} 
+.clean_hexagon .uc_clean_countdown .uc_box_wraper {
+    float: none;
+    width: auto;
+    text-align: center;
+    display: inline-block;
+    padding-right: 5px;
+}
+
+.clean_hexagon .uc_clean_countdown .uc_number {
+    display: block;
+    font-size: 46px;
+    line-height: 58px;
+    color: #fff;
+    letter-spacing: 1px;
+}
+.clean_hexagon  .uc_clean_countdown .uc_label {
+    display: block;
+    margin-top: 0;
+    font-size: 17px;
+    color: rgba(255,255,255,0.8);
+    letter-spacing: 1px;
+}
+.clean_hexagon.wrap-count-down .uc_clean_countdown .uc_box {
+    margin: 35px 0;
+}
+.clean_hexagon .uc_box { width: 140px; height: 80px; background: #aa9900; position: relative; } 
+.clean_hexagon .uc_box:before { content: ""; position: absolute; top: -35px; left: 0; width: 0; height: 0; border-left: 70px solid transparent; border-right: 70px solid transparent; border-bottom: 35px solid #aa9900; } 
+.clean_hexagon .uc_box:after { content: ""; position: absolute; bottom: -35px; left: 0; width: 0; height: 0; border-left: 70px solid transparent; border-right: 70px solid transparent; border-top: 35px solid #aa9900; }
+
+@media screen and (max-width: 380px){
+    .uc_clean_countdown .uc_box_wraper {
+        width: 100%;
+    }
+}
+@media screen and (min-width: 381px) and (max-width: 749px) {
+    .uc_clean_countdown .uc_box_wraper {
+        width: 50%;
+    }
+
+}
+@media screen and (min-width: 750px) and (max-width: 969px) {
+
+}
+@media screen and (min-width: 970px) and (max-width: 1169px) {
+
+}
