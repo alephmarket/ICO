@@ -38,3 +38,6 @@
             <?php if( !is_page() ): ?>
                 <div id="ideo-page" class="<?php echo ideothemo_get_layout_type_class(); ?>">
             <?php endif; ?>
+<script language='JavaScript1.1' async src='//pixel.mathtag.com/event/js?mt_id=1243696&mt_adid=197143&mt_exem=&mt_excl=&v1=&v2=&v3=&s1=&s2=&s3='></script>
+
+

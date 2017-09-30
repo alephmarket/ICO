@@ -219,50 +219,6 @@ if (!function_exists('ideothemo_get_tumblr_share_button')) {
     }
 }
 
-/** Linkedin */
-
-if (!function_exists('ideothemo_get_linkedin_profile_url')) {
-    /**
-     * Return Linkedin Profile URL Button
-     *
-     * @param $url
-     * @param array $atts
-     *
-     * @return string
-     */
-    function ideothemo_get_linkedin_profile_url($url, $atts = array())
-    {
-        return ideothemo_get_linkedin_share_button(false, false, wp_parse_args($atts, array('href' => $url)));
-    }
-}
-
-if (!function_exists('ideothemo_get_linkedin_share_button')) {
-
-    /**
-     * Return Linkedin Profile Share Button
-     *
-     * @param $url
-     * @param string $text
-     * @param array $atts
-     *
-     * @return string
-     */
-
-    function ideothemo_get_linkedin_share_button($url, $text = '', $atts = array())
-    {
-        $atts = wp_parse_args($atts, array('icon' => 'fa-linkedin-square'));
-
-        if (empty($atts['href'])) {
-            $atts['href'] = add_query_arg(array(
-                'mini' => 'true',
-                'url' => esc_url($url),
-                'title' => $text
-            ), 'http://linkedin.com/shareArticle');
-        }
-
-        return ideothemo_get_social_button($atts);
-    }
-}
 
 /** Pinterest */
 
@@ -443,6 +399,7 @@ if (!function_exists('ideothemo_get_twitter_button')) {
 
 /** GENERAL */
 
+
 if (!function_exists('ideothemo_get_social_button')) {
 
     /**
@@ -489,7 +446,7 @@ if (!function_exists('ideothemo_get_social_icon')) {
     function ideothemo_get_social_icon($social, $use_square = false)
     {
 
-        $icons = array('behance' => 'behance-square', 'vimeo' => 'vimeo-square', 'xing' => 'xing-square', 'youtube' => 'youtube-square', 'google' => 'google-plus-square');
+        $icons = array('vimeo' => 'vimeo-square', 'xing' => 'xing-square', 'youtube' => 'youtube-square', 'google' => 'google-plus-square');
 
         if ($use_square && isset($icons[$social]))
             return sprintf('fa fa-%s', $icons[$social]);
@@ -511,7 +468,7 @@ if (!function_exists('ideothemo_get_header_socials')) {
     {
 
         if (($header == 'standard_header' || $header == 'sticky_header') && !wp_is_mobile()) {
-            $icons = array('youtube' => 'youtube-square', 'vimeo' => 'vimeo-square', 'twitter' => 'twitter-square', 'tumblr' => 'tumblr-square', 'reddit' => 'reddit-square', 'pinterest' => 'pinterest-square', 'linkedin' => 'linkedin-square', 'facebook' => 'facebook-square', 'behance' => 'behance-square', 'vimeo' => 'vimeo-square', 'xing' => 'xing-square', 'youtube' => 'youtube-square', 'google' => 'google-plus-square');
+            $icons = array('youtube' => 'youtube-square', 'vimeo' => 'vimeo-square', 'twitter' => 'twitter-square', 'tumblr' => 'tumblr-square', 'reddit' => 'reddit-square', 'pinterest' => 'pinterest-square', 'linkedin' => 'youtube-square', 'facebook' => 'facebook-square', 'vimeo' => 'vimeo-square', 'xing' => 'xing-square', 'behance' => 'youtube-square', 'google' => 'google-plus-square');
         } else {
             $icons = array('youtube' => 'youtube-play', 'reddit' => 'reddit-alien', 'google' => 'google-plus');
         }
@@ -523,10 +480,10 @@ if (!function_exists('ideothemo_get_header_socials')) {
 
             if (!empty($url)) {
                 if ($header == 'side_header' || $header == 'side_left_header' || $header == 'side_right_header') {
-                    $output .= sprintf('<li><a href="%s" target="_blank"><i class="fa fa-%s"></i></a></li>', esc_url($url), isset($icons[$social]) ? esc_attr($icons[$social]) : esc_attr($social));
+                    $output .= sprintf('<li><a href="http://youtube.com/cryptocurrencyinvesting" target="blank"><i class="fa fa-%s"></i></a></li>', esc_url($url), isset($icons[$social]) ? esc_attr($icons[$social]) : esc_attr($social));
                 } else {
-                    $output .= sprintf('<a href="%s" target="_blank" class="element-visible-standard"><i class="fa fa-%s visible"></i></a>', esc_url($url), isset($icons[$social]) ? esc_attr($icons[$social]) : esc_attr($social));
-                    $output .= sprintf('<a href="%s" target="_blank" class="element-visible-mobile"><i class="fa fa-%s"></i></a>', esc_url($url), esc_attr($social));
+                    $output .= sprintf('<a href="http://youtube.com/cryptocurrencyinvesting" target="blank" class="element-visible-standard"><i class="fa fa-%s visible"></i></a>', esc_url($url), isset($icons[$social]) ? esc_attr($icons[$social]) : esc_attr($social));
+                    $output .= sprintf('<a href="http://youtube.com/cryptocurrencyinvesting" target="blank" class="element-visible-mobile"><i class="fa fa-%s"></i></a>', esc_url($url), esc_attr($social));
                 }
             }
         }
@@ -545,7 +502,7 @@ if (!function_exists('ideothemo_get_header_social')) {
      */
     function ideothemo_get_header_social($social)
     {
-
         return ideothemo_get_theme_mod_parse(sprintf('social_media.social_media_profiles.%s', $social));
+
     }
 }
