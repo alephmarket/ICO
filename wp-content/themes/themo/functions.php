@@ -405,19 +405,3 @@ function custom_shop_page_redirect() {
 }
 add_action( 'template_redirect', 'custom_shop_page_redirect' );
 
-
-add_action( 'phpmailer_init', 'send_mail_via_SMTP' );
-function send_mail_via_SMTP($phpmailer) {
-    $phpmailer->isSMTP();     
-    $phpmailer->Host = 'smtp.gmail.com';
-    // Force it to use Username and Password to authenticate
-    $phpmailer->SMTPAuth = true;
-    $phpmailer->Port = 465;
-    $phpmailer->Username = 'jp@alephmarket.io';
-    $phpmailer->Password = 'mamimaju.01';
-    // Additional settings…
-    // Choose SSL or TLS, if necessary for your server
-    $phpmailer->SMTPSecure = "ssl";
-    $phpmailer->From = "info@alephmarket.io";
-    $phpmailer->FromName = "Aleph Market Team";
-}
