@@ -3,8 +3,8 @@ Contributors: alekv
 Donate link: http://www.wolfundbaer.ch/donations/
 Tags: woocommerce, woocommerce conversion tracking, google adwords, adwords, conversion, conversion value, conversion tag, conversion pixel, conversion value tracking, conversion tracking, conversion tracking adwords, conversion tracking pixel, conversion tracking script, track conversions, tracking code manager
 Requires at least: 3.1
-Tested up to: 4.8.1
-Stable tag: 1.4.3
+Tested up to: 4.8.2
+Stable tag: 1.4.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -12,11 +12,11 @@ Track the dynamic order value in AdWords from WooCommerce
 
 == Description ==
 
-This plugin <strong>tracks the value of WooCommerce orders in Google AdWords</strong>. With this you can optimize all your AdWords campaings to achieve maximum efficiency.
+This plugin <strong>tracks the value of WooCommerce orders in Google AdWords</strong>. With this you can optimize all your AdWords campaigns to achieve maximum efficiency.
 
 <strong>Highlights</strong>
 
-* Very accurate by preventing duplicate reporting effectively, excluding admins and shop managers from tracking, and not counting failed payments.
+* Very precise by preventing duplicate reporting effectively, excluding admins and shop managers from tracking, and not counting failed payments.
 * Very easy to install and maintain.
 
 <strong>Requirements</strong>
@@ -26,13 +26,7 @@ This plugin <strong>tracks the value of WooCommerce orders in Google AdWords</st
 
 <strong>Other plugins</strong>
 
-If you like this plugin you might like that one too: https://wordpress.org/plugins/woocommerce-google-dynamic-retargeting-tag/
-
-<strong>Supported languages</strong>
-
-* English
-* German
-* Serbian ( by Adrijana Nikolic http://webhostinggeeks.com )
+If you like this plugin you might like that one too: [WooCommerce AdWords Dynamic Remarketing](https://wordpress.org/plugins/woocommerce-google-dynamic-retargeting-tag/)
  
 == Installation ==
 
@@ -52,23 +46,13 @@ If you like this plugin you might like that one too: https://wordpress.org/plugi
 
 With the Google Tag Assistant you will also be able to see the tag fired on the thankyou page.
 
-= Google Tag Assistant reports that the plugin uses a non-optimized or not standard way of implementation (and suggests to use script based tracking). Why is that so? =
-
-The plugin currently uses only the image pixel based conversion tracking. The reason is a WordPress filter that changes and disables the script based tracking. Unfortunately that filter cannot be turned off. The problem has been reported as a bug long time ago: https://core.trac.wordpress.org/ticket/3670
-
-There is an experimental way to circumvent above mentioned filter, but it possibly will not work for all installations, probably even breaking some themes. So we stuck with the image based pixel for maximum compatibility.
-
-The image pixel conversion tracking works absolutely fine so far. So you can keep using it.
-
-Once we find a way to implement the script based tracking while keeping the same maximum compatibility level, we will release that to the public.
-
 = I get a fatal error and I am running old versions of WordPress and/or WooCommerce. What can I do? =
 
 As this is a free plugin we don't support old version of WordPress and WooCommerce. You will have to update your installation.
 
 = I am using an offsite payment gateway and the conversions are not being tracked. What can I do? =
 
-We don't support if an offsite payment gateway is in use. The reason is that those cases can be complex and time consuming. We don't want to cover this for a free plugin. We do not recommend offsite payment gateways anyway. A visitor can stop the redirection manually which prevents at least some conversions to be tracked. Also offsite payment gateways are generally bad for the conversion rate.
+We don't support if an offsite payment gateway is in use. The reason is that those cases can be complex and time consuming to solve. We don't want to cover this for a free plugin. We do not recommend offsite payment gateways anyway. A visitor can stop the redirection manually which prevents at least some conversions to be tracked. Also offsite payment gateways are generally bad for the conversion rate.
 
 = Where can I report a bug or suggest improvements? =
 
@@ -80,6 +64,14 @@ You can send the link to the front page of your shop too if you think it would b
 
 == Changelog ==
 
+= 1.4.6 =
+* Tweak: Disabled minification through Autoptimize
+= 1.4.5 =
+* Tweak: Order ID back in apostrophes
+= 1.4.4 =
+* Tweak: Switched on JavaScript tracking with a fix for the CDATA bug http://core.trac.wordpress.org/ticket/3670
+* Tweak: The correct function is being used to get the currency depending on the WooCommerce version
+* Fix: Added missing </noscript> tag
 = 1.4.3 =
 * Tweak: Remove campaign URL parameter
 = 1.4.2 =

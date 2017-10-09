@@ -397,11 +397,3 @@ function ideothemo_page_title($title)
     return $title;
 }
 
-function custom_shop_page_redirect() {
-    if( is_shop() ){
-        wp_redirect( home_url( '/?page_id=1079' ) );
-        exit();
-    }
-}
-add_action( 'template_redirect', 'custom_shop_page_redirect' );
-
