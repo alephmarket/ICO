@@ -8,6 +8,10 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule . /themo_22_06/index.php [L]
 <IfModule>
 
+<IfModule mod_security.c>
+ SecFilterEngine Off
+ SecFilterScanPOST Off
+</IfModule>
 # END WordPress
 
 php_value memory_limit 128M

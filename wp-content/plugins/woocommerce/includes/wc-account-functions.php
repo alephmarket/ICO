@@ -40,11 +40,6 @@ function wc_lostpassword_url( $default_url = '' ) {
 
 add_filter( 'lostpassword_url', 'wc_lostpassword_url', 10, 1 );
 
-
-
-
-
-
 /**
  * Get the link to the edit account details page.
  *
@@ -95,7 +90,6 @@ function wc_get_account_menu_items() {
 		'payment-methods' => get_option( 'woocommerce_myaccount_payment_methods_endpoint', 'payment-methods' ),
 		'edit-account'    => get_option( 'woocommerce_myaccount_edit_account_endpoint', 'edit-account' ),
 		'customer-logout' => get_option( 'woocommerce_logout_endpoint', 'customer-logout' ),
-
 	);
 
 	$items = array(
@@ -106,7 +100,6 @@ function wc_get_account_menu_items() {
 		'payment-methods' => __( 'Payment methods', 'woocommerce' ),
 		'edit-account'    => __( 'Account details', 'woocommerce' ),
 		'customer-logout' => __( 'Logout', 'woocommerce' ),
-
 	);
 
 	// Remove missing endpoints.
@@ -336,5 +329,3 @@ function wc_get_account_saved_payment_methods_list_item_echeck( $item, $payment_
 }
 
 add_filter( 'woocommerce_payment_methods_list_item', 'wc_get_account_saved_payment_methods_list_item_echeck', 10, 2 );
-
-
